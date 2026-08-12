@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas-primary: #FAF9F5;
+    --bg-canvas-secondary: #F4F1EA;
+    --bg-canvas-card: #FFFFFF;
+    --bg-canvas-dark: #1E2522;
+
+    --color-accent-gold: #C5A059;
+    --color-accent-gold-hover: #B28E46;
+    --color-accent-gold-light: #F7F2E8;
+
+    --color-text-primary: #1A1C1A;
+    --color-text-secondary: #4A4E4B;
+    --color-text-tertiary: #767B78;
+    --color-text-inverse: #FAF9F5;
+
+    --border-subtle: rgba(44, 58, 51, 0.08);
+    --border-medium: rgba(44, 58, 51, 0.16);
+    --border-gold: rgba(197, 160, 89, 0.30);
+
+    --font-heading: 'Playfair Display', Georgia, serif;
+    --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-canvas-primary);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--bg-canvas-primary);
+    color: var(--color-text-primary);
+  }
+
+  /* Custom Luxury Focus Ring for Keyboard Accessibility */
+  *:focus-visible {
+    outline: 2px solid var(--color-accent-gold) !important;
+    outline-offset: 3px !important;
+  }
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B28E46;
+}
+
+/* Typography Utility Helpers */
+.font-serif-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.font-sans-body {
+  font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+}
+
+/* Glassmorphism Luxury Overlay */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}
+
+.glass-panel-dark {
+  background: rgba(30, 37, 34, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 160, 89, 0.2);
+}

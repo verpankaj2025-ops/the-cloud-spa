@@ -1,0 +1,6 @@
+{
+  "name": "The Cloud Spa & Wellness Center",
+  "description": "Luxury Spa and Wellness Center in Gomti Nagar, Lucknow offering Thai, Balinese, Deep Tissue, and Couple Massages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
