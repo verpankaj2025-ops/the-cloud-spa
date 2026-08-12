@@ -53,7 +53,7 @@ export const SEO_KEYWORD_CLUSTERS = {
     {
       question: 'How do I book an appointment at The Cloud Spa Lucknow?',
       answer:
-        'You can call or WhatsApp us directly at +91 83037 20883 or book online via https://thecloudspa.in.',
+        'You can call or WhatsApp us directly at +91 83037 20883 or book online via https://www.thecloudspa.in.',
     },
     {
       question: 'Where is The Cloud Spa located in Gomti Nagar?',

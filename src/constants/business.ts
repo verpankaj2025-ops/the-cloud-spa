@@ -11,7 +11,7 @@ export const BUSINESS_DETAILS: LocalBusinessInfo = {
   tagline: "Lucknow's Premier Luxury Wellness Sanctuary",
   description:
     'Experience world-class luxury massages and holistic therapies in Gomti Nagar, Lucknow. Certified therapists offering Thai, Balinese, Deep Tissue, Swedish, and Couple Spa experiences.',
-  url: 'https://thecloudspa.in',
+  url: 'https://www.thecloudspa.in',
   email: 'info@thecloudspa.in',
   phone: '+918303720883',
   whatsappPhone: '+918303720883',
