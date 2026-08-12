@@ -6,7 +6,7 @@
 import { BUSINESS_DETAILS } from '../constants/business';
 
 export const SITE_CONFIG = {
-  domain: 'thecloudspa.com',
+  domain: 'www.thecloudspa.in',
   siteUrl: BUSINESS_DETAILS.url,
   siteName: BUSINESS_DETAILS.name,
   businessHours: '11:00 AM - 8:00 PM',

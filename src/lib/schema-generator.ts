@@ -26,12 +26,8 @@ export function generateLocalBusinessSchema() {
     priceRange: BUSINESS_DETAILS.priceRange,
     currenciesAccepted: BUSINESS_DETAILS.currenciesAccepted,
     paymentAccepted: BUSINESS_DETAILS.paymentAccepted.join(', '),
-    image: [
-      `${BUSINESS_DETAILS.url}/assets/images/cloud-spa-facade.jpg`,
-      `${BUSINESS_DETAILS.url}/assets/images/cloud-spa-interior.jpg`,
-      `${BUSINESS_DETAILS.url}/assets/images/cloud-spa-couple-suite.jpg`,
-    ],
-    logo: `${BUSINESS_DETAILS.url}/assets/images/logo.png`,
+    image: [`${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`],
+    logo: `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: BUSINESS_DETAILS.address.streetAddress,
@@ -51,7 +47,7 @@ export function generateLocalBusinessSchema() {
       opens: hours.opens,
       closes: hours.closes,
     })),
-    sameAs: Object.values(BUSINESS_DETAILS.social).filter(Boolean),
+    sameAs: [BUSINESS_DETAILS.social.instagram, BUSINESS_DETAILS.social.facebook].filter(Boolean),
     areaServed: BUSINESS_DETAILS.areaServed.map((area) => ({
       '@type': 'AdministrativeArea',
       name: `${area}, Lucknow, Uttar Pradesh`,
@@ -84,7 +80,7 @@ export function generateOrganizationSchema() {
     name: BUSINESS_DETAILS.name,
     legalName: BUSINESS_DETAILS.legalName,
     url: BUSINESS_DETAILS.url,
-    logo: `${BUSINESS_DETAILS.url}/assets/images/logo.png`,
+    logo: `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
     contactPoint: [
       {
         '@type': 'ContactPoint',
@@ -94,7 +90,7 @@ export function generateOrganizationSchema() {
         availableLanguage: ['English', 'Hindi'],
       },
     ],
-    sameAs: Object.values(BUSINESS_DETAILS.social).filter(Boolean),
+    sameAs: [BUSINESS_DETAILS.social.instagram, BUSINESS_DETAILS.social.facebook].filter(Boolean),
   };
 }
 
@@ -112,14 +108,7 @@ export function generateWebSiteSchema() {
     publisher: {
       '@id': `${BUSINESS_DETAILS.url}/#organization`,
     },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${BUSINESS_DETAILS.url}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
+
   };
 }
 
@@ -257,7 +246,7 @@ export function generateArticleSchema(post: {
     datePublished: post.publishedDate,
     dateModified: post.updatedDate,
     articleSection: post.category,
-    inLanguage: 'en-US',
+    inLanguage: 'en-IN',
     mainEntityOfPage: {
       '@type': 'WebPage',
       '@id': articleUrl,
@@ -276,7 +265,7 @@ export function generateArticleSchema(post: {
       name: BUSINESS_DETAILS.name,
       logo: {
         '@type': 'ImageObject',
-        url: `${BUSINESS_DETAILS.url}/assets/images/logo.png`,
+        url: `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
       },
     },
   };

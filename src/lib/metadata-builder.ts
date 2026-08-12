@@ -20,7 +20,7 @@ export function buildPageMetadata({
   description,
   path,
   keywords = [],
-  imageUrl = `${BUSINESS_DETAILS.url}/assets/images/og-cloud-spa.jpg`,
+  imageUrl = `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
   type = 'website',
 }: BuildMetadataParams): SEOPageMetadata {
   const canonicalUrl = `${BUSINESS_DETAILS.url}${path}`;

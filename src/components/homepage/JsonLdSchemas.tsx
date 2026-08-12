@@ -18,8 +18,8 @@ export const JsonLdSchemas: React.FC = () => {
   const websiteSchema = generateWebSiteSchema();
   const faqSchema = generateFAQSchema();
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { position: 1, name: 'Home', url: 'https://thecloudspa.com' },
-    { position: 2, name: 'Spa Gomti Nagar', url: 'https://thecloudspa.com/#services' },
+    { position: 1, name: 'Home', url: '/' },
+    { position: 2, name: 'Spa in Gomti Nagar', url: '/#services' },
   ]);
 
   return (
