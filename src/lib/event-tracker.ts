@@ -23,6 +23,27 @@ export interface BookingEventPayload {
   step?: number;
 }
 
+
+/**
+ * Track booking modal opening across GA4, GTM, and Meta Pixel.
+ * Fired only from explicit user booking CTA interactions.
+ */
+export function trackBookingModalOpen(source = 'general_cta'): void {
+  const payload = {
+    event_category: 'booking',
+    source,
+    page_path: typeof window !== 'undefined' ? window.location.pathname : '',
+    page_title: typeof document !== 'undefined' ? document.title : '',
+  };
+
+  sendGA4Event('booking_modal_open', payload);
+  sendGTMEvent('booking_modal_open', payload);
+  trackMetaEvent('Schedule', {
+    content_category: 'Spa_Booking_Modal',
+    content_name: source,
+  });
+}
+
 /**
  * Track Page View across GA4, GTM, and Meta Pixel
  */

@@ -348,8 +348,10 @@ Please confirm slot availability and driver valet instructions.`;
             </div>
 
             <input
-              type="text"
-              placeholder="Search therapy (e.g. Thai, Deep Tissue)..."
+  id="therapy-search"
+  name="therapy_search"
+  type="text"
+  placeholder="Search therapy (e.g. Thai, Deep Tissue)..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="px-4 py-2 rounded-xl bg-[#FAF9F5] border border-[#2C3A33]/20 text-xs focus:border-[#C5A059] focus:outline-none"
@@ -579,7 +581,10 @@ Please confirm slot availability and driver valet instructions.`;
 
           {/* CUSTOM CALENDAR PICKER INPUT */}
           <div className="space-y-2 bg-[#FAF9F5] p-5 rounded-2xl border border-[#2C3A33]/10">
-            <label className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5">
+            <label
+  htmlFor="preferred-date"
+  className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5"
+>
               <Calendar className="w-4 h-4 text-[#C5A059]" /> Or Pick Specific Calendar Date:
             </label>
             <input
@@ -745,14 +750,24 @@ Please confirm slot availability and driver valet instructions.`;
               <div className="relative flex items-center">
                 <span className="absolute left-4 text-xs font-bold text-[#2C3A33]/60">+91</span>
                 <input
-                  type="tel"
-                  required
-                  placeholder="8303720883"
-                  value={clientPhone}
-                  onChange={(e) => {
-                    setClientPhone(e.target.value);
-                    if (errors.clientPhone) setErrors((prev) => ({ ...prev, clientPhone: '' }));
-                  }}
+  id="client-phone"
+  name="client_phone"
+  inputMode="numeric"
+  pattern="[0-9]{10}"
+  maxLength={10}
+  minLength={10}
+  autoComplete="tel-national"
+  required
+  placeholder="8303720883"
+  value={clientPhone}
+  onChange={(e) => {
+    const value = e.target.value.replace(/\D/g, '').slice(0, 10);
+    setClientPhone(value);
+
+    if (errors.clientPhone) {
+      setErrors((prev) => ({ ...prev, clientPhone: '' }));
+    }
+  }}
                   className={`w-full pl-14 pr-4 py-3 rounded-xl bg-[#FAF9F5] border text-sm font-medium text-[#1E2522] focus:outline-none ${
                     errors.clientPhone ? 'border-red-500' : 'border-[#2C3A33]/20 focus:border-[#C5A059]'
                   }`}

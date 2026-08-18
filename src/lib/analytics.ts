@@ -43,6 +43,7 @@ export {
   trackWhatsAppClick,
   trackPhoneClick,
   trackBookingSubmitted,
+  trackBookingModalOpen,
   trackServiceSelected,
   trackLocationSelected,
   trackMembershipClick,

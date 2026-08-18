@@ -24,6 +24,7 @@ import { FooterSection } from '../ui/FooterSection';
 import { QuickActionBar } from './QuickActionBar';
 import { BookingFormModal } from '../ui/BookingFormModal';
 import { JsonLdSchemas } from './JsonLdSchemas';
+import { trackBookingModalOpen } from '../../lib/analytics';
 
 export function HomepageClientContainer() {
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
@@ -31,6 +32,7 @@ export function HomepageClientContainer() {
 
   const handleOpenBooking = (treatmentId?: string) => {
     setSelectedTreatmentId(treatmentId);
+    trackBookingModalOpen('homepage_cta');
     setBookingModalOpen(true);
   };
 
