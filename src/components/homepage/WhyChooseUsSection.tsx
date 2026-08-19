@@ -97,10 +97,10 @@ export const WhyChooseUsSection: React.FC = () => {
             </div>
           </div>
           <a
-            href="tel:8303720883"
+            href="tel:9455671995"
             className="shrink-0 px-6 py-3 rounded-xl bg-[#C5A059] text-[#1E2522] font-semibold text-sm hover:bg-[#D4AF37] transition-all shadow-md"
           >
-            Inquire via Call: 8303720883
+            Inquire via Call: 9455671995
           </a>
         </div>
       </div>

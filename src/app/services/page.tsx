@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const meta = buildPageMetadata({
     title: 'Luxury Spa Treatments & Therapies Catalog in Gomti Nagar, Lucknow',
     description:
-      'Explore all luxury spa treatments at The Cloud Spa Lucknow. Thai, Balinese, Deep Tissue, Swedish Massages, Couple Spa Packages, Jacuzzi & Steam Baths in Gomti Nagar. Call 8303720883.',
+      'Explore all luxury spa treatments at The Cloud Spa Lucknow. Thai, Balinese, Deep Tissue, Swedish Massages, Couple Spa Packages, Jacuzzi & Steam Baths in Gomti Nagar. Call 9455671995.',
     path: '/services',
     keywords: [
       'Spa Treatments Lucknow',

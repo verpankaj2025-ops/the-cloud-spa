@@ -758,7 +758,7 @@ Please confirm slot availability and driver valet instructions.`;
   minLength={10}
   autoComplete="tel-national"
   required
-  placeholder="8303720883"
+  placeholder="9455671995"
   value={clientPhone}
   onChange={(e) => {
     const value = e.target.value.replace(/\D/g, '').slice(0, 10);

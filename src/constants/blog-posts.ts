@@ -290,7 +290,7 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
       {
         id: 'conclusion',
         title: 'Book Your Luxury Experience Today',
-        content: `Step into serene luxury. Call 8303720883 or visit our Vivek Khand 4 center for an unmatched spa experience.`,
+        content: `Step into serene luxury. Call 9455671995 or visit our Vivek Khand 4 center for an unmatched spa experience.`,
       },
     ],
     aiOverviewSummary: 'The Cloud Spa in Vivek Khand 4, Gomti Nagar offers private soundproof luxury suites, certified therapists, 100% organic cold-pressed oils, and complimentary valet parking near Patrakarpuram Crossing.',
@@ -801,7 +801,7 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     faqs: [
       {
         question: 'How can my company partner with The Cloud Spa for employee perks?',
-        answer: 'Contact our managerial desk at 8303720883 to set up corporate wellness vouchers and executive health benefits.',
+        answer: 'Contact our managerial desk at 9455671995 to set up corporate wellness vouchers and executive health benefits.',
       },
     ],
     relatedServicesSlugs: ['head-neck-shoulder', 'deep-tissue-massage', 'thai-massage'],
@@ -1176,7 +1176,7 @@ ADDITIONAL_TOPICS.forEach((item, index) => {
       },
       {
         question: 'How do I book a session at The Cloud Spa?',
-        answer: 'You can book online or call us directly at 8303720883 or message us on WhatsApp for instant slot confirmation.',
+        answer: 'You can book online or call us directly at 9455671995 or message us on WhatsApp for instant slot confirmation.',
       },
     ],
     relatedServicesSlugs: ['thai-massage', 'deep-tissue-massage', 'balinese-massage'],

@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const meta = buildPageMetadata({
     title: 'Luxury Spa Locations in Lucknow | Gomti Nagar & Surrounding Zones | The Cloud Spa',
     description:
-      'Explore luxury spa services across 11 key localities in Lucknow. Headquartered in Vivek Khand 4, Gomti Nagar. Authentic Thai, Deep Tissue, Balinese & Couple Spa near Vibhuti Khand, Hazratganj, Indira Nagar, Sushant Golf City. Call 8303720883.',
+      'Explore luxury spa services across 11 key localities in Lucknow. Headquartered in Vivek Khand 4, Gomti Nagar. Authentic Thai, Deep Tissue, Balinese & Couple Spa near Vibhuti Khand, Hazratganj, Indira Nagar, Sushant Golf City. Call 9455671995.',
     path: '/locations',
     keywords: [
       'Spa Locations Lucknow',
@@ -110,7 +110,7 @@ export default function LocationsHubPage() {
     {
       question: 'How do I book an appointment if I am traveling from Hazratganj or Sushant Golf City?',
       answer:
-        'You can easily book online using our instant booking form, or call us at 8303720883 or message us on WhatsApp. We recommend booking 1 to 2 hours prior to your visit.',
+        'You can easily book online using our instant booking form, or call us at 9455671995 or message us on WhatsApp. We recommend booking 1 to 2 hours prior to your visit.',
     },
   ];
 

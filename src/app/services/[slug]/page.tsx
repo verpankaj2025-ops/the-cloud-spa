@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${treatment.name} in Gomti Nagar, Lucknow | Benefits & Pricing`,
     description: `${treatment.shortDescription} Book ${treatment.name} at The Cloud Spa Gomti Nagar Lucknow. Starting ₹${
       treatment.priceINR[60] || Object.values(treatment.priceINR)[0]
-    }. Call 8303720883.`,
+    }. Call 9455671995.`,
     path: `/services/${treatment.slug}`,
     keywords: treatment.targetKeywords,
     imageUrl: treatment.image.src,

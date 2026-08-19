@@ -12,7 +12,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const meta = buildPageMetadata({
     title: 'Traditional Thai Massage in Lucknow | Thai Spa Gomti Nagar | The Cloud Spa',
     description:
-      'Experience authentic Traditional Thai Massage in Gomti Nagar, Lucknow at The Cloud Spa. Relieve spinal back pain, improve joint flexibility & correct desk posture with oil-free Thai stretch therapy. Starting ₹2,499. Call 8303720883.',
+      'Experience authentic Traditional Thai Massage in Gomti Nagar, Lucknow at The Cloud Spa. Relieve spinal back pain, improve joint flexibility & correct desk posture with oil-free Thai stretch therapy. Starting ₹2,499. Call 9455671995.',
     path: '/services/thai-massage-lucknow',
     keywords: [
       'Thai Massage Lucknow',

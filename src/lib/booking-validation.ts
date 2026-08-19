@@ -41,7 +41,7 @@ export function validateIndianPhone(phone: string): boolean {
 }
 
 /**
- * Normalizes Indian Phone to standard format (e.g. +91 8303720883)
+ * Normalizes Indian Phone to standard format (e.g. +91 9455671995)
  */
 export function normalizeIndianPhone(phone: string): string {
   const digitsOnly = phone.replace(/\D/g, '');

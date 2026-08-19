@@ -380,7 +380,7 @@ export function LocationsHubClientPage() {
               },
               {
                 q: 'How do I book an appointment if I am traveling from Hazratganj or Sushant Golf City?',
-                a: 'You can easily book online using our instant booking form, or call us at 8303720883 or message us on WhatsApp. We recommend booking 1 to 2 hours prior to your visit.',
+                a: 'You can easily book online using our instant booking form, or call us at 9455671995 or message us on WhatsApp. We recommend booking 1 to 2 hours prior to your visit.',
               },
             ].map((faq, idx) => (
               <div key={idx} className="bg-white rounded-xl p-5 border border-[#2C3A33]/10 space-y-2">

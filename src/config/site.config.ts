@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
   siteUrl: BUSINESS_DETAILS.url,
   siteName: BUSINESS_DETAILS.name,
   businessHours: '11:00 AM - 8:00 PM',
-  whatsappNumber: '918303720883',
+  whatsappNumber: '919455671995',
   googleMapsEmbedUrl:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.390!2d80.9927!3d26.8526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDUxJzA5LjQiTiA4MMKwNTknMzMuNyJF!5e0!3m2!1sen!2sin!4v1700000000000',
   analytics: {
