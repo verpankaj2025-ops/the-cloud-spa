@@ -68,7 +68,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Yoga Massage Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/thai-massage.webp',
       alt: 'Traditional Thai Massage Therapy at The Cloud Spa Gomti Nagar Lucknow',
       width: 1200,
       height: 800,
@@ -149,7 +149,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Relaxation Therapy Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/balinese-massage.webp',
       alt: 'Balinese Massage Spa Treatment at The Cloud Spa Lucknow',
       width: 1200,
       height: 800,
@@ -224,7 +224,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Back Pain Relief Massage Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/deep-tissue-massage.webp',
       alt: 'Deep Tissue Massage Therapy at The Cloud Spa Gomti Nagar',
       width: 1200,
       height: 800,
@@ -297,7 +297,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Gentle Massage Center Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/swedish-massage.webp',
       alt: 'Swedish Massage Therapy at The Cloud Spa Lucknow',
       width: 1200,
       height: 800,
@@ -366,7 +366,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Aromatic Spa Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1608248597263-0057e43a3524?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/aromatherapy-oils.webp',
       alt: 'Aromatherapy Essential Oil Therapy at The Cloud Spa Lucknow',
       width: 1200,
       height: 800,
@@ -436,7 +436,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Warm Stone Massage Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/hot-stone-massage.webp',
       alt: 'Volcanic Hot Stone Therapy at The Cloud Spa Gomti Nagar',
       width: 1200,
       height: 800,
@@ -506,7 +506,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'VIP Couple Suite Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/couples-spa.webp',
       alt: 'Private Luxury Couple Spa Suite at The Cloud Spa Gomti Nagar Lucknow',
       width: 1200,
       height: 800,
@@ -581,7 +581,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Spa Steam Room Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/steam-bath.webp',
       alt: 'Herbal Detox Steam Chamber at The Cloud Spa Lucknow',
       width: 1200,
       height: 800,
@@ -650,7 +650,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Luxury Spa with Jacuzzi Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/jacuzzi.webp',
       alt: 'Luxury Hydrotherapy Jacuzzi Soak at The Cloud Spa Gomti Nagar',
       width: 1200,
       height: 800,
@@ -718,7 +718,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Bridal Body Polish Lucknow',
     ],
     image: {
-      src: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
+      src: '/images/spa/body-scrub.webp',
       alt: 'Exfoliating Body Scrub & Polish Treatment at The Cloud Spa Lucknow',
       width: 1200,
       height: 800,

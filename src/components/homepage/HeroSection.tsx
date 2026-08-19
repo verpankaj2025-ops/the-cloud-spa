@@ -20,7 +20,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
       {/* Background Hero Ambient Image with Dark Overlay - Optimized LCP */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/spa-placeholder.svg"
+          src="/images/spa/hero-spa.webp"
           alt="Luxury Spa Room in Gomti Nagar Lucknow"
           fill
           priority
