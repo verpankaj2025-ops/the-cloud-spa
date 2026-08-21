@@ -355,7 +355,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Aromatherapy Stress Relief',
-        slug: 'aromatherapy-massage-lucknow',
+        slug: 'aromatherapy',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Gentle Care',
@@ -614,7 +614,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Aromatherapy Stress Relief',
-        slug: 'aromatherapy-massage-lucknow',
+        slug: 'aromatherapy',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Calming',

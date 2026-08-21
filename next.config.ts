@@ -28,6 +28,26 @@ const nextConfig: NextConfig = {
         destination: '/services/swedish-massage',
         permanent: true,
       },
+{
+  source: '/services/aromatherapy-massage',
+  destination: '/services/aromatherapy',
+  permanent: true,
+},
+{
+  source: '/services/aromatherapy-massage-lucknow',
+  destination: '/services/aromatherapy',
+  permanent: true,
+},
+{
+  source: '/services/hot-stone-massage-lucknow',
+  destination: '/services/hot-stone-massage',
+  permanent: true,
+},
+{
+  source: '/services/volcanic-hot-stone-therapy',
+  destination: '/services/hot-stone-massage',
+  permanent: true,
+},
     ];
   },
 
