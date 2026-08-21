@@ -1,6 +1,16 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/services/traditional-thai-massage',
+        destination: '/services/thai-massage',
+        permanent: true,
+      },
+    ];
+  },
+
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
