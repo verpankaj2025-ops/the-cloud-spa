@@ -585,7 +585,7 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
               </Link>
 
               <Link
-                href="/services/deep-tissue-massage-lucknow"
+                href="/services/deep-tissue-massage"
                 className="p-4 rounded-xl border border-[#2C3A33]/10 bg-[#FAF9F5] hover:border-[#C5A059] transition-all flex items-center justify-between"
               >
                 <div>
@@ -596,7 +596,7 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
               </Link>
 
               <Link
-                href="/services/couple-spa-lucknow"
+                href="/services/couple-spa"
                 className="p-4 rounded-xl border border-[#2C3A33]/10 bg-[#FAF9F5] hover:border-[#C5A059] transition-all flex items-center justify-between"
               >
                 <div>
