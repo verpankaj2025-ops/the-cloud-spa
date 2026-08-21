@@ -9,7 +9,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'thai-massage',
     slug: 'thai-massage',
-    aliases: ['traditional-thai-massage'],
     name: 'Authentic Traditional Thai Massage',
     tagline: 'Ancient Yoga-Assisted Stretching & SEN Energy Line Therapy',
     shortDescription:
