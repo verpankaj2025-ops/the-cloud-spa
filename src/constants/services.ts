@@ -313,7 +313,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'aromatherapy',
     slug: 'aromatherapy',
-    aliases: ['aromatherapy-massage', 'aromatherapy-massage-lucknow'],
     name: 'Aromatherapy Healing Essential Oil Therapy',
     tagline: 'Custom Essential Oil Elixirs for Emotional & Physical Balance',
     shortDescription:
@@ -382,7 +381,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'hot-stone-massage',
     slug: 'hot-stone-massage',
-    aliases: ['hot-stone-massage-lucknow', 'volcanic-hot-stone-therapy'],
     name: 'Volcanic Hot Stone Melt Therapy',
     tagline: 'Geothermal Basalt Stones Infusing Deep Thermal Muscular Heat',
     shortDescription:
