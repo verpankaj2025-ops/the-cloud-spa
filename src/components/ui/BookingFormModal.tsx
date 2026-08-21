@@ -14,6 +14,7 @@ export interface BookingFormModalProps {
   isOpen: boolean;
   onClose: () => void;
   preSelectedTreatmentId?: string;
+  preSelectedDuration?: number;
   source?: string;
 }
 
@@ -21,6 +22,7 @@ export const BookingFormModal: React.FC<BookingFormModalProps> = ({
   isOpen,
   onClose,
   preSelectedTreatmentId,
+  preSelectedDuration,
   source = 'modal_trigger',
 }) => {
   return (
@@ -74,6 +76,7 @@ export const BookingFormModal: React.FC<BookingFormModalProps> = ({
             <div className="p-4 sm:p-6 overflow-y-auto">
               <BookingEngine
                 initialServiceSlug={preSelectedTreatmentId}
+                initialDuration={preSelectedDuration}
                 source={source}
                 compact
               />

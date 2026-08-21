@@ -52,6 +52,7 @@ import {
 
 export interface BookingEngineProps {
   initialServiceSlug?: string;
+  initialDuration?: number;
   initialLocationSlug?: string;
   source?: string;
   onBookingComplete?: (details: BookingFormData) => void;
@@ -73,6 +74,7 @@ const TIME_SLOTS = [
 
 export function BookingEngine({
   initialServiceSlug,
+  initialDuration,
   initialLocationSlug,
   source = 'booking_engine',
   onBookingComplete,
@@ -87,7 +89,14 @@ export function BookingEngine({
     SPA_TREATMENTS[0];
 
   const [selectedServiceId, setSelectedServiceId] = useState<string>(defaultService.id);
-  const [selectedDuration, setSelectedDuration] = useState<number>(60);
+
+const validInitialDuration =
+  initialDuration && DURATION_OPTIONS.includes(initialDuration as typeof DURATION_OPTIONS[number])
+    ? initialDuration
+    : 60;
+
+const [selectedDuration, setSelectedDuration] =
+  useState<number>(validInitialDuration);
 
   // Today ISO date helper
   const getTodayIso = () => {
