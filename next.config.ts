@@ -18,6 +18,16 @@ const nextConfig: NextConfig = {
         destination: '/services/couple-spa',
         permanent: true,
       },
+      {
+        source: '/services/balinese-massage-lucknow',
+        destination: '/services/balinese-massage',
+        permanent: true,
+      },
+      {
+        source: '/services/swedish-massage-lucknow',
+        destination: '/services/swedish-massage',
+        permanent: true,
+      },
     ];
   },
 

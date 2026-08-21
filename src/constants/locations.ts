@@ -240,7 +240,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Swedish Stress Buster',
-        slug: 'swedish-massage-lucknow',
+        slug: 'swedish-massage',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Quick Relax',
@@ -339,7 +339,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Balinese Deep Relaxation Therapy',
-        slug: 'balinese-massage-lucknow',
+        slug: 'balinese-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Neighbor Favorite',
@@ -940,7 +940,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Swedish Deep Stress Relief',
-        slug: 'swedish-massage-lucknow',
+        slug: 'swedish-massage',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Best Value',

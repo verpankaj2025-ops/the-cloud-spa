@@ -607,7 +607,7 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
               </Link>
 
               <Link
-                href="/services/balinese-massage-lucknow"
+                href="/services/balinese-massage"
                 className="p-4 rounded-xl border border-[#2C3A33]/10 bg-[#FAF9F5] hover:border-[#C5A059] transition-all flex items-center justify-between"
               >
                 <div>
@@ -618,7 +618,7 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
               </Link>
 
               <Link
-                href="/services/swedish-massage-lucknow"
+                href="/services/swedish-massage"
                 className="p-4 rounded-xl border border-[#2C3A33]/10 bg-[#FAF9F5] hover:border-[#C5A059] transition-all flex items-center justify-between"
               >
                 <div>
