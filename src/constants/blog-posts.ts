@@ -1115,7 +1115,73 @@ const ADDITIONAL_TOPICS = [
   { slug: 'deep-breathing-during-massage', title: 'The Power of Diaphragmatic Breathing: How Deep Inhalation Enhances Massage Benefits', cat: 'Wellness' as const, author: 'dr-ananya-sharma' },
 ];
 
+
+type GeneratedBlogContent = {
+  overview: string
+  benefits: string
+  protocol: string
+  faqIntro: string
+  keyTakeaway: string
+  callout: string
+}
+
+function getGeneratedBlogContent(
+  slug: string,
+  title: string,
+  category: string
+): GeneratedBlogContent {
+  const topic = title.toLowerCase()
+
+  const contentMap: Record<string, GeneratedBlogContent> = {
+    'steam-bath-detox-benefits': {
+      overview: 'A steam bath uses controlled warmth and humidity to create a relaxing environment for the body. This guide explains what people commonly enjoy about steam sessions, how to prepare comfortably, and when a gentler approach may be appropriate.',
+      benefits: 'Warm humid air can feel soothing after a demanding day and may temporarily loosen the feeling of stiffness. Hydration, sensible session length, and cooling down gradually are important parts of a comfortable steam-bath routine.',
+      protocol: 'A session should begin with comfort screening, clear timing, access to drinking water, and an easy exit whenever needed. Guests should never feel pressured to stay in intense heat beyond their comfort level.',
+      faqIntro: 'Steam sessions work best when duration and comfort are adjusted to the individual rather than following one fixed routine.',
+      keyTakeaway: 'Comfort, hydration, and sensible timing are more important than pushing through excessive heat.',
+      callout: 'Leave the steam area and cool down if you feel dizzy, unwell, or uncomfortable.',
+    },
+
+    'sports-injury-prevention-massage': {
+      overview: 'Sports massage and recovery bodywork are often used around demanding training periods to help athletes focus on mobility, muscle comfort, and recovery habits. The approach should reflect the sport, training load, and the person’s current condition.',
+      benefits: 'Targeted bodywork may help an athlete feel less stiff and more prepared for normal movement. Recovery also depends on training progression, sleep, nutrition, hydration, and appropriate rest.',
+      protocol: 'A therapist should discuss recent training, sore areas, competition schedules, and pressure preferences before treatment. Acute injuries or unexplained pain should be assessed by an appropriate healthcare professional.',
+      faqIntro: 'The most useful recovery plan depends on training demands rather than using the same treatment for every athlete.',
+      keyTakeaway: 'Massage can support recovery routines, but it does not replace sensible training and injury assessment.',
+      callout: 'Recent injury, swelling, or sharp pain should be evaluated before receiving intensive bodywork.',
+    },
+
+    'sciatica-and-back-pain-massage': {
+      overview: 'Lower-back discomfort can have many possible causes, and the term sciatica describes symptoms that may involve pain or altered sensation travelling along a nerve pathway. Massage may support comfort for some people but should not be presented as a diagnosis or universal cure.',
+      benefits: 'Gentle, well-adjusted massage may help some clients relax surrounding muscle tension and improve their sense of comfort. Results vary depending on the underlying cause of symptoms.',
+      protocol: 'Treatment should start with a discussion about symptoms, sensitivity, previous injuries, and pressure tolerance. New weakness, numbness, bladder or bowel changes, or severe symptoms require prompt medical assessment.',
+      faqIntro: 'Back and nerve-related symptoms should be approached individually because similar sensations can have different causes.',
+      keyTakeaway: 'Comfort-focused bodywork may be supportive, while persistent or serious symptoms need professional medical evaluation.',
+      callout: 'Stop treatment and seek medical advice for severe or worsening neurological symptoms.',
+    },
+  }
+
+  if (contentMap[slug]) {
+    return contentMap[slug]
+  }
+
+  return {
+    overview: `This guide explores ${topic} and the practical factors people may consider before choosing a wellness or bodywork session. The focus is on expectations, comfort, preparation, and selecting an approach that matches individual needs.`,
+    benefits: `${title} can involve different wellness goals depending on the person. A thoughtful approach considers comfort, preferences, daily activity, and realistic expectations instead of promising the same outcome for everyone.`,
+    protocol: `At The Cloud Spa, a session related to ${category} should begin with a conversation about comfort, preferences, and the desired experience. Pressure, pacing, and treatment choices can then be adjusted where appropriate.`,
+    faqIntro: `Questions about ${topic} are best answered in the context of individual comfort, goals, and relevant health considerations.`,
+    keyTakeaway: `A personalised approach is more useful than assuming one ${category} experience suits every guest.`,
+    callout: `Choose a comfortable pace and communicate openly about pressure, temperature, and preferences.`,
+  }
+}
+
 ADDITIONAL_TOPICS.forEach((item, index) => {
+  const uniqueContent = getGeneratedBlogContent(
+    item.slug,
+    item.title,
+    item.cat
+  )
+
   BLOG_POSTS.push({
     slug: item.slug,
     title: item.title,
@@ -1145,24 +1211,24 @@ ADDITIONAL_TOPICS.forEach((item, index) => {
       {
         id: 'overview',
         title: `Understanding ${item.cat}`,
-        content: `At The Cloud Spa in Gomti Nagar, Lucknow, our therapeutic team combines clinical knowledge with traditional Asian and Ayurvedic bodywork. Understanding ${item.title.toLowerCase()} provides actionable clarity for anyone seeking physical pain relief or mental relaxation.`,
-        callout: 'Consistency in bodywork therapy creates cumulative physical benefits, preventing acute tension before muscle spasms occur.',
-        keyTakeaway: 'Integrating structured bodywork into your routine accelerates recovery, releases deep muscular knots, and calms systemic nervous stress.',
+        content: uniqueContent.overview,
+        callout: uniqueContent.callout,
+        keyTakeaway: uniqueContent.keyTakeaway,
       },
       {
         id: 'benefits',
         title: 'Key Physical & Health Benefits',
-        content: `Regular sessions increase blood circulation, promote lymphatic drainage of cellular waste, relieve spinal nerve compression, and encourage parasympathetic nervous system calm.`,
+        content: uniqueContent.benefits,
       },
       {
         id: 'protocol',
         title: 'Professional Bodywork Protocol at The Cloud Spa',
-        content: `Every guest session at our Vivek Khand 4 center begins with an initial posture and comfort consultation. Certified therapists adjust pressure levels, room temperature, and aroma selections to meet your exact comfort needs.`,
+        content: uniqueContent.protocol,
       },
       {
         id: 'faqs',
         title: 'Frequently Asked Questions',
-        content: `For any specific health conditions or preferences, our reception team and lead physician guide you to the ideal treatment length and oil formulation.`,
+        content: uniqueContent.faqIntro,
       },
     ],
     aiOverviewSummary: `${item.title} at The Cloud Spa Lucknow provides certified bodywork therapy that relieves chronic physical tension, lowers stress hormones, and restores vitality.`,
