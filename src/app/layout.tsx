@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_DETAILS.url),
   title: {
     default: `${BUSINESS_DETAILS.name} | Luxury Spa Gomti Nagar Lucknow`,
-    template: `%s | ${BUSINESS_DETAILS.name}`,
+    template: '%s',
   },
   description:
     'Best Luxury Spa in Gomti Nagar, Lucknow. Experience experienced wellness professional massages, couple spa suites, Swedish, Thai, Deep Tissue, and Jacuzzi hydrotherapy in Vivek Khand 4.',
