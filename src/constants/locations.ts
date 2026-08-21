@@ -111,7 +111,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Deep Tissue Muscle Recovery',
-        slug: 'deep-tissue-massage-lucknow',
+        slug: 'deep-tissue-massage',
         duration: '60 Minutes',
         price: '₹2,799',
         badge: 'Therapeutic',
@@ -119,7 +119,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Royal Couple Spa Experience',
-        slug: 'couple-spa-lucknow',
+        slug: 'couple-spa',
         duration: '90 Minutes',
         price: '₹5,999',
         badge: 'Luxury VIP',
@@ -224,7 +224,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Deep Tissue Executive Recovery',
-        slug: 'deep-tissue-massage-lucknow',
+        slug: 'deep-tissue-massage',
         duration: '75 Minutes',
         price: '₹3,199',
         badge: 'Recommended for IT',
@@ -446,7 +446,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Royal Couple Spa',
-        slug: 'couple-spa-lucknow',
+        slug: 'couple-spa',
         duration: '90 Minutes',
         price: '₹5,999',
         badge: 'Luxury VIP',
@@ -531,7 +531,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Deep Tissue Recovery Massage',
-        slug: 'deep-tissue-massage-lucknow',
+        slug: 'deep-tissue-massage',
         duration: '60 Minutes',
         price: '₹2,799',
         badge: 'High Impact',
@@ -693,7 +693,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Royal Couple Spa Experience',
-        slug: 'couple-spa-lucknow',
+        slug: 'couple-spa',
         duration: '90 Minutes',
         price: '₹5,999',
         badge: 'VIP Signature',
@@ -775,7 +775,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Deep Tissue Recovery',
-        slug: 'deep-tissue-massage-lucknow',
+        slug: 'deep-tissue-massage',
         duration: '90 Minutes',
         price: '₹3,699',
         badge: 'Therapeutic',
@@ -866,7 +866,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Royal Couple VIP Spa',
-        slug: 'couple-spa-lucknow',
+        slug: 'couple-spa',
         duration: '90 Minutes',
         price: '₹5,999',
         badge: 'Luxury Suite',
@@ -1026,7 +1026,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Deep Tissue Muscle Recovery',
-        slug: 'deep-tissue-massage-lucknow',
+        slug: 'deep-tissue-massage',
         duration: '60 Minutes',
         price: '₹2,799',
         badge: 'Pain Relief',
