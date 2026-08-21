@@ -94,7 +94,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'balinese-massage',
     slug: 'balinese-massage',
-    aliases: ['balinese-massage-lucknow', 'balinese-royal-massage'],
     name: 'Balinese Royal Relaxation Massage',
     tagline: 'Exotic Indonesian Oil Therapy, Percussion & Acupressure',
     shortDescription:
@@ -170,7 +169,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'deep-tissue-massage',
     slug: 'deep-tissue-massage',
-    aliases: ['deep-tissue-massage-lucknow', 'deep-tissue-recovery'],
     name: 'Deep Tissue Muscle Recovery Therapy',
     tagline: 'Targeted Deep Fascial Pressure for Muscular Pain Relief',
     shortDescription:
@@ -245,7 +243,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'swedish-massage',
     slug: 'swedish-massage',
-    aliases: ['swedish-massage-lucknow', 'classic-swedish-massage'],
     name: 'Classic Swedish Rejuvenation Therapy',
     tagline: 'Gentle Gliding Effleurage for Total Mind & Body Harmony',
     shortDescription:
@@ -450,7 +447,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'couple-spa',
     slug: 'couple-spa',
-    aliases: ['couple-spa-lucknow', 'couple-massage-package', 'luxury-couple-spa'],
     name: 'Luxury Royal Couple Spa Package',
     tagline: 'Private Soundproof VIP Suite with Jacuzzi & Synchronized Therapies',
     shortDescription:
@@ -525,7 +521,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'steam-bath',
     slug: 'steam-bath',
-    aliases: ['steam-bath-lucknow', 'herbal-steam-bath'],
     name: 'Herbal Detox Steam Bath Chamber',
     tagline: 'Eucalyptus Infused Thermal Moisture to Purify Pores & Clear Airways',
     shortDescription:
@@ -595,7 +590,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'jacuzzi',
     slug: 'jacuzzi',
-    aliases: ['jacuzzi-lucknow', 'jacuzzi-hydrotherapy', 'hydrotherapy-jacuzzi'],
     name: 'Hydrotherapy Jacuzzi Bath Soak',
     tagline: 'Targeted Multi-Jet Hydrotherapy with Epsom & Essential Oils',
     shortDescription:
@@ -664,7 +658,6 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
   {
     id: 'body-scrub',
     slug: 'body-scrub',
-    aliases: ['body-scrub-lucknow', 'body-scrub-polish', 'exfoliating-body-scrub'],
     name: 'Exfoliating Body Scrub & Skin Polish',
     tagline: 'Organic Walnut, Coffee & Honey Exfoliation for Silky Glowing Skin',
     shortDescription:
