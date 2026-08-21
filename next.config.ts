@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
         destination: '/services/thai-massage',
         permanent: true,
       },
+      {
+        source: '/services/deep-tissue-massage-lucknow',
+        destination: '/services/deep-tissue-massage',
+        permanent: true,
+      },
+      {
+        source: '/services/couple-spa-lucknow',
+        destination: '/services/couple-spa',
+        permanent: true,
+      },
     ];
   },
 
