@@ -13,9 +13,9 @@ export const BUSINESS_DETAILS: LocalBusinessInfo = {
     'Experience world-class luxury massages and holistic therapies in Gomti Nagar, Lucknow. Certified therapists offering Thai, Balinese, Deep Tissue, Swedish, and Couple Spa experiences.',
   url: 'https://www.thecloudspa.in',
   email: 'info@thecloudspa.in',
-  phone: '+919455671995',
-  whatsappPhone: '+919455671995',
-  formattedPhone: '+91 83037 20883',
+  phone: '919455671995',
+  whatsappPhone: '919455671995',
+  formattedPhone: '+91 94556 71995',
   address: {
     streetAddress: '4/526 Near Brijwasi Bakery, Vivek Khand 4',
     subLocality: 'Vivek Khand 4, Gomti Nagar',
@@ -82,6 +82,17 @@ export const BUSINESS_DETAILS: LocalBusinessInfo = {
     whatsapp: 'https://wa.me/919455671995',
   },
 };
+
+
+export function getWhatsAppUrl(message?: string): string {
+  const baseUrl = `https://wa.me/${BUSINESS_DETAILS.whatsappPhone}`;
+
+  if (!message) {
+    return baseUrl;
+  }
+
+  return `${baseUrl}?text=${encodeURIComponent(message)}`;
+}
 
 import { LUCKNOW_LOCATIONS } from './locations';
 

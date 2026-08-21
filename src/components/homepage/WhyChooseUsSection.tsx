@@ -6,6 +6,7 @@
 import React from 'react';
 import { Award, ShieldCheck, Heart, Sparkles, Flame, Droplets, Lock, CheckCircle2 } from 'lucide-react';
 import { LuxuryBadge } from '../ui/LuxuryBadge';
+import { BUSINESS_DETAILS } from '../../constants/business';
 
 export const WhyChooseUsSection: React.FC = () => {
   const pillars = [
@@ -97,10 +98,10 @@ export const WhyChooseUsSection: React.FC = () => {
             </div>
           </div>
           <a
-            href="tel:9455671995"
+            href={`tel:${BUSINESS_DETAILS.phone}`}
             className="shrink-0 px-6 py-3 rounded-xl bg-[#C5A059] text-[#1E2522] font-semibold text-sm hover:bg-[#D4AF37] transition-all shadow-md"
           >
-            Inquire via Call: 9455671995
+            Inquire via Call: {BUSINESS_DETAILS.formattedPhone}
           </a>
         </div>
       </div>

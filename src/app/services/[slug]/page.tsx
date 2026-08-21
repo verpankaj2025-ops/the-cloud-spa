@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import { notFound, permanentRedirect } from 'next/navigation';
 import { SPA_TREATMENTS, getTreatmentBySlug } from '../../../constants/services';
 import { TARGET_LOCALITIES, BUSINESS_DETAILS } from '../../../constants/business';
 import { buildPageMetadata } from '../../../lib/metadata-builder';
@@ -16,18 +16,9 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const paramsList: Array<{ slug: string }> = [];
-
-  SPA_TREATMENTS.forEach((treatment) => {
-    paramsList.push({ slug: treatment.slug });
-    if (treatment.aliases) {
-      treatment.aliases.forEach((alias) => {
-        paramsList.push({ slug: alias });
-      });
-    }
-  });
-
-  return paramsList;
+  return SPA_TREATMENTS.map((treatment) => ({
+    slug: treatment.slug,
+  }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -38,6 +29,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     return {
       title: 'Treatment Not Found | The Cloud Spa Lucknow',
       description: 'The requested spa treatment page could not be found.',
+    };
+  }
+
+  const isAlias = treatment.slug !== slug;
+
+  if (isAlias) {
+    return {
+      robots: {
+        index: false,
+        follow: true,
+      },
+      alternates: {
+        canonical: `${BUSINESS_DETAILS.url}/services/${treatment.slug}`,
+      },
     };
   }
 
@@ -94,6 +99,10 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   if (!treatment) {
     notFound();
+  }
+
+  if (treatment.slug !== slug) {
+    permanentRedirect(`/services/${treatment.slug}`);
   }
 
   // Related treatments (excluding current treatment)

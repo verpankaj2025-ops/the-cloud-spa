@@ -28,7 +28,7 @@ import { FooterSection } from '../ui/FooterSection';
 import { BookingFormModal } from '../ui/BookingFormModal';
 import { LuxuryButton } from '../ui/LuxuryButton';
 import { LuxuryBadge } from '../ui/LuxuryBadge';
-import { BUSINESS_DETAILS } from '../../constants/business';
+import { BUSINESS_DETAILS, getWhatsAppUrl } from '../../constants/business';
 import { LUCKNOW_LOCATIONS, DetailedLocationSEO } from '../../constants/locations';
 import { SPA_TREATMENTS } from '../../constants/services';
 
@@ -110,7 +110,7 @@ export function LocationsHubClientPage() {
                     Book Spa Appointment
                   </LuxuryButton>
                   <a
-                    href={`https://wa.me/91${BUSINESS_DETAILS.whatsappPhone}?text=${encodeURIComponent('Hello The Cloud Spa, I would like to query spa services and directions.')}`}
+                    href={getWhatsAppUrl('Hello The Cloud Spa, I would like to query spa services and directions.')}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

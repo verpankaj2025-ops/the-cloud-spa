@@ -37,7 +37,7 @@ import { BookingFormModal } from '../ui/BookingFormModal';
 import { LuxuryButton } from '../ui/LuxuryButton';
 import { LuxuryBadge } from '../ui/LuxuryBadge';
 import { BlogPost } from '../../types/blog';
-import { BUSINESS_DETAILS } from '../../constants/business';
+import { BUSINESS_DETAILS, getWhatsAppUrl } from '../../constants/business';
 import { SPA_TREATMENTS } from '../../constants/services';
 import { LUCKNOW_LOCATIONS } from '../../constants/locations';
 import { BLOG_POSTS } from '../../constants/blog-posts';
@@ -493,7 +493,7 @@ export function BlogDetailClientPage({ post }: BlogDetailClientPageProps) {
                   </LuxuryButton>
 
                   <a
-                    href={`https://wa.me/91${BUSINESS_DETAILS.whatsappPhone}?text=${encodeURIComponent(`Hello The Cloud Spa, I read your post "${post.title}" and would like to book a appointment.`)}`}
+                    href={getWhatsAppUrl(`Hello The Cloud Spa, I read your post "${post.title}" and would like to book an appointment.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
