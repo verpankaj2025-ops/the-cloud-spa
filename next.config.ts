@@ -48,6 +48,71 @@ const nextConfig: NextConfig = {
   destination: '/services/hot-stone-massage',
   permanent: true,
 },
+      {
+        source: '/services/balinese-royal-massage',
+        destination: '/services/balinese-massage',
+        permanent: true,
+      },
+      {
+        source: '/services/deep-tissue-recovery',
+        destination: '/services/deep-tissue-massage',
+        permanent: true,
+      },
+      {
+        source: '/services/classic-swedish-massage',
+        destination: '/services/swedish-massage',
+        permanent: true,
+      },
+      {
+        source: '/services/couple-massage-package',
+        destination: '/services/couple-spa',
+        permanent: true,
+      },
+      {
+        source: '/services/luxury-couple-spa',
+        destination: '/services/couple-spa',
+        permanent: true,
+      },
+      {
+        source: '/services/steam-bath-lucknow',
+        destination: '/services/steam-bath',
+        permanent: true,
+      },
+      {
+        source: '/services/herbal-steam-bath',
+        destination: '/services/steam-bath',
+        permanent: true,
+      },
+      {
+        source: '/services/jacuzzi-lucknow',
+        destination: '/services/jacuzzi',
+        permanent: true,
+      },
+      {
+        source: '/services/jacuzzi-hydrotherapy',
+        destination: '/services/jacuzzi',
+        permanent: true,
+      },
+      {
+        source: '/services/hydrotherapy-jacuzzi',
+        destination: '/services/jacuzzi',
+        permanent: true,
+      },
+      {
+        source: '/services/body-scrub-lucknow',
+        destination: '/services/body-scrub',
+        permanent: true,
+      },
+      {
+        source: '/services/body-scrub-polish',
+        destination: '/services/body-scrub',
+        permanent: true,
+      },
+      {
+        source: '/services/exfoliating-body-scrub',
+        destination: '/services/body-scrub',
+        permanent: true,
+      },
     ];
   },
 
