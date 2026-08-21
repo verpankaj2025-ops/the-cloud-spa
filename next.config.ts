@@ -4,6 +4,11 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: '/services/thai-massage-lucknow',
+        destination: '/services/thai-massage',
+        permanent: true,
+      },
+      {
         source: '/services/traditional-thai-massage',
         destination: '/services/thai-massage',
         permanent: true,
