@@ -103,7 +103,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Traditional Thai Stretch Therapy',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Most Popular',
@@ -232,7 +232,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Traditional Thai Posture Realignment',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Spinal Relief',
@@ -347,7 +347,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Traditional Thai Stretch Bodywork',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Posture Correction',
@@ -438,7 +438,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Traditional Thai Massage',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Top Pick',
@@ -523,7 +523,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Express Reflexology & Foot Care',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Market Special',
@@ -606,7 +606,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Traditional Thai Massage',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Best Seller',
@@ -701,7 +701,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Traditional Thai Massage',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Authentic Thai',
@@ -783,7 +783,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Traditional Thai Massage',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Spine Stretch',
@@ -858,7 +858,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Traditional Thai Golf Stretch Session',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Golfer Favorite',
@@ -948,7 +948,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       },
       {
         name: 'Traditional Thai Stretch Therapy',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '60 Minutes',
         price: '₹2,499',
         badge: 'Popular',
@@ -1018,7 +1018,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
     recommendedServices: [
       {
         name: 'Traditional Thai Stretch Therapy',
-        slug: 'thai-massage-lucknow',
+        slug: 'thai-massage',
         duration: '90 Minutes',
         price: '₹3,499',
         badge: 'Posture Fix',

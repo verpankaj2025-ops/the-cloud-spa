@@ -574,7 +574,7 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs">
               <Link
-                href="/services/thai-massage-lucknow"
+                href="/services/thai-massage"
                 className="p-4 rounded-xl border border-[#2C3A33]/10 bg-[#FAF9F5] hover:border-[#C5A059] transition-all flex items-center justify-between"
               >
                 <div>
