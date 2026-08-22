@@ -1165,86 +1165,151 @@ function getGeneratedBlogContent(
     return contentMap[slug]
   }
 
+  const words = slug
+    .split('-')
+    .filter(Boolean)
+
   const hash = [...slug].reduce(
-    (total, char) => total + char.charCodeAt(0),
-    0
+    (total, char, index) =>
+      (total * 31 + char.charCodeAt(0) + index) >>> 0,
+    7
   )
 
-  const contentIndex = hash % 8
+  const pick = <T,>(items: T[], salt: number): T => {
+    const mixed =
+      ((hash ^ Math.imul(salt, 2654435761)) >>> 0) +
+      Math.imul(hash >>> 16, salt + 97)
 
-  const overviewOptions = [
-    `This guide explores ${topic} from a practical wellness perspective. It focuses on what the experience may involve, how to prepare, and how individual comfort can shape the session.`,
-    `${title} is best understood by looking at the specific goals behind the treatment rather than assuming the same experience suits everyone. Preparation, comfort, and personal preferences all matter.`,
-    `People interested in ${topic} often have different expectations. This guide looks at the treatment context, common considerations, and practical ways to choose an experience that feels appropriate.`,
-    `A useful approach to ${topic} starts with understanding personal goals and comfort levels. The experience can vary depending on lifestyle, physical activity, preferences, and treatment choices.`,
-    `This topic covers a wellness approach that should be adapted to the individual. Knowing what to expect can help guests communicate their preferences and make more informed treatment decisions.`,
-    `Before choosing a session related to ${topic}, it helps to consider your routine, expectations, comfort preferences, and any factors that could affect the overall experience.`,
-    `${title} can be approached in several ways depending on the guest's goals. A personalised discussion helps create a treatment experience that feels more suitable and comfortable.`,
-    `The practical side of ${topic} involves more than simply choosing a service. Session intensity, preparation, communication, and personal comfort all contribute to the overall experience.`,
+    return items[(mixed >>> 0) % items.length]
+  }
+
+  const categoryLabel = category.toLowerCase()
+  const shortTopic = words.slice(0, 5).join(' ')
+
+  const overviewOpeners = [
+    `People exploring ${topic} usually begin with a specific question, concern, or wellness goal rather than a one-size-fits-all expectation.`,
+    `${title} is easier to understand when the focus stays on the actual purpose of the session, the setting, and the person's individual priorities.`,
+    `Interest in ${topic} can come from everyday routines, recovery needs, relaxation goals, or simple curiosity about how the experience works.`,
+    `A practical look at ${topic} starts by separating realistic expectations from exaggerated promises and focusing on what the experience is actually designed to provide.`,
+    `The subject of ${shortTopic} can mean different things to different guests, which makes preparation and context more useful than a generic description.`,
+    `Before booking something related to ${topic}, it helps to understand the role of timing, comfort, treatment style, and personal expectations.`,
+    `This guide approaches ${topic} through the lens of informed wellness choices, with attention to preparation, communication, and the guest's intended experience.`,
+    `Rather than treating ${topic} as a fixed formula, it is more useful to consider why someone is interested in it and what they hope to get from the session.`,
+    `For many guests, ${topic} is connected to a broader ${categoryLabel} routine that may change according to workload, activity, stress, or lifestyle.`,
+    `${title} becomes more practical when the discussion includes who the session may suit, what questions to ask beforehand, and how comfort can shape the experience.`,
   ]
 
-  const benefitOptions = [
-    `The potential value of this approach depends on the person's goals and response to treatment. Some guests may focus on relaxation, while others may prioritise comfort, mobility, or recovery after daily activity.`,
-    `A well-planned session can support a broader self-care routine by giving the guest dedicated time to relax and pay attention to physical comfort. Individual results and preferences can vary.`,
-    `Benefits are best considered alongside lifestyle factors such as movement, rest, hydration, and daily stress. A treatment should support realistic wellness goals rather than promise identical outcomes.`,
-    `Different guests may value different aspects of the experience, including relaxation, temporary relief from everyday tension, or a greater sense of physical comfort after a demanding routine.`,
-    `The usefulness of a wellness session often depends on appropriate pacing and individual preferences. Clear communication can help align the treatment with the guest's intended outcome.`,
-    `Rather than expecting one universal result, guests can consider how the session fits into their existing routine. Comfort, recovery habits, and realistic expectations all influence the experience.`,
-    `A treatment may become more meaningful when it is selected for a specific personal goal. The preferred pressure, duration, timing, and style can all influence how comfortable the session feels.`,
-    `Wellness benefits should be viewed as individual experiences rather than guarantees. The most appropriate approach depends on the guest's needs, preferences, and relevant health considerations.`,
+  const overviewClosers = [
+    `Knowing these details can make it easier to choose an approach that fits your circumstances.`,
+    `That perspective helps keep the decision grounded in comfort and realistic goals.`,
+    `The result is a more informed conversation before treatment begins.`,
+    `This can help guests avoid assumptions and communicate more clearly with their therapist.`,
+    `A little preparation often makes the overall experience feel more appropriate and predictable.`,
+    `The most useful choice is usually the one that matches both the intended outcome and personal comfort.`,
+    `This gives the guest a clearer basis for deciding how the session should be approached.`,
+    `Individual context matters, especially when expectations, routines, or sensitivities differ.`,
+    `A personalised discussion is often more valuable than relying on a generic wellness claim.`,
+    `This approach keeps the focus on suitability instead of promising the same result to every person.`,
   ]
 
-  const protocolOptions = [
-    `At The Cloud Spa, the session should begin with a brief conversation about comfort, preferred pressure, treatment goals, and any information relevant to the guest's experience. Adjustments can then be made during the session.`,
-    `A thoughtful treatment process starts by understanding what the guest wants from the visit. Pressure, pacing, room comfort, and treatment choices can be adjusted where appropriate.`,
-    `Before beginning, the therapist should discuss expectations and invite the guest to communicate throughout the session. Ongoing feedback helps keep the experience aligned with personal comfort.`,
-    `The treatment should be personalised through clear communication before and during the session. Guests should feel comfortable requesting adjustments to pressure, positioning, temperature, or pacing.`,
-    `A suitable session begins with understanding the guest's preferences and intended outcome. The therapist can then adapt the experience within the appropriate scope of the selected treatment.`,
-    `Comfort should remain central throughout the visit. A short pre-session discussion can help identify preferences and create a clearer plan for pressure, timing, and the overall treatment style.`,
-    `The experience should be guided by the guest's feedback rather than a rigid one-size-fits-all routine. Communication before and during the session helps support appropriate adjustments.`,
-    `A personalised approach involves discussing the guest's comfort and expectations before treatment begins. Any relevant concerns should be raised early so the experience can be adapted appropriately.`,
+  const benefitBodies = [
+    `${title} may be valued for the way it fits into a person's wider routine, whether the priority is relaxation, temporary comfort, movement, or recovery time.`,
+    `The experience may offer a dedicated opportunity to slow down and pay attention to physical and mental comfort after a demanding routine.`,
+    `Potential benefits depend on the treatment style and the individual response, so lifestyle factors such as rest, movement, hydration, and workload still matter.`,
+    `Some guests may appreciate the calming side of the experience, while others may be more interested in how it supports their sense of mobility or everyday comfort.`,
+    `A session can be more useful when it is chosen with a clear purpose instead of expecting every treatment to deliver the same outcome.`,
+    `The perceived value often comes from matching duration, pressure, timing, and treatment style with the guest's immediate needs.`,
+    `For ${categoryLabel}-related goals, consistency in healthy routines outside the treatment room can matter just as much as the session itself.`,
+    `Wellness experiences are individual, and the response can vary according to preferences, current activity levels, stress, and other personal factors.`,
+    `A thoughtful session may complement self-care habits by creating time for rest and focused attention to comfort without replacing appropriate professional care.`,
+    `The most realistic way to view the benefits is as part of a broader routine rather than as a guaranteed solution to every concern.`,
   ]
 
-  const faqOptions = [
-    `Questions about ${topic} are easier to answer when personal goals, comfort preferences, and any relevant health considerations are taken into account.`,
-    `The right approach to ${topic} can vary from person to person, so treatment questions are best discussed in relation to the guest's individual expectations and comfort.`,
-    `There is no single ideal experience for every guest. Questions about timing, pressure, preparation, or suitability should be considered individually.`,
-    `Guests often benefit from discussing their expectations before booking, especially when they have specific comfort preferences or relevant physical considerations.`,
-    `The most suitable treatment choices depend on individual circumstances. Clear communication helps determine whether a particular approach is appropriate for the guest's intended experience.`,
-    `Practical questions about preparation and session style should be answered with the guest's own goals and comfort in mind rather than relying on a fixed formula.`,
-    `A short conversation before treatment can clarify common questions about what to expect and help the guest choose a more suitable experience.`,
-    `Individual preferences can influence the answer to many treatment questions, which is why personalised guidance is generally more useful than a universal recommendation.`,
+  const benefitClosers = [
+    `Clear expectations help keep those potential benefits in perspective.`,
+    `That is why individual response should remain part of the conversation.`,
+    `Results should be understood as personal experiences rather than universal guarantees.`,
+    `Choosing the right pace can be as important as choosing the treatment itself.`,
+    `A therapist can use feedback to adapt the experience within the scope of the service.`,
+    `Comfort and suitability remain more useful measures than exaggerated claims.`,
+    `The wider routine around the session can influence how meaningful the experience feels.`,
+    `Personal goals provide a better guide than a generic promise of results.`,
+    `This makes communication an important part of getting the experience right.`,
+    `Relevant health concerns should always be considered separately when appropriate.`,
   ]
 
-  const takeawayOptions = [
-    `The best experience is usually one that matches your personal goals and allows room for clear communication and comfort adjustments.`,
-    `Choosing a treatment based on your own preferences is more useful than expecting one fixed method to work the same way for everyone.`,
-    `Clear expectations and open communication can make a wellness session feel more comfortable and better aligned with your needs.`,
-    `Personal comfort should guide the experience, from treatment intensity to pacing and the type of support you are looking for.`,
-    `A thoughtful, individual approach is generally more valuable than treating wellness as a one-size-fits-all experience.`,
-    `Preparation and communication can help you choose a session that fits your routine and comfort preferences more effectively.`,
-    `The most appropriate treatment experience depends on the guest, the intended outcome, and the ability to adjust the session when needed.`,
-    `Wellness choices work best when expectations remain realistic and the experience can be adapted to individual comfort.`,
+  const protocolOpeners = [
+    `At The Cloud Spa, a ${categoryLabel}-focused visit should start with a short conversation about the guest's reason for booking and preferred experience.`,
+    `A suitable process begins by understanding what the guest wants from the session before deciding on pressure, pacing, or treatment emphasis.`,
+    `Before treatment starts, the therapist should invite the guest to share relevant preferences, comfort limits, and expectations.`,
+    `The session can be approached more thoughtfully when preparation includes a quick discussion of routine, comfort, and the intended outcome.`,
+    `For a topic such as ${shortTopic}, the treatment plan should remain flexible enough to reflect the guest's feedback.`,
+    `A professional wellness session works best when communication starts before the first technique is applied and continues whenever adjustments are needed.`,
+    `The treatment approach should be guided by the selected service as well as the guest's stated comfort and goals.`,
+    `A brief pre-session check can help identify practical preferences that influence positioning, pacing, pressure, or room comfort.`,
+    `The therapist should avoid assuming that every guest wants the same intensity or treatment experience.`,
+    `Personalisation begins with listening to the guest and setting realistic expectations for the chosen service.`,
   ]
 
-  const calloutOptions = [
-    `Communicate any discomfort or preference changes during the session so appropriate adjustments can be made.`,
-    `Choose a comfortable treatment pace and speak up if pressure, positioning, or temperature needs to change.`,
-    `Personal feedback during a session can help create a more comfortable and suitable experience.`,
-    `If you have concerns about comfort or treatment suitability, discuss them before the session begins.`,
-    `Do not feel obligated to follow a fixed intensity if a gentler approach feels more appropriate.`,
-    `Relevant health concerns or unusual symptoms should be discussed with an appropriate healthcare professional when necessary.`,
-    `A wellness session should support comfort, not require you to push through pain or significant discomfort.`,
-    `Open communication is an important part of creating a treatment experience that feels appropriate for you.`,
+  const protocolClosers = [
+    `Adjustments can then be made where appropriate throughout the visit.`,
+    `Ongoing feedback gives the guest a clear way to request changes if something does not feel right.`,
+    `This keeps the experience responsive instead of forcing everyone into the same routine.`,
+    `The aim is to stay aligned with comfort while remaining within the appropriate scope of the treatment.`,
+    `Any relevant concerns should be raised early so they can be considered before proceeding.`,
+    `The guest should feel comfortable speaking up at any point during the session.`,
+    `A flexible approach can make the treatment feel more suitable without overpromising a particular outcome.`,
+    `This process supports clearer communication from arrival through the end of the session.`,
+    `If unusual symptoms or significant concerns are present, appropriate healthcare advice may be needed.`,
+    `The final approach should reflect informed preferences rather than a rigid template.`,
+  ]
+
+  const faqBodies = [
+    `Questions about ${topic} are best answered by considering the person's goals, comfort preferences, and the specific type of session being discussed.`,
+    `There is rarely one universal answer about suitability, timing, or intensity because individual routines and expectations can differ.`,
+    `Guests often get more useful guidance when they explain what they hope to achieve instead of asking for a generic treatment recommendation.`,
+    `Preparation questions can usually be clarified by discussing the selected service, expected comfort level, and any relevant personal considerations.`,
+    `The right treatment conversation should distinguish ordinary wellness preferences from symptoms or concerns that may require healthcare advice.`,
+    `Practical details such as duration, pressure, timing, and preparation should be matched to the individual rather than treated as fixed rules.`,
+    `A short discussion before booking can help determine whether the chosen approach matches the guest's intended experience.`,
+    `Personal context matters when answering questions about ${shortTopic}, especially if activity levels, sensitivities, or expectations vary.`,
+    `Guests should feel comfortable asking about what the session involves and whether adjustments can be made.`,
+    `The most helpful answer usually comes from combining realistic expectations with clear communication about individual preferences.`,
+  ]
+
+  const takeawayBodies = [
+    `The best decision is the one that matches your actual goal instead of following a generic wellness trend.`,
+    `Comfort, realistic expectations, and open communication are more useful than trying to copy someone else's ideal routine.`,
+    `A personalised approach gives the guest more control over how the session is experienced.`,
+    `Choosing an appropriate pace can matter more than chasing maximum intensity.`,
+    `Wellness choices are generally more useful when they can adapt to changing routines and individual needs.`,
+    `A clear purpose for the session can make treatment choices easier to discuss and adjust.`,
+    `The experience should support comfort and informed decision-making rather than pressure the guest to follow a fixed formula.`,
+    `Personal feedback is valuable because treatment preferences can change from one visit to another.`,
+    `A realistic view of benefits helps keep wellness decisions practical and sustainable.`,
+    `The guest's comfort should remain central from booking through the end of the session.`,
+  ]
+
+  const calloutBodies = [
+    `Share changes in comfort as soon as you notice them so the session can be adjusted where appropriate.`,
+    `If pressure, positioning, temperature, or pacing does not feel right, communicate that clearly during the visit.`,
+    `Do not assume discomfort must be tolerated to make a wellness session worthwhile.`,
+    `Discuss relevant concerns before treatment instead of waiting until the session becomes uncomfortable.`,
+    `Choose the pace that feels appropriate for your body and current routine.`,
+    `Ask questions before booking if you are unsure about the style or intensity of the selected service.`,
+    `A comfortable session should allow room for feedback rather than requiring you to follow a fixed intensity.`,
+    `Unusual, severe, or persistent symptoms may need assessment by an appropriate healthcare professional.`,
+    `Give the therapist useful feedback so the experience can be adjusted to your stated preferences.`,
+    `Preparation and honest communication can help avoid mismatched expectations.`,
   ]
 
   return {
-    overview: overviewOptions[contentIndex],
-    benefits: benefitOptions[(contentIndex + 2) % benefitOptions.length],
-    protocol: protocolOptions[(contentIndex + 3) % protocolOptions.length],
-    faqIntro: faqOptions[(contentIndex + 5) % faqOptions.length],
-    keyTakeaway: takeawayOptions[(contentIndex + 1) % takeawayOptions.length],
-    callout: calloutOptions[(contentIndex + 4) % calloutOptions.length],
+    overview: `${pick(overviewOpeners, 11)} ${pick(overviewClosers, 29)}`,
+    benefits: `${pick(benefitBodies, 47)} ${pick(benefitClosers, 71)}`,
+    protocol: `${pick(protocolOpeners, 97)} ${pick(protocolClosers, 131)}`,
+    faqIntro: pick(faqBodies, 173),
+    keyTakeaway: pick(takeawayBodies, 211),
+    callout: pick(calloutBodies, 257),
   }
 }
 
