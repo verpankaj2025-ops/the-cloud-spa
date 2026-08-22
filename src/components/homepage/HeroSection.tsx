@@ -50,7 +50,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
 
             {/* Subheading */}
             <p className="text-base sm:text-lg text-[#D2D6D3] max-w-2xl font-light leading-relaxed">
-              Step into Lucknow’s premier sanctuary for wellness. Experience authentic Thai stretching, Balinese aromatherapy, deep tissue muscle recovery, and private couple Jacuzzi suites guided by certified expert therapists.
+              Looking for a premium spa in Gomti Nagar, Lucknow? Experience authentic Thai Massage in Lucknow, relaxing Balinese therapy, Deep Tissue Massage, Full Body Massage, and private couple Jacuzzi suites with trained wellness professionals.
             </p>
 
             {/* Call to Actions */}

@@ -37,10 +37,10 @@ export const FeaturedServicesSection: React.FC<FeaturedServicesSectionProps> = (
             SIGNATURE THERAPIES
           </LuxuryBadge>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-heading font-bold text-[#1A1C1A]">
-            World-Class Massages & Spa Therapies
+            Full Body Massage & Spa Therapies in Gomti Nagar
           </h2>
           <p className="text-base text-[#4A4E4B] leading-relaxed">
-            Tailored wellness solutions designed by master practitioners. Choose your ideal duration and experience profound muscular and mental renewal in Gomti Nagar.
+            Explore Thai Massage, Deep Tissue Massage, Balinese Massage, aromatherapy and other wellness experiences at our professional massage center in Gomti Nagar, Lucknow.
           </p>
 
           {/* Filter Tabs */}

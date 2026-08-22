@@ -21,7 +21,7 @@ export const LocationSection: React.FC = () => {
             Visit Us in Gomti Nagar, Lucknow
           </h2>
           <p className="text-base text-[#4A4E4B] leading-relaxed">
-            Conveniently situated in Vivek Khand 4 right near Brijwasi Bakery. Surrounded by ample private parking, easy metro access, and wide avenue roads.
+            Conveniently situated in Vivek Khand 4 near Brijwasi Bakery, The Cloud Spa is a centrally located spa and massage center in Gomti Nagar, Lucknow, with easy access from nearby residential and commercial areas.
           </p>
         </div>
 
