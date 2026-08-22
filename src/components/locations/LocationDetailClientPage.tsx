@@ -95,17 +95,19 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
                 </div>
 
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-[#FAF9F5] leading-tight">
-                  Luxury Spa Services Near <span className="text-[#C5A059]">{location.name}</span>, Lucknow
+                  Best Spa & Massage Center Near <span className="text-[#C5A059]">{location.name}</span>, Lucknow
                 </h1>
 
                 <p className="text-base sm:text-lg text-[#FAF9F5]/85 leading-relaxed font-light max-w-3xl">
                   {location.heroSubtitle}
+
+                  Experience premium Thai Massage, Full Body Massage, Deep Tissue Massage and luxury spa therapies near {location.name}, Lucknow.
                 </p>
 
                 {/* Key Landmarks Chips */}
                 <div className="space-y-2">
                   <span className="text-xs uppercase tracking-widest text-[#C5A059] font-semibold block">
-                    Nearby Key Landmarks Served:
+                    Spa Near Popular Landmarks in {location.name}, Lucknow:
                   </span>
                   <div className="flex flex-wrap gap-2">
                     {location.landmarks.map((landmark, idx) => (
@@ -344,7 +346,7 @@ export function LocationDetailClientPage({ location }: LocationDetailClientPageP
                 Top Treatments
               </LuxuryBadge>
               <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#1E2522]">
-                Recommended Massages for {location.name} Visitors
+                Popular Massage & Spa Treatments Near {location.name}, Lucknow
               </h2>
               <p className="text-xs sm:text-sm text-[#2C3A33]/80">
                 Tailored for postural realignment, stress recovery, and luxury couple relaxation.
