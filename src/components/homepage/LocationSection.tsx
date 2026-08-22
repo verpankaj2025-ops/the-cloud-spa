@@ -144,6 +144,31 @@ export const LocationSection: React.FC = () => {
               </div>
             </div>
           ))}
+        {/* SEO Internal Location Links */}
+        <div className="text-center mt-10 space-y-4">
+          <h3 className="text-xl font-serif-heading font-bold text-[#1A1C1A]">
+            Areas We Serve in Lucknow
+          </h3>
+
+          <div className="flex flex-wrap justify-center gap-3 text-sm">
+            <a href="/locations/gomti-nagar" className="text-[#C5A059] hover:underline">
+              Gomti Nagar
+            </a>
+
+            <a href="/locations/vivek-khand" className="text-[#C5A059] hover:underline">
+              Vivek Khand
+            </a>
+
+            <a href="/locations/vibhuti-khand" className="text-[#C5A059] hover:underline">
+              Vibhuti Khand
+            </a>
+
+            <a href="/locations/patrakarpuram" className="text-[#C5A059] hover:underline">
+              Patrakarpuram
+            </a>
+          </div>
+        </div>
+
         </div>
       </div>
     </section>

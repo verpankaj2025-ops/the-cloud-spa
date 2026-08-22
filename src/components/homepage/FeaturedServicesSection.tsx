@@ -78,6 +78,35 @@ export const FeaturedServicesSection: React.FC<FeaturedServicesSectionProps> = (
           </div>
         </div>
 
+        {/* SEO Internal Service Links */}
+        <div className="text-center space-y-4">
+          <h3 className="text-xl font-serif-heading font-bold text-[#1A1C1A]">
+            Popular Massage Services in Gomti Nagar
+          </h3>
+
+          <div className="flex flex-wrap justify-center gap-3 text-sm">
+            <a href="/services/thai-massage" className="text-[#C5A059] hover:underline">
+              Thai Massage
+            </a>
+
+            <a href="/services/deep-tissue-massage" className="text-[#C5A059] hover:underline">
+              Deep Tissue Massage
+            </a>
+
+            <a href="/services/balinese-massage" className="text-[#C5A059] hover:underline">
+              Balinese Massage
+            </a>
+
+            <a href="/services/couple-spa" className="text-[#C5A059] hover:underline">
+              Couple Spa
+            </a>
+
+            <a href="/services/jacuzzi" className="text-[#C5A059] hover:underline">
+              Jacuzzi Spa
+            </a>
+          </div>
+        </div>
+
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredTreatments.map((treatment) => (
