@@ -9,7 +9,6 @@ import { buildPageMetadata } from '../../../lib/metadata-builder';
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
-  generateLocalBusinessSchema,
 } from '../../../lib/schema-generator';
 import { LocationDetailClientPage } from '../../../components/locations/LocationDetailClientPage';
 
@@ -125,7 +124,6 @@ export default async function LocationSlugPage({ params }: PageProps) {
   };
 
   const faqSchema = generateFAQSchema(location.faqs);
-  const localBusinessSchema = generateLocalBusinessSchema();
 
   return (
     <>
@@ -136,10 +134,6 @@ export default async function LocationSlugPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       <script
         type="application/ld+json"

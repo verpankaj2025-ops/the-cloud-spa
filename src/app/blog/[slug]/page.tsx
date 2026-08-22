@@ -10,7 +10,6 @@ import {
   generateArticleSchema,
   generateBreadcrumbSchema,
   generateFAQSchema,
-  generateLocalBusinessSchema,
 } from '../../../lib/schema-generator';
 import { BlogDetailClientPage } from '../../../components/blog/BlogDetailClientPage';
 
@@ -98,7 +97,6 @@ export default async function BlogSlugPage({ params }: PageProps) {
 
   const articleSchema = generateArticleSchema(post);
   const faqSchema = generateFAQSchema(post.faqs);
-  const localBusinessSchema = generateLocalBusinessSchema();
 
   return (
     <>
@@ -109,10 +107,6 @@ export default async function BlogSlugPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
       {post.faqs.length > 0 && (
         <script

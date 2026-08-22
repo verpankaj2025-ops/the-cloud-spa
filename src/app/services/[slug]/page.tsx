@@ -6,7 +6,6 @@ import { buildPageMetadata } from '../../../lib/metadata-builder';
 import {
   generateBreadcrumbSchema,
   generateFAQSchema,
-  generateLocalBusinessSchema,
   generateServiceSchema,
 } from '../../../lib/schema-generator';
 import { ServiceDetailClient } from '../../../components/services/ServiceDetailClient';
@@ -122,7 +121,6 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const serviceSchema = generateServiceSchema(treatment);
   const faqSchema = generateFAQSchema(treatment.faqs);
-  const localBusinessSchema = generateLocalBusinessSchema();
 
   return (
     <>
@@ -137,10 +135,6 @@ export default async function ServiceDetailPage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
       />
 
       <ServiceDetailClient
