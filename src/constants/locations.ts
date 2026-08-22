@@ -64,6 +64,10 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Couple Spa Gomti Nagar Lucknow',
       'Spa near Brijwasi Bakery Gomti Nagar',
       'Spa near Patrakarpuram Lucknow',
+      'Spa near me Gomti Nagar',
+      'Massage near me Gomti Nagar',
+      'Massage Center in Gomti Nagar',
+      'Full Body Massage Gomti Nagar',
     ],
     heroSubtitle: 'Step into Gomti Nagar’s flagship luxury spa sanctuary in Vivek Khand 4. Offering experienced wellness professionals, private couple suites, and authentic Asian bodywork.',
     introParagraphs: [
@@ -185,6 +189,8 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Corporate Massage Vibhuti Khand',
       'Deep Tissue Massage Vibhuti Khand',
       'Thai Spa near Indira Gandhi Pratishthan',
+      'Massage Center near Vibhuti Khand',
+      'Spa near me Vibhuti Khand',
     ],
     heroSubtitle: 'Just 5 minutes from TCS Awadh Park, Lucknow High Court, and IGP. Designed specifically for corporate executives, legal professionals, and tech specialists.',
     introParagraphs: [
@@ -301,6 +307,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Massage Parlour near Brijwasi Bakery Vivek Khand',
       'Spa near Manoj Pandey Chauraha',
       'Body Massage Vivek Khand Lucknow',
+      'Massage Center Vivek Khand',
     ],
     heroSubtitle: 'Step out of your door in Vivek Khand into five-star luxury. Our flagship center is located directly in Vivek Khand 4 near Brijwasi Bakery.',
     introParagraphs: [
@@ -572,6 +579,8 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Body Massage Center Indira Nagar',
       'Massage Parlour near Bhootnath Market',
       'Spa near Munshipulia Lucknow',
+      'Massage Center near Indira Nagar',
+      'Body Massage Indira Nagar',
     ],
     heroSubtitle: 'Serving residents of Indira Nagar with 5-star spa luxuries. A smooth 10-minute drive via Polytechnic flyover directly to our Gomti Nagar center.',
     introParagraphs: [
@@ -659,6 +668,8 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Best Massage Center near Sahara Ganj Mall',
       'Couple Spa near Hazratganj Lucknow',
       'Thai Massage near Hazratganj',
+      'Massage Center near Hazratganj',
+      'Luxury Spa Hazratganj',
     ],
     heroSubtitle: 'Lucknow’s heritage heart connected directly to modern luxury. A swift 12-minute drive down Lohia Path leads to our sanctuary.',
     introParagraphs: [
@@ -741,6 +752,8 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Best Spa in Aliganj Lucknow',
       'Massage Center Kapoorthala Aliganj',
       'Body Massage Parlour Aliganj',
+      'Massage Center Aliganj',
+      'Body Massage Aliganj',
     ],
     heroSubtitle: 'Serving Aliganj, Kapoorthala, and Purania with premier wellness care. Reach our Gomti Nagar flagship spa in 15 minutes via Lohia Path.',
     introParagraphs: [
@@ -824,6 +837,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Luxury Spa near Medanta Lucknow',
       'Massage Center near Phoenix Palassio',
       'Best Spa near Ansal Golf City',
+      'Massage Center near Sushant Golf City',
     ],
     heroSubtitle: 'Serving ultra-luxury residents, golfers, and visitors around Sushant Golf City, Lulu Mall, and Phoenix Palassio via Shaheed Path in 14 minutes.',
     introParagraphs: [
@@ -906,6 +920,7 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Best Spa near BBD University Lucknow',
       'Massage Center near Faizabad Road Lucknow',
       'Body Massage Chinhat Gomti Nagar',
+      'Massage Center near Chinhat',
     ],
     heroSubtitle: 'Serving Chinhat, BBD campus area, and Faizabad Road corridor. Only 8 minutes away in quiet Vivek Khand 4 Gomti Nagar.',
     introParagraphs: [
@@ -988,6 +1003,8 @@ export const LUCKNOW_LOCATIONS: DetailedLocationSEO[] = [
       'Best Spa in Jankipuram Extension',
       'Massage Center near AKTU Lucknow',
       'Body Massage Parlour Jankipuram',
+      'Massage Center near Jankipuram',
+      'Spa near AKTU Lucknow',
     ],
     heroSubtitle: 'Serving Jankipuram, Jankipuram Extension, and AKTU University campus with uncompromised 5-star spa luxuries in 18 minutes.',
     introParagraphs: [
