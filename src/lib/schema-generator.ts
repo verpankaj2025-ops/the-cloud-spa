@@ -23,11 +23,15 @@ export function generateLocalBusinessSchema() {
     url: BUSINESS_DETAILS.url,
     telephone: BUSINESS_DETAILS.phone,
     email: BUSINESS_DETAILS.email,
-    priceRange: BUSINESS_DETAILS.priceRange,
+    priceRange: "₹1499 - ₹8999",
     currenciesAccepted: BUSINESS_DETAILS.currenciesAccepted,
     paymentAccepted: BUSINESS_DETAILS.paymentAccepted.join(', '),
-    image: [`${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`],
-    logo: `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
+    image: [
+      `${BUSINESS_DETAILS.url}/images/spa/hero-spa.webp`,
+      `${BUSINESS_DETAILS.url}/images/spa/thai-massage.webp`,
+      `${BUSINESS_DETAILS.url}/images/spa/couples-spa.webp`,
+    ],
+    logo: `${BUSINESS_DETAILS.url}/images/logo/cloud-spa-logo.svg`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: BUSINESS_DETAILS.address.streetAddress,
@@ -122,6 +126,11 @@ export function generateServiceSchema(treatment: SpaTreatment) {
     '@id': `${BUSINESS_DETAILS.url}/services/${treatment.slug}/#service`,
     name: treatment.name,
     serviceType: treatment.category,
+    category: "Massage Therapy & Wellness",
+    audience: {
+      '@type': 'Audience',
+      audienceType: 'Adults seeking luxury wellness therapy',
+    },
     description: treatment.fullDescription,
     provider: {
       '@id': `${BUSINESS_DETAILS.url}/#localbusiness`,
