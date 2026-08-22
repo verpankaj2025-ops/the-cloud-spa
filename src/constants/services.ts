@@ -65,6 +65,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Traditional Thai Therapy Lucknow',
       'Dry Massage Center Lucknow',
       'Yoga Massage Lucknow',
+      'Thai Massage Gomti Nagar',
+      'Massage Center Gomti Nagar',
     ],
     image: {
       src: '/images/spa/thai-massage.webp',
@@ -145,6 +147,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Aromatherapy Spa Gomti Nagar',
       'Exotic Oil Massage Lucknow',
       'Relaxation Therapy Lucknow',
+      'Balinese Massage Gomti Nagar',
     ],
     image: {
       src: '/images/spa/balinese-massage.webp',
@@ -219,6 +222,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Pain Relief Spa Gomti Nagar',
       'Muscle Knot Treatment Lucknow',
       'Back Pain Relief Massage Lucknow',
+      'Deep Tissue Massage Gomti Nagar',
+      'Massage for muscle pain',
     ],
     image: {
       src: '/images/spa/deep-tissue-massage.webp',
@@ -291,6 +296,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Full Body Massage Gomti Nagar',
       'Relaxing Spa Lucknow',
       'Gentle Massage Center Lucknow',
+      'Relaxing Massage Lucknow',
+      'Massage Center Gomti Nagar',
     ],
     image: {
       src: '/images/spa/swedish-massage.webp',
@@ -359,6 +366,7 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Essential Oil Spa Gomti Nagar',
       'Stress Relief Therapy Lucknow',
       'Aromatic Spa Lucknow',
+      'Aromatherapy Massage Gomti Nagar',
     ],
     image: {
       src: '/images/spa/aromatherapy-oils.webp',
@@ -428,6 +436,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Volcanic Stone Spa Gomti Nagar',
       'Thermal Heat Therapy Lucknow',
       'Warm Stone Massage Lucknow',
+      'Hot Stone Massage Gomti Nagar',
+      'Luxury Spa Lucknow',
     ],
     image: {
       src: '/images/spa/hot-stone-massage.webp',
@@ -497,6 +507,9 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Couple Massage Package Lucknow',
       'Romantic Spa Day Lucknow',
       'VIP Couple Suite Lucknow',
+      'Couple Spa Gomti Nagar',
+      'Couple Massage Lucknow',
+      'Private Couple Spa',
     ],
     image: {
       src: '/images/spa/couples-spa.webp',
@@ -571,6 +584,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Herbal Steam Room Gomti Nagar',
       'Detox Steam Therapy Lucknow',
       'Spa Steam Room Lucknow',
+      'Steam Bath Gomti Nagar',
+      'Spa with Steam Bath Lucknow',
     ],
     image: {
       src: '/images/spa/steam-bath.webp',
@@ -639,6 +654,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Hydrotherapy Spa Gomti Nagar',
       'Jacuzzi Bath Center Lucknow',
       'Luxury Spa with Jacuzzi Lucknow',
+      'Jacuzzi Spa Lucknow',
+      'Jacuzzi in Gomti Nagar',
     ],
     image: {
       src: '/images/spa/jacuzzi.webp',
@@ -706,6 +723,8 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
       'Body Polish Spa Gomti Nagar',
       'Skin Exfoliation Lucknow',
       'Bridal Body Polish Lucknow',
+      'Body Scrub Gomti Nagar',
+      'Full Body Spa Lucknow',
     ],
     image: {
       src: '/images/spa/body-scrub.webp',
