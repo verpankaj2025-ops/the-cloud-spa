@@ -132,6 +132,7 @@ export function generateServiceSchema(treatment: SpaTreatment) {
       audienceType: 'Adults seeking luxury wellness therapy',
     },
     description: treatment.fullDescription,
+    image: `${BUSINESS_DETAILS.url}${treatment.image.src}`,
     provider: {
       '@id': `${BUSINESS_DETAILS.url}/#localbusiness`,
     },
