@@ -357,10 +357,11 @@ Please confirm slot availability and driver valet instructions.`;
             </div>
 
             <input
-  id="therapy-search"
-  name="therapy_search"
-  type="text"
-  placeholder="Search therapy (e.g. Thai, Deep Tissue)..."
+              id="therapy-search"
+              name="therapy_search"
+              type="text"
+              aria-label="Search spa therapies"
+              placeholder="Search therapy (e.g. Thai, Deep Tissue)..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               className="px-4 py-2 rounded-xl bg-[#FAF9F5] border border-[#2C3A33]/20 text-xs focus:border-[#C5A059] focus:outline-none"
@@ -597,6 +598,8 @@ Please confirm slot availability and driver valet instructions.`;
               <Calendar className="w-4 h-4 text-[#C5A059]" /> Or Pick Specific Calendar Date:
             </label>
             <input
+              id="preferred-date"
+              name="preferred_date"
               type="date"
               min={getTodayIso()}
               value={preferredDate}
@@ -728,12 +731,18 @@ Please confirm slot availability and driver valet instructions.`;
           <div className="space-y-4">
             {/* FULL NAME */}
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5">
+              <label
+                htmlFor="client-name"
+                className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5"
+              >
                 <User className="w-4 h-4 text-[#C5A059]" /> Full Name *
               </label>
               <input
+                id="client-name"
+                name="client_name"
                 type="text"
                 required
+                autoComplete="name"
                 placeholder="e.g. Vikramaditya Singh"
                 value={clientName}
                 onChange={(e) => {
@@ -753,7 +762,10 @@ Please confirm slot availability and driver valet instructions.`;
 
             {/* PHONE NUMBER */}
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5">
+              <label
+                htmlFor="client-phone"
+                className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5"
+              >
                 <Phone className="w-4 h-4 text-[#C5A059]" /> Mobile / WhatsApp Number *
               </label>
               <div className="relative flex items-center">
@@ -795,11 +807,17 @@ Please confirm slot availability and driver valet instructions.`;
 
             {/* EMAIL (OPTIONAL) */}
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5">
+              <label
+                htmlFor="client-email"
+                className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5"
+              >
                 <Mail className="w-4 h-4 text-[#C5A059]" /> Email Address (Optional)
               </label>
               <input
+                id="client-email"
+                name="client_email"
                 type="email"
+                autoComplete="email"
                 placeholder="e.g. vikram@example.com"
                 value={clientEmail}
                 onChange={(e) => {
@@ -819,10 +837,15 @@ Please confirm slot availability and driver valet instructions.`;
 
             {/* SPECIAL REQUESTS */}
             <div className="space-y-1.5">
-              <label className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5">
+              <label
+                htmlFor="special-requests"
+                className="text-xs font-bold uppercase tracking-wider text-[#2C3A33] flex items-center gap-1.5"
+              >
                 <FileText className="w-4 h-4 text-[#C5A059]" /> Muscle Pain / Posture Notes / Special Requests
               </label>
               <textarea
+                id="special-requests"
+                name="special_requests"
                 rows={2}
                 placeholder="e.g. Focus on neck & upper back tension, prefer light aroma oil, couple suite required..."
                 value={specialRequests}
