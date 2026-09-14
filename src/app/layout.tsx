@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next';
-import React, { ReactNode } from 'react';
+import React from 'react';
 import { Playfair_Display, Plus_Jakarta_Sans } from 'next/font/google';
 import '../index.css';
 import { BUSINESS_DETAILS } from '../constants/business';
@@ -27,55 +27,67 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_DETAILS.url),
+
   title: {
-    default: `${BUSINESS_DETAILS.name} | Luxury Spa Gomti Nagar Lucknow`,
-    template: '%s',
+    default: 'Best Spa in Gomti Nagar, Lucknow | The Cloud Spa',
+    template: '%s | The Cloud Spa',
   },
+
   description:
-    'Best Luxury Spa in Gomti Nagar, Lucknow. Experience experienced wellness professional massages, couple spa suites, Swedish, Thai, Deep Tissue, and Jacuzzi hydrotherapy in Vivek Khand 4.',
+    'Looking for a spa near you in Lucknow? The Cloud Spa in Gomti Nagar offers Thai, Balinese, Deep Tissue, Swedish and Couple Spa experiences, plus Jacuzzi and wellness facilities.',
+
   keywords: [
-    'Spa in Gomti Nagar',
     'Best Spa in Gomti Nagar',
+    'Spa in Gomti Nagar',
     'Spa in Lucknow',
+    'Spa near me Lucknow',
+    'Spa near me Gomti Nagar',
+    'Best spa in Lucknow',
     'Massage Center Gomti Nagar',
     'Luxury Spa Lucknow',
     'Thai Massage Lucknow',
     'Deep Tissue Massage Lucknow',
+    'Balinese Massage Lucknow',
     'Couple Spa Lucknow',
-    'Vivek Khand 4 Spa',
+    'Full Body Massage Gomti Nagar',
   ],
+
   authors: [{ name: BUSINESS_DETAILS.name }],
   creator: BUSINESS_DETAILS.name,
   publisher: BUSINESS_DETAILS.name,
+
   formatDetection: {
     email: false,
     address: true,
     telephone: true,
   },
+
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: BUSINESS_DETAILS.url,
     siteName: BUSINESS_DETAILS.name,
-    title: `${BUSINESS_DETAILS.name} | Best Luxury Spa in Gomti Nagar Lucknow`,
+    title: 'Best Spa in Gomti Nagar, Lucknow | The Cloud Spa',
     description:
-      'Premier luxury spa and wellness sanctuary in Gomti Nagar, Vivek Khand 4, Lucknow. Book online or call for instant confirmation.',
+      'Luxury spa and massage experiences in Gomti Nagar, Lucknow with Thai, Balinese, Deep Tissue, Swedish and Couple Spa treatments, plus Jacuzzi facilities.',
     images: [
       {
         url: `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
         width: 1200,
         height: 630,
-        alt: `${BUSINESS_DETAILS.name} - Luxury Spa Gomti Nagar Lucknow`,
+        alt: 'The Cloud Spa luxury spa in Gomti Nagar Lucknow',
       },
     ],
   },
+
   twitter: {
     card: 'summary_large_image',
-    title: `${BUSINESS_DETAILS.name} | Luxury Spa Gomti Nagar Lucknow`,
+    title: 'Best Spa in Gomti Nagar, Lucknow | The Cloud Spa',
     description:
-      'Premier luxury spa in Gomti Nagar Lucknow with experienced wellness professionals and private acoustic suites.',
+      'Luxury spa and massage experiences in Gomti Nagar, Lucknow with Thai, Balinese, Deep Tissue, Swedish and Couple Spa treatments.',
     images: [`${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`],
   },
+
   robots: {
     index: true,
     follow: true,
@@ -87,9 +99,11 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+
   alternates: {
     canonical: BUSINESS_DETAILS.url,
   },
+
   verification: getVerificationMetadata(),
 };
 
@@ -99,14 +113,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${playfair.variable} ${jakarta.variable} scroll-smooth`}>
+    <html
+      lang="en"
+      className={`${playfair.variable} ${jakarta.variable} scroll-smooth`}
+    >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
+
       <body className="min-h-screen bg-[#FAF9F5] text-[#1A1C1A] font-sans-body antialiased selection:bg-[#C5A059] selection:text-white">
         <AnalyticsProvider>{children}</AnalyticsProvider>
       </body>
     </html>
   );
 }
-

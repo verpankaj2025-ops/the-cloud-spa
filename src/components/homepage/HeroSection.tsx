@@ -1,14 +1,22 @@
 /**
  * Luxury Hero Section Component
- * Optimized for 'Best Spa in Gomti Nagar', 'Spa in Lucknow', and local conversion
+ * Optimized for high-intent homepage searches and local conversion
  */
 
 import React from 'react';
 import Image from 'next/image';
-import { Star, ShieldCheck, MapPin, Sparkles, Award, ArrowRight, Phone, MessageCircle } from 'lucide-react';
+import {
+  Star,
+  ShieldCheck,
+  MapPin,
+  Sparkles,
+  Award,
+  ArrowRight,
+  Phone,
+  MessageCircle,
+} from 'lucide-react';
 import { BUSINESS_DETAILS } from '../../constants/business';
 import { LuxuryButton } from '../ui/LuxuryButton';
-import { LuxuryBadge } from '../ui/LuxuryBadge';
 
 interface HeroSectionProps {
   onOpenBooking: () => void;
@@ -16,12 +24,15 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#1E2522] text-[#FAF9F5] py-16 lg:py-24">
-      {/* Background Hero Ambient Image with Dark Overlay - Optimized LCP */}
+    <section
+      id="home"
+      className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#1E2522] text-[#FAF9F5] py-16 lg:py-24"
+    >
+      {/* Background Hero Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/spa/hero-spa.webp"
-          alt="Luxury Spa Room in Gomti Nagar Lucknow"
+          alt="Luxury spa interior in Gomti Nagar, Lucknow"
           fill
           priority
           sizes="100vw"
@@ -32,28 +43,29 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          
-          {/* Left Column: Headline & Action Controls */}
+          {/* Left Column */}
           <div className="lg:col-span-7 space-y-6 text-left">
-            {/* Location Tag Badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#C5A059]/15 border border-[#C5A059]/40 backdrop-blur-md">
               <MapPin className="w-4 h-4 text-[#D4AF37]" />
               <span className="text-xs sm:text-sm font-medium tracking-wide text-[#F4F1EA]">
-                Vivek Khand 4, Gomti Nagar, Lucknow (Near Brijwasi Bakery)
+                Vivek Khand 4, Gomti Nagar, Lucknow · Near Brijwasi Bakery
               </span>
             </div>
 
-            {/* Main H1 Title - Target SEO Keywords */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif-heading font-bold text-[#FAF9F5] leading-tight tracking-tight">
-              Best Luxury Spa in <span className="text-[#D4AF37] italic font-normal">Gomti Nagar</span>, Lucknow
+              Best Spa in{' '}
+              <span className="text-[#D4AF37] italic font-normal">
+                Gomti Nagar
+              </span>
+              , Lucknow
             </h1>
 
-            {/* Subheading */}
             <p className="text-base sm:text-lg text-[#D2D6D3] max-w-2xl font-light leading-relaxed">
-              Looking for a premium spa in Gomti Nagar, Lucknow? Experience authentic Thai Massage in Lucknow, relaxing Balinese therapy, Deep Tissue Massage, Full Body Massage, and private couple Jacuzzi suites with trained wellness professionals.
+              Looking for a spa near you in Lucknow? The Cloud Spa offers Thai,
+              Balinese, Deep Tissue and Swedish Massage, Couple Spa experiences,
+              Full Body Massage and Jacuzzi wellness facilities in Gomti Nagar.
             </p>
 
-            {/* Call to Actions */}
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <LuxuryButton
                 variant="gold"
@@ -61,13 +73,15 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                 onClick={onOpenBooking}
                 icon={<Sparkles className="w-5 h-5" />}
               >
-                Book Appointment
+                Book Spa Appointment
               </LuxuryButton>
 
               <LuxuryButton
                 variant="whatsapp"
                 size="lg"
-                onClick={() => window.open(BUSINESS_DETAILS.social.whatsapp, '_blank')}
+                onClick={() =>
+                  window.open(BUSINESS_DETAILS.social.whatsapp, '_blank')
+                }
                 icon={<MessageCircle className="w-5 h-5" />}
               >
                 WhatsApp Booking
@@ -77,36 +91,36 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                 href="#services"
                 className="inline-flex items-center gap-2 text-sm text-[#D4AF37] hover:text-[#E2C765] font-medium transition-colors px-3 py-2"
               >
-                Explore Treatments <ArrowRight className="w-4 h-4" />
+                Explore Spa Services <ArrowRight className="w-4 h-4" />
               </a>
             </div>
 
-            {/* Key Trust Highlights */}
             <div className="pt-6 border-t border-[#FAF9F5]/10 grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs text-[#C5C9C6]">
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                <span>100% Certified Therapists</span>
+                <span>Professional Wellness Team</span>
               </div>
+
               <div className="flex items-center gap-2">
                 <Award className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                <span>Private VIP Suites</span>
+                <span>Private Spa Suites</span>
               </div>
+
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                <span>Organic Essential Oils</span>
+                <span>Massage & Wellness Therapies</span>
               </div>
+
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#D4AF37] shrink-0" />
-                <span>Steam & Jacuzzi</span>
+                <span>Jacuzzi & Spa Facilities</span>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Rating Box & Visual Badge Card */}
+          {/* Right Column */}
           <div className="lg:col-span-5 flex flex-col gap-6">
             <div className="bg-[#2C3A33]/80 border border-[#C5A059]/30 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-2xl space-y-6">
-              
-              {/* Luxury Sanctuary Highlights */}
               <div className="flex items-center justify-between pb-6 border-b border-[#FAF9F5]/10">
                 <div>
                   <div className="flex items-center gap-1.5 text-[#D4AF37] mb-1">
@@ -114,11 +128,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                       <Star key={i} className="w-5 h-5 fill-current" />
                     ))}
                   </div>
+
                   <div className="text-2xl font-serif-heading font-bold text-[#FAF9F5]">
                     Luxury Wellness Sanctuary
                   </div>
+
                   <div className="text-xs text-[#A3A8A5]">
-                    Experienced Wellness Professionals in Gomti Nagar
+                    Spa & Massage Center in Gomti Nagar, Lucknow
                   </div>
                 </div>
 
@@ -127,48 +143,53 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenBooking }) => {
                 </div>
               </div>
 
-              {/* Statistics Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-[#1E2522]/60 p-4 rounded-xl border border-white/5">
                   <div className="text-2xl font-bold font-serif-heading text-[#D4AF37]">
                     10,000+
                   </div>
-                  <div className="text-xs text-[#A3A8A5] mt-0.5">Satisfied Guests</div>
+                  <div className="text-xs text-[#A3A8A5] mt-0.5">
+                    Satisfied Guests
+                  </div>
                 </div>
 
                 <div className="bg-[#1E2522]/60 p-4 rounded-xl border border-white/5">
                   <div className="text-2xl font-bold font-serif-heading text-[#D4AF37]">
                     15+
                   </div>
-                  <div className="text-xs text-[#A3A8A5] mt-0.5">Expert Therapists</div>
+                  <div className="text-xs text-[#A3A8A5] mt-0.5">
+                    Wellness Professionals
+                  </div>
                 </div>
 
                 <div className="bg-[#1E2522]/60 p-4 rounded-xl border border-white/5">
                   <div className="text-2xl font-bold font-serif-heading text-[#D4AF37]">
                     100%
                   </div>
-                  <div className="text-xs text-[#A3A8A5] mt-0.5">Sanitized & Hygienic</div>
+                  <div className="text-xs text-[#A3A8A5] mt-0.5">
+                    Sanitized & Hygienic
+                  </div>
                 </div>
 
                 <div className="bg-[#1E2522]/60 p-4 rounded-xl border border-white/5">
                   <div className="text-2xl font-bold font-serif-heading text-[#D4AF37]">
                     7 Days
                   </div>
-                  <div className="text-xs text-[#A3A8A5] mt-0.5">11:00 AM - 8:00 PM</div>
+                  <div className="text-xs text-[#A3A8A5] mt-0.5">
+                    11:00 AM - 8:00 PM
+                  </div>
                 </div>
               </div>
 
-              {/* Instant Call Action */}
               <a
                 href={`tel:${BUSINESS_DETAILS.phone}`}
                 className="flex items-center justify-center gap-2 w-full py-3 px-4 rounded-xl bg-[#C5A059] text-[#1E2522] font-semibold hover:bg-[#D4AF37] transition-all text-sm shadow-md"
               >
                 <Phone className="w-4 h-4" />
-                <span>Call Directly: {BUSINESS_DETAILS.formattedPhone}</span>
+                <span>Call: {BUSINESS_DETAILS.formattedPhone}</span>
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>
