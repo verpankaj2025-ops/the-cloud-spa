@@ -55,17 +55,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const startingPrice =
     treatment.priceINR[60] ?? Object.values(treatment.priceINR)[0];
 
-  const meta = buildPageMetadata({
-    title: `${treatment.name} in Gomti Nagar, Lucknow | Benefits & Pricing`,
-    description:
-      `${treatment.shortDescription} Book ${treatment.name} at The Cloud Spa in Gomti Nagar, Lucknow. ` +
-      `Sessions start at ₹${startingPrice}.`,
-    path: canonicalPath,
-    keywords: treatment.targetKeywords,
-    imageUrl: absoluteImageUrl,
-    type: 'website',
-    geoPlacename: 'Gomti Nagar, Lucknow',
-  });
+  const serviceTitle = treatment.name.includes('Gomti Nagar, Lucknow')
+  ? treatment.name
+  : `${treatment.name} in Gomti Nagar, Lucknow`;
+
+const meta = buildPageMetadata({
+  title: `${serviceTitle} | Benefits & Pricing`,
+  description:
+    `${treatment.shortDescription} Book ${treatment.name} at The Cloud Spa in Gomti Nagar, Lucknow. ` +
+    `Sessions start at ₹${startingPrice}.`,
+  path: canonicalPath,
+  keywords: treatment.targetKeywords,
+  imageUrl: absoluteImageUrl,
+  type: 'website',
+  geoPlacename: 'Gomti Nagar, Lucknow',
+});
 
   return {
     title: meta.title,
