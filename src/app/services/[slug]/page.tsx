@@ -1,7 +1,14 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound, permanentRedirect } from 'next/navigation';
-import { SPA_TREATMENTS, getTreatmentBySlug } from '../../../constants/services';
-import { TARGET_LOCALITIES, BUSINESS_DETAILS } from '../../../constants/business';
+
+import {
+  SPA_TREATMENTS,
+  getTreatmentBySlug,
+} from '../../../constants/services';
+import {
+  TARGET_LOCALITIES,
+  BUSINESS_DETAILS,
+} from '../../../constants/business';
 import { buildPageMetadata } from '../../../lib/metadata-builder';
 import {
   generateBreadcrumbSchema,
@@ -25,15 +32,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const treatment = getTreatmentBySlug(slug);
 
   if (!treatment) {
-    return {
-      title: 'Treatment Not Found | The Cloud Spa Lucknow',
-      description: 'The requested spa treatment page could not be found.',
-    };
+    notFound();
   }
 
-  const isAlias = treatment.slug !== slug;
-
-  if (isAlias) {
+  if (treatment.slug !== slug) {
     return {
       robots: {
         index: false,
@@ -45,44 +47,71 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
+  const canonicalPath = `/services/${treatment.slug}`;
+  const absoluteImageUrl = treatment.image.src.startsWith('http')
+    ? treatment.image.src
+    : `${BUSINESS_DETAILS.url}${treatment.image.src}`;
+
+  const startingPrice =
+    treatment.priceINR[60] ?? Object.values(treatment.priceINR)[0];
+
   const meta = buildPageMetadata({
     title: `${treatment.name} in Gomti Nagar, Lucknow | Benefits & Pricing`,
-    description: `${treatment.shortDescription} Book ${treatment.name} at The Cloud Spa Gomti Nagar Lucknow. Starting ₹${
-      treatment.priceINR[60] || Object.values(treatment.priceINR)[0]
-    }. Call 9455671995.`,
-    path: `/services/${treatment.slug}`,
+    description:
+      `${treatment.shortDescription} Book ${treatment.name} at The Cloud Spa in Gomti Nagar, Lucknow. ` +
+      `Sessions start at ₹${startingPrice}.`,
+    path: canonicalPath,
     keywords: treatment.targetKeywords,
-    imageUrl: treatment.image.src,
-    type: 'article',
+    imageUrl: absoluteImageUrl,
+    type: 'website',
+    geoPlacename: 'Gomti Nagar, Lucknow',
   });
 
   return {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
+
     alternates: {
-      canonical: `${BUSINESS_DETAILS.url}/services/${treatment.slug}`,
+      canonical: `${BUSINESS_DETAILS.url}${canonicalPath}`,
     },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
+    },
+
     openGraph: {
       title: meta.openGraph.title,
       description: meta.openGraph.description,
-      url: `${BUSINESS_DETAILS.url}/services/${treatment.slug}`,
-      type: meta.openGraph.type,
+      url: `${BUSINESS_DETAILS.url}${canonicalPath}`,
+      type: 'website',
+      siteName: BUSINESS_DETAILS.name,
+      locale: 'en_IN',
       images: [
         {
-          url: treatment.image.src,
+          url: absoluteImageUrl,
           width: treatment.image.width,
           height: treatment.image.height,
           alt: treatment.image.alt,
         },
       ],
     },
+
     twitter: {
-      card: meta.twitter.card,
+      card: 'summary_large_image',
       title: meta.twitter.title,
       description: meta.twitter.description,
-      images: [treatment.image.src],
+      images: [absoluteImageUrl],
     },
+
     other: {
       'geo.region': meta.geoTags.region,
       'geo.placename': meta.geoTags.placename,
@@ -104,10 +133,9 @@ export default async function ServiceDetailPage({ params }: Props) {
     permanentRedirect(`/services/${treatment.slug}`);
   }
 
-  // Related treatments (excluding current treatment)
-  const relatedTreatments = SPA_TREATMENTS.filter(
-    (t) => t.id !== treatment.id
-  ).slice(0, 3);
+  const relatedTreatments = SPA_TREATMENTS
+    .filter((item) => item.id !== treatment.id)
+    .slice(0, 3);
 
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: '/', position: 1 },
@@ -126,15 +154,23 @@ export default async function ServiceDetailPage({ params }: Props) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
       />
+
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema),
+        }}
       />
+
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
       />
 
       <ServiceDetailClient

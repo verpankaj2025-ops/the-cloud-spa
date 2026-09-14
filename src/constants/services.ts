@@ -7,67 +7,75 @@ import { SpaTreatment } from '../types/spa';
 
 export const SPA_TREATMENTS: SpaTreatment[] = [
   {
-    id: 'thai-massage',
-    slug: 'thai-massage',
-    name: 'Authentic Traditional Thai Massage',
-    tagline: 'Ancient Yoga-Assisted Stretching & SEN Energy Line Therapy',
-    shortDescription:
-      'Re-energize your body with authentic Thai acupressure and gentle yoga stretching performed by certified therapists without oil.',
-    fullDescription:
-      'Originating from ancient Buddhist and Ayurvedic medicinal practices, our Traditional Thai Massage is a dry, oil-free bodywork therapy. Senior therapists apply rhythmic palm and thumb pressure along key SEN energy pathways accompanied by passive yoga stretches. This therapeutic sequence aligns postural imbalances, dissolves muscular stiffness, opens tight joints, and dramatically enhances physical flexibility.',
-    aiOverview: {
-      summary:
-        'Traditional Thai Massage at The Cloud Spa Lucknow is a dry, oil-free bodywork therapy combining rhythmic acupressure and passive yoga stretches along SEN energy lines to relieve stiffness, improve posture, and enhance flexibility.',
-      keyPoints: [
-        'Dry massage performed over comfortable cotton attire provided by the spa',
-        'Uses thumb, palm, elbow, and knee pressure combined with assisted yoga stretching',
-        'Targets chronic back strain, postural misalignment, and joint stiffness',
-        'Session durations available in 60, 90, and 120 minutes',
-      ],
-      idealDuration: '90 Minutes recommended for full-body flexibility and tension release',
-      expectedOutcome: 'Immediate improvement in joint range of motion, relief from postural tension, and rejuvenated physical vitality.',
-    },
-    category: 'massage',
-    durationMinutes: [60, 90, 120],
-    priceINR: { 60: 2499, 90: 3499, 120: 4499 },
-    benefits: [
-      'Relieves intense back strain and spinal muscular tightness',
-      'Enhances joint mobility, flexibility, and athletic mobility',
-      'Boosts blood circulation and energetic vitality',
-      'Stimulates SEN energy pathways for systemic balance',
-      'Helps correct desk-bound postural slumping',
+  id: 'thai-massage',
+  slug: 'thai-massage',
+  name: 'Thai Massage in Gomti Nagar, Lucknow',
+  tagline:
+    'Authentic Thai Stretching, Acupressure & Full-Body Relaxation',
+  shortDescription:
+    'Experience authentic Thai Massage in Gomti Nagar, Lucknow with assisted stretching, acupressure and full-body relaxation by trained therapists.',
+  fullDescription:
+    'The Cloud Spa Thai Massage combines traditional Thai stretching, controlled acupressure and assisted mobility techniques for guests looking for a firm, structured massage experience. The treatment is performed without oil and can be tailored around common areas of stiffness such as the back, shoulders, hips and legs.',
+  aiOverview: {
+    summary:
+      'Thai Massage at The Cloud Spa Gomti Nagar is a traditional oil-free bodywork experience combining assisted stretching and acupressure to support flexibility, relaxation and everyday tension relief.',
+    keyPoints: [
+      'Authentic Thai Massage in Gomti Nagar, Lucknow',
+      'Oil-free assisted stretching and acupressure techniques',
+      'Suitable for everyday stiffness, desk-work tension and flexibility goals',
+      'Available in 60, 90 and 120-minute sessions',
     ],
-    popularFor: [
-      'IT Professionals & Desk Workers',
-      'Athletes & Fitness Enthusiasts',
-      'Chronic Lower Back & Neck Tension Sufferers',
-      'Travelers Seeking Quick Jet-Lag Recovery',
-    ],
-    contraindications: [
-      'Recent bone fractures or acute spinal disc herniation',
-      'Uncontrolled high blood pressure or severe cardiovascular disease',
-      'First trimester of pregnancy',
-      'Recent abdominal or joint surgical procedures',
-    ],
-    preparation: [
-      'Avoid heavy meals at least 1 to 2 hours before your session',
-      'Arrive 15 minutes prior to complete your consultation and change into loose cotton attire',
-      'Inform your therapist about any previous spinal or joint injuries',
-    ],
-    aftercare: [
-      'Drink plenty of warm water or herbal tea to support metabolic detoxification',
-      'Perform light range-of-motion stretching over the next 24 hours',
-      'Avoid strenuous heavy lifting immediately after your session',
-    ],
-    targetKeywords: [
-      'Thai Massage Lucknow',
-      'Best Thai Spa Gomti Nagar',
-      'Traditional Thai Therapy Lucknow',
-      'Dry Massage Center Lucknow',
-      'Yoga Massage Lucknow',
-      'Thai Massage Gomti Nagar',
-      'Massage Center Gomti Nagar',
-    ],
+    idealDuration:
+      '90 Minutes for a complete full-body Thai stretching session',
+    expectedOutcome:
+      'A structured relaxation experience with improved comfort, mobility and reduced feelings of muscular stiffness.',
+  },
+  category: 'massage',
+  durationMinutes: [60, 90, 120],
+  priceINR: { 60: 2499, 90: 3499, 120: 4499 },
+  benefits: [
+    'Supports flexibility and mobility through assisted stretching',
+    'Targets common back, shoulder, hip and leg tension',
+    'Oil-free massage experience for guests who prefer traditional Thai techniques',
+    'Useful after long desk hours or physically demanding activity',
+    'Pressure can be adjusted around guest comfort',
+  ],
+  popularFor: [
+    'IT Professionals & Desk Workers',
+    'Athletes & Fitness Enthusiasts',
+    'Guests with Back, Neck & Shoulder Stiffness',
+    'Travelers Looking for Full-Body Relaxation',
+  ],
+  contraindications: [
+    'Recent bone fractures or acute spinal injuries',
+    'Uncontrolled blood pressure or serious cardiovascular conditions',
+    'First trimester of pregnancy',
+    'Recent abdominal or joint surgery',
+  ],
+  preparation: [
+    'Avoid a heavy meal before the session',
+    'Arrive a little early for consultation and changing',
+    'Tell your therapist about previous injuries or sensitive areas',
+  ],
+  aftercare: [
+    'Drink water after the session',
+    'Perform only light stretching for the rest of the day',
+    'Avoid unusually strenuous activity immediately after treatment',
+  ],
+  targetKeywords: [
+    'Thai Massage Lucknow',
+    'Thai Massage Gomti Nagar',
+    'Best Thai Massage in Lucknow',
+    'Best Thai Massage in Gomti Nagar',
+    'Thai Massage near me Lucknow',
+    'Thai Massage near me Gomti Nagar',
+    'Authentic Thai Massage Lucknow',
+    'Traditional Thai Massage Gomti Nagar',
+    'Thai Massage Center Lucknow',
+    'Thai Spa Gomti Nagar',
+    'Thai Massage for Back Pain Lucknow',
+    'Massage Center Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/thai-massage.webp',
       alt: 'Traditional Thai Massage Therapy at The Cloud Spa Gomti Nagar Lucknow',
@@ -93,62 +101,72 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'balinese-massage',
-    slug: 'balinese-massage',
-    name: 'Balinese Royal Relaxation Massage',
-    tagline: 'Exotic Indonesian Oil Therapy, Percussion & Acupressure',
-    shortDescription:
-      'Immerse yourself in a luxurious blend of warm essential oils, long gliding strokes, gentle skin folding, and rhythmic pressure.',
-    fullDescription:
-      'Transport your senses to the tropical serenity of Bali. The Balinese Royal Massage combines gentle stretches, acupressure, skin-rolling techniques, and fragrant warm exotic essential oils to stimulate blood circulation, relieve deep anxiety, and induce profound mental tranquility.',
-    aiOverview: {
-      summary:
-        'Balinese Royal Massage is an Indonesian holistic oil treatment utilizing firm palm strokes, gentle skin rolling, acupressure, and warm herbal essential oils to relieve stress, improve circulation, and soothe deep muscular ache.',
-      keyPoints: [
-        'Combines Swedish gliding, Thai stretches, and Ayurvedic acupressure',
-        'Uses organic cold-pressed warm oils like Frangipani, Lemongrass, and Sandalwood',
-        'Improves lymphatic drainage and releases deep mental fatigue',
-        'Available in 60 and 90-minute full-body sessions',
-      ],
-      idealDuration: '90 Minutes for full head-to-toe relaxation and skin nourishing',
-      expectedOutcome: 'Profound mental relaxation, silky soft skin, and complete relief from stress-induced muscle knots.',
-    },
-    category: 'massage',
-    durationMinutes: [60, 90],
-    priceINR: { 60: 2599, 90: 3699 },
-    benefits: [
-      'Induces deep psychological relaxation and restful sleep',
-      'Nourishes and softens skin with organic cold-pressed oils',
-      'Improves lymphatic drainage and toxin elimination',
-      'Eases mental anxiety, insomnia, and nervous exhaustion',
-      'Relieves stubborn shoulder and upper back tightness',
+  id: 'balinese-massage',
+  slug: 'balinese-massage',
+  name: 'Balinese Massage in Gomti Nagar, Lucknow',
+  tagline:
+    'Luxury Indonesian Oil Massage for Deep Relaxation & Stress Relief',
+  shortDescription:
+    'Experience relaxing Balinese Massage in Gomti Nagar, Lucknow with flowing oil strokes, gentle stretching and calming aromatherapy.',
+  fullDescription:
+    'The Cloud Spa Balinese Massage combines flowing Indonesian massage strokes, gentle stretching, acupressure and relaxing aromatic oils to create a deeply calming full-body treatment. It is ideal for guests looking for stress relief, relaxation and a premium spa experience in Gomti Nagar, Lucknow.',
+  aiOverview: {
+    summary:
+      'Balinese Massage at The Cloud Spa Gomti Nagar is a relaxing Indonesian-inspired oil massage combining flowing strokes, gentle stretching, acupressure and aromatherapy for full-body relaxation.',
+    keyPoints: [
+      'Balinese Massage in Gomti Nagar, Lucknow',
+      'Flowing oil-based massage with gentle stretching and acupressure',
+      'A relaxing choice for stress, fatigue and general muscle tension',
+      'Available in 60 and 90-minute sessions',
     ],
-    popularFor: [
-      'Luxury Seekers & Wellness Lovers',
-      'Individuals Suffering from Insomnia or Stress',
-      'Weekend Rejuvenation Pampering',
-      'Bridal & Groom Prep Treatments',
-    ],
-    contraindications: [
-      'Open skin wounds, rashes, or contagious dermatological conditions',
-      'Severe allergy to natural botanical essential oils',
-      'High fever or active systemic infection',
-    ],
-    preparation: [
-      'Take a light warm shower prior to your appointment',
-      'Inform the therapist if you have sensitive skin or specific aromatic oil preferences',
-    ],
-    aftercare: [
-      'Allow the essential oils to absorb into your skin for at least 2 hours post-massage before showering',
-      'Sip warm herbal green tea to flush out mobilized cellular toxins',
-    ],
-    targetKeywords: [
-      'Balinese Massage Lucknow',
-      'Aromatherapy Spa Gomti Nagar',
-      'Exotic Oil Massage Lucknow',
-      'Relaxation Therapy Lucknow',
-      'Balinese Massage Gomti Nagar',
-    ],
+    idealDuration:
+      '90 Minutes for a complete full-body relaxation experience',
+    expectedOutcome:
+      'A calming spa experience designed to reduce everyday stress and muscular tension while promoting relaxation.',
+  },
+  category: 'massage',
+  durationMinutes: [60, 90],
+  priceINR: { 60: 2599, 90: 3699 },
+  benefits: [
+    'Promotes full-body relaxation and stress reduction',
+    'Flowing massage strokes help release everyday muscular tension',
+    'Aromatic oils provide a soothing sensory spa experience',
+    'Gentle stretching supports comfortable body movement',
+    'Ideal for guests seeking a slower, relaxing massage style',
+  ],
+  popularFor: [
+    'Luxury Spa & Wellness Seekers',
+    'Guests Experiencing Stress or Fatigue',
+    'Weekend Relaxation',
+    'Bridal & Pre-Event Spa Sessions',
+  ],
+  contraindications: [
+    'Open wounds, active skin irritation or contagious skin conditions',
+    'Known sensitivity or allergy to massage oils or essential oils',
+    'Fever or active systemic infection',
+  ],
+  preparation: [
+    'Take a light shower before your appointment',
+    'Tell the therapist about sensitive skin or preferred oil aromas',
+  ],
+  aftercare: [
+    'Allow massage oils to remain on the skin for a short period after treatment',
+    'Drink water after the session and rest comfortably',
+  ],
+  targetKeywords: [
+    'Balinese Massage Lucknow',
+    'Balinese Massage Gomti Nagar',
+    'Best Balinese Massage Lucknow',
+    'Best Balinese Massage in Gomti Nagar',
+    'Balinese Massage near me Lucknow',
+    'Balinese Massage near me Gomti Nagar',
+    'Luxury Balinese Spa Lucknow',
+    'Aromatherapy Massage Gomti Nagar',
+    'Relaxation Massage Lucknow',
+    'Indonesian Massage Lucknow',
+    'Balinese Spa Gomti Nagar',
+    'Full Body Massage Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/balinese-massage.webp',
       alt: 'Balinese Massage Spa Treatment at The Cloud Spa Lucknow',
@@ -169,62 +187,72 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'deep-tissue-massage',
-    slug: 'deep-tissue-massage',
-    name: 'Deep Tissue Muscle Recovery Therapy',
-    tagline: 'Targeted Deep Fascial Pressure for Muscular Pain Relief',
-    shortDescription:
-      'Penetrate deep muscle layers and connective tissue to melt chronic knots, stiffness, and long-standing postural strain.',
-    fullDescription:
-      'Designed specifically for individuals suffering from chronic stress knots, stiff shoulders, and athletic soreness. Our expert therapists utilize slow, deliberate deep strokes, concentrated elbow/forearm pressure, and warm therapeutic herbal oils to break down dense muscle adhesions deep within your muscular structure.',
-    aiOverview: {
-      summary:
-        'Deep Tissue Muscle Recovery Therapy focuses on realigning deep layers of muscle and connective fascia. It targets chronic pain, stiff necks, tight shoulders, and sports injuries using firm, deliberate pressure.',
-      keyPoints: [
-        'Targets inner muscle layers, tendons, and protective fascia',
-        'Helps break down scar tissue and stubborn muscle knots (adhesions)',
-        'Reduces inflammation and lowers stress hormone (cortisol) levels',
-        'Offered in 60, 90, and 120-minute customizable pressure sessions',
-      ],
-      idealDuration: '90 Minutes to thoroughly address multiple tension zones',
-      expectedOutcome: 'Substantial reduction in chronic joint/muscle pain, improved posture, and liberated physical movement.',
-    },
-    category: 'massage',
-    durationMinutes: [60, 90, 120],
-    priceINR: { 60: 2799, 90: 3899, 120: 4899 },
-    benefits: [
-      'Breaks down stubborn muscle adhesions and chronic stress knots',
-      'Alleviates chronic neck, lower back, and shoulder pain',
-      'Significantly lowers cortisol stress levels',
-      'Accelerates athletic muscle recovery and reduces DOMS',
-      'Restores optimal postural symmetry',
+  id: 'deep-tissue-massage',
+  slug: 'deep-tissue-massage',
+  name: 'Deep Tissue Massage in Gomti Nagar, Lucknow',
+  tagline: 'Targeted Deep Pressure for Muscle Recovery & Tension Relief',
+  shortDescription:
+    'Get targeted deep tissue massage in Gomti Nagar, Lucknow for tight shoulders, back tension, muscle knots and post-workout recovery.',
+  fullDescription:
+    'The Cloud Spa Deep Tissue Massage uses slow, controlled pressure and focused bodywork techniques to address deeper areas of muscular tension. It is designed for guests looking for a firm, targeted massage experience for everyday stiffness, desk-related tension and post-workout muscle fatigue in Gomti Nagar, Lucknow.',
+  aiOverview: {
+    summary:
+      'Deep Tissue Massage at The Cloud Spa Gomti Nagar is a firm, targeted massage experience focused on areas of persistent muscular tension, including the back, neck, shoulders and legs.',
+    keyPoints: [
+      'Targeted deep-pressure massage in Gomti Nagar, Lucknow',
+      'Focus on back, neck, shoulders and other high-tension areas',
+      'Suitable for desk-work tension and post-workout muscle fatigue',
+      'Available in 60, 90 and 120-minute sessions',
     ],
-    popularFor: [
-      'Gym Enthusiasts & Athletes',
-      'Corporate Executives & Long-Hour Desk Workers',
-      'Chronic Back & Neck Pain Sufferers',
-    ],
-    contraindications: [
-      'Blood clotting disorders or use of blood-thinning medications',
-      'Recent major orthopedic surgeries',
-      'Severe osteoporosis or active varicose veins',
-    ],
-    preparation: [
-      'Hydrate well throughout the day before your appointment',
-      'Avoid eating heavy or spicy foods 1 hour prior to pressure therapy',
-    ],
-    aftercare: [
-      'Expect slight muscular tenderness for 24-48 hours, which is normal during muscle fiber realignment',
-      'Drink 2-3 liters of water to help flush released metabolic waste from muscle tissues',
-    ],
-    targetKeywords: [
-      'Deep Tissue Massage Lucknow',
-      'Pain Relief Spa Gomti Nagar',
-      'Muscle Knot Treatment Lucknow',
-      'Back Pain Relief Massage Lucknow',
-      'Deep Tissue Massage Gomti Nagar',
-      'Massage for muscle pain',
-    ],
+    idealDuration:
+      '90 Minutes for addressing multiple tension areas during one session',
+    expectedOutcome:
+      'A targeted relaxation and recovery experience with reduced feelings of muscular tightness and improved comfort.',
+  },
+  category: 'massage',
+  durationMinutes: [60, 90, 120],
+  priceINR: { 60: 2799, 90: 3899, 120: 4899 },
+  benefits: [
+    'Targets persistent muscle tightness and common tension areas',
+    'Focused pressure for neck, shoulder, back and leg discomfort',
+    'Useful for post-workout recovery and everyday muscular fatigue',
+    'Supports relaxation after long desk or driving hours',
+    'Customizable pressure based on guest comfort',
+  ],
+  popularFor: [
+    'Gym Enthusiasts & Athletes',
+    'Corporate Executives & Desk Workers',
+    'Guests with Tight Neck, Shoulders or Back',
+    'Guests Looking for a Firm Massage Experience',
+  ],
+  contraindications: [
+    'Blood clotting disorders or use of blood-thinning medication',
+    'Recent major orthopedic surgery',
+    'Severe osteoporosis or active varicose veins',
+  ],
+  preparation: [
+    'Stay comfortably hydrated before your appointment',
+    'Avoid a heavy meal immediately before the session',
+    'Tell the therapist about areas of sensitivity or previous injuries',
+  ],
+  aftercare: [
+    'Drink water after the session',
+    'Allow the body to rest after a firm-pressure treatment',
+    'Avoid unusually strenuous activity immediately after the session',
+  ],
+  targetKeywords: [
+    'Deep Tissue Massage Lucknow',
+    'Deep Tissue Massage Gomti Nagar',
+    'Best Deep Tissue Massage Lucknow',
+    'Deep Tissue Massage near me Lucknow',
+    'Deep Tissue Massage near me Gomti Nagar',
+    'Deep Tissue Massage for Back Pain Lucknow',
+    'Back Pain Relief Massage Lucknow',
+    'Muscle Knot Massage Gomti Nagar',
+    'Pain Relief Massage Gomti Nagar',
+    'Deep Tissue Massage Center Lucknow',
+    'Massage Center Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/deep-tissue-massage.webp',
       alt: 'Deep Tissue Massage Therapy at The Cloud Spa Gomti Nagar',
@@ -245,60 +273,72 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'swedish-massage',
-    slug: 'swedish-massage',
-    name: 'Classic Swedish Rejuvenation Therapy',
-    tagline: 'Gentle Gliding Effleurage for Total Mind & Body Harmony',
-    shortDescription:
-      'The classic Western therapeutic massage designed to smooth tension, boost blood oxygenation, and calm your central nervous system.',
-    fullDescription:
-      'Featuring the five classic therapeutic strokes—effleurage (gliding), petrissage (kneading), friction, tapotement (rhythmic tapping), and vibration. Swedish Rejuvenation Therapy is the gold standard for stress elimination, ideal for first-time spa visitors and anyone needing nervous system restoration.',
-    aiOverview: {
-      summary:
-        'Classic Swedish Massage is a smooth, soothing full-body oil therapy using long gliding strokes, kneading, and rhythmic tapping to relieve muscle fatigue, boost circulation, and calm stress.',
-      keyPoints: [
-        'Utilizes 5 foundational Swedish massage strokes for complete stress relief',
-        'Increases blood oxygen level and speeds up cellular circulation',
-        'Gentle to medium pressure tailored for ultimate comfort',
-        'Available in 60 and 90-minute therapeutic sessions',
-      ],
-      idealDuration: '60 or 90 Minutes for comprehensive relaxation',
-      expectedOutcome: 'Calm nervous system, refreshed energy, and silky smooth muscle tone.',
-    },
-    category: 'massage',
-    durationMinutes: [60, 90],
-    priceINR: { 60: 2299, 90: 3299 },
-    benefits: [
-      'Promotes deep central nervous system tranquility',
-      'Increases blood oxygenation and vascular circulation',
-      'Relieves general physical fatigue and mental burnout',
-      'Improves sleep quality and decreases anxiety',
+  id: 'swedish-massage',
+  slug: 'swedish-massage',
+  name: 'Swedish Massage in Gomti Nagar, Lucknow',
+  tagline:
+    'Gentle Full-Body Massage for Stress Relief, Relaxation & Recovery',
+  shortDescription:
+    'Enjoy a relaxing Swedish Massage in Gomti Nagar, Lucknow with gentle-to-medium pressure, flowing strokes and full-body relaxation.',
+  fullDescription:
+    'The Cloud Spa Swedish Massage is a classic relaxation-focused full-body treatment using smooth flowing strokes, kneading and rhythmic techniques. It is designed for guests looking for a gentle massage experience to unwind after work, travel or a busy week in Lucknow.',
+  aiOverview: {
+    summary:
+      'Swedish Massage at The Cloud Spa Gomti Nagar is a gentle-to-medium pressure full-body massage designed for relaxation, stress relief and everyday muscle fatigue.',
+    keyPoints: [
+      'Swedish Massage in Gomti Nagar, Lucknow',
+      'Gentle-to-medium pressure full-body massage',
+      'Ideal for stress, fatigue and first-time spa visitors',
+      'Available in 60 and 90-minute sessions',
     ],
-    popularFor: [
-      'First-Time Spa Guests',
-      'People Experiencing High Workplace Stress',
-      'Senior Citizens & Gentle Care Seekers',
-    ],
-    contraindications: [
-      'Fever or acute viral infection',
-      'Uncontrolled skin conditions or open wounds',
-    ],
-    preparation: [
-      'Arrive 10-15 minutes early to unwind in our tranquil lounge',
-      'Communicate your preferred pressure level with your therapist',
-    ],
-    aftercare: [
-      'Enjoy a cup of warm Chamomile or Green tea post-session',
-      'Take a warm shower 1-2 hours later to relax muscles further',
-    ],
-    targetKeywords: [
-      'Swedish Massage Lucknow',
-      'Full Body Massage Gomti Nagar',
-      'Relaxing Spa Lucknow',
-      'Gentle Massage Center Lucknow',
-      'Relaxing Massage Lucknow',
-      'Massage Center Gomti Nagar',
-    ],
+    idealDuration:
+      '60 or 90 Minutes depending on the desired relaxation time',
+    expectedOutcome:
+      'A calm, refreshed and relaxing full-body spa experience.',
+  },
+  category: 'massage',
+  durationMinutes: [60, 90],
+  priceINR: { 60: 2299, 90: 3299 },
+  benefits: [
+    'Promotes full-body relaxation after a busy day',
+    'Helps ease everyday muscle fatigue and physical tension',
+    'Gentle-to-medium pressure suitable for relaxation-focused sessions',
+    'A comfortable choice for first-time spa guests',
+    'Supports a calm and restorative wellness experience',
+  ],
+  popularFor: [
+    'First-Time Spa Guests',
+    'Corporate Professionals & Desk Workers',
+    'Guests Experiencing Everyday Stress',
+    'Guests Preferring Gentle Massage Pressure',
+  ],
+  contraindications: [
+    'Fever or active infection',
+    'Open wounds or active skin irritation',
+    'Any condition where massage has been medically restricted',
+  ],
+  preparation: [
+    'Arrive a few minutes early to settle in before the session',
+    'Tell your therapist your preferred pressure level',
+  ],
+  aftercare: [
+    'Drink water after the session',
+    'Allow yourself time to rest and relax after treatment',
+  ],
+  targetKeywords: [
+    'Swedish Massage Lucknow',
+    'Swedish Massage Gomti Nagar',
+    'Best Swedish Massage Lucknow',
+    'Best Swedish Massage in Gomti Nagar',
+    'Swedish Massage near me Lucknow',
+    'Swedish Massage near me Gomti Nagar',
+    'Relaxing Massage Lucknow',
+    'Full Body Massage Gomti Nagar',
+    'Gentle Massage Center Lucknow',
+    'Relaxation Spa Gomti Nagar',
+    'Stress Relief Massage Lucknow',
+    'Massage Center Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/swedish-massage.webp',
       alt: 'Swedish Massage Therapy at The Cloud Spa Lucknow',
@@ -314,60 +354,72 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'aromatherapy',
-    slug: 'aromatherapy',
-    name: 'Aromatherapy Healing Essential Oil Therapy',
-    tagline: 'Custom Essential Oil Elixirs for Emotional & Physical Balance',
-    shortDescription:
-      'Harness the healing essence of organic cold-pressed botanical oils tailored to soothe your senses, ease stress, and boost mental clarity.',
-    fullDescription:
-      'Aromatherapy Massage blends specialized lymphatic massage strokes with organic plant-extracted essential oils (such as Lavender, Eucalyptus, Ylang Ylang, and Tea Tree). As the volatile aromatic molecules are inhaled and absorbed through the skin, they interact with the brain limbic system to balance emotions, reduce migraine frequency, and restore internal harmony.',
-    aiOverview: {
-      summary:
-        'Aromatherapy Massage uses therapeutic-grade organic essential oils custom-blended for your state of mind. It combines gentle rhythmic strokes with olfactory therapy to soothe stress, relieve headaches, and boost mood.',
-      keyPoints: [
-        'Personalized essential oil consultation before treatment',
-        'Activates the limbic system to release serotonin and balance emotions',
-        'Enhances skin hydration with vitamin-rich carrier oils',
-        'Available in 60 and 90-minute sessions',
-      ],
-      idealDuration: '90 Minutes for deep mental de-stressing and sensory restoration',
-      expectedOutcome: 'Profound tranquility, reduced anxiety, improved mood, and glowing hydrated skin.',
-    },
-    category: 'therapy',
-    durationMinutes: [60, 90],
-    priceINR: { 60: 2699, 90: 3799 },
-    benefits: [
-      'Balances emotional mood swings and reduces anxiety',
-      'Promotes deep restful sleep and cures insomnia',
-      'Relieves tension headaches and sinus congestion',
-      'Intensifies skin hydration and cellular elasticity',
+  id: 'aromatherapy',
+  slug: 'aromatherapy',
+  name: 'Aromatherapy Massage in Gomti Nagar, Lucknow',
+  tagline:
+    'Relaxing Essential Oil Massage for Stress Relief, Calm & Wellness',
+  shortDescription:
+    'Enjoy a soothing Aromatherapy Massage in Gomti Nagar, Lucknow using calming essential oils and gentle massage techniques for relaxation and stress relief.',
+  fullDescription:
+    'The Cloud Spa Aromatherapy Massage combines gentle massage techniques with carefully selected essential oil aromas to create a calming wellness experience. It is designed for guests seeking relaxation, stress relief and a peaceful spa session in Gomti Nagar, Lucknow.',
+  aiOverview: {
+    summary:
+      'Aromatherapy Massage at The Cloud Spa Gomti Nagar combines gentle massage with selected essential oil aromas to create a relaxing wellness experience focused on stress reduction and calm.',
+    keyPoints: [
+      'Aromatherapy Massage in Gomti Nagar, Lucknow',
+      'Relaxing massage with selected essential oil aromas',
+      'Designed for guests seeking stress relief and a calming spa experience',
+      'Available in 60 and 90-minute sessions',
     ],
-    popularFor: [
-      'Stress & Anxiety Management',
-      'Insomnia & Sleep Disorder Relief',
-      'Aromatic Wellness Connoisseurs',
-    ],
-    contraindications: [
-      'Severe asthma or acute respiratory allergies',
-      'Epilepsy or seizure disorders (certain essential oils)',
-      'Pregnancy (specific essential oil restrictions apply)',
-    ],
-    preparation: [
-      'Inform therapist of any perfume or plant allergies',
-      'Avoid wearing heavy perfumes before coming to the spa',
-    ],
-    aftercare: [
-      'Leave essential oils on skin for several hours to maximize therapeutic absorption',
-      'Drink plenty of water to maintain hydration',
-    ],
-    targetKeywords: [
-      'Aromatherapy Massage Lucknow',
-      'Essential Oil Spa Gomti Nagar',
-      'Stress Relief Therapy Lucknow',
-      'Aromatic Spa Lucknow',
-      'Aromatherapy Massage Gomti Nagar',
-    ],
+    idealDuration:
+      '90 Minutes for a longer relaxation-focused aromatherapy experience',
+    expectedOutcome:
+      'A peaceful and relaxing spa session designed to reduce everyday stress and support overall wellbeing.',
+  },
+  category: 'therapy',
+  durationMinutes: [60, 90],
+  priceINR: { 60: 2699, 90: 3799 },
+  benefits: [
+    'Creates a calming and relaxing spa experience',
+    'Gentle massage helps ease everyday physical tension',
+    'Essential oil aromas enhance the sensory wellness experience',
+    'Suitable for stress and mental fatigue from busy routines',
+    'Customizable aroma preferences for a more personalized session',
+  ],
+  popularFor: [
+    'Stress & Relaxation',
+    'Guests Seeking Gentle Massage',
+    'Wellness & Self-Care',
+    'Relaxation After Busy Work Days',
+  ],
+  contraindications: [
+    'Known allergies or sensitivity to specific essential oils',
+    'Severe respiratory sensitivity to strong fragrances',
+    'Any condition where massage or specific oils have been medically restricted',
+  ],
+  preparation: [
+    'Tell the therapist about allergies or fragrance sensitivities',
+    'Avoid applying strong perfume immediately before the appointment',
+  ],
+  aftercare: [
+    'Drink water after the session',
+    'Relax for a short period after treatment and avoid rushing into strenuous activity',
+  ],
+  targetKeywords: [
+    'Aromatherapy Massage Lucknow',
+    'Aromatherapy Massage Gomti Nagar',
+    'Best Aromatherapy Massage Lucknow',
+    'Aromatherapy Massage near me Lucknow',
+    'Aromatherapy Massage near me Gomti Nagar',
+    'Essential Oil Massage Lucknow',
+    'Essential Oil Spa Gomti Nagar',
+    'Stress Relief Massage Lucknow',
+    'Relaxation Massage Gomti Nagar',
+    'Aromatic Spa Lucknow',
+    'Aromatherapy Spa Gomti Nagar',
+    'Relaxing Spa near me Lucknow',
+  ],
     image: {
       src: '/images/spa/aromatherapy-oils.webp',
       alt: 'Aromatherapy Essential Oil Therapy at The Cloud Spa Lucknow',
@@ -383,62 +435,69 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'hot-stone-massage',
-    slug: 'hot-stone-massage',
-    name: 'Volcanic Hot Stone Melt Therapy',
-    tagline: 'Geothermal Basalt Stones Infusing Deep Thermal Muscular Heat',
-    shortDescription:
-      'Penetrate dense muscle tightness with smooth heated basalt stones placed on key chakra energy centers and glided over sore muscles.',
-    fullDescription:
-      'Immerse your body in restorative geothermal heat. Smooth volcanic basalt stones, rich in iron and heat retention properties, are heated to optimal therapeutic temperatures and used as extensions of the therapist hands. The deep penetrating thermal energy relaxes rigid muscle fibers 4x faster than manual pressure alone.',
-    aiOverview: {
-      summary:
-        'Volcanic Hot Stone Therapy uses smooth heated volcanic stones placed along energy meridian points and stroked across stiff muscles. Thermal heat melts muscle knots and expands blood vessels for instant pain relief.',
-      keyPoints: [
-        'Natural volcanic basalt stones heated in temperature-controlled water',
-        'Melts deep muscular rigidity without excessive physical pressure',
-        'Expands blood vessels to boost oxygen flow to tight tissues',
-        'Available in 60 and 90-minute thermal treatments',
-      ],
-      idealDuration: '90 Minutes for full thermal penetration across all muscle groups',
-      expectedOutcome: 'Total muscular softness, instant easing of joint stiffness, and deep thermal comforting bliss.',
-    },
-    category: 'therapy',
-    durationMinutes: [60, 90],
-    priceINR: { 60: 2999, 90: 4199 },
-    benefits: [
-      'Deep thermal penetration melts rigid muscle knots effortlessly',
-      'Significantly increases vascular blood flow and cellular nutrition',
-      'Soothes arthritic discomfort and joint stiffness',
-      'Induces heavy, restorative sleep',
+  id: 'hot-stone-massage',
+  slug: 'hot-stone-massage',
+  name: 'Hot Stone Massage in Gomti Nagar, Lucknow',
+  tagline:
+    'Warm Basalt Stone Massage for Deep Relaxation & Muscle Comfort',
+  shortDescription:
+    'Experience a relaxing Hot Stone Massage in Gomti Nagar, Lucknow using warm basalt stones and massage techniques for deep comfort and relaxation.',
+  fullDescription:
+    'The Cloud Spa Hot Stone Massage combines controlled warm basalt stones with massage techniques to create a soothing thermal wellness experience. It is designed for guests seeking deep relaxation, warmth and relief from everyday muscular tension in Gomti Nagar, Lucknow.',
+  aiOverview: {
+    summary:
+      'Hot Stone Massage at The Cloud Spa Gomti Nagar combines warm basalt stones with massage techniques for a deeply relaxing thermal spa experience.',
+    keyPoints: [
+      'Hot Stone Massage in Gomti Nagar, Lucknow',
+      'Warm basalt stones used alongside massage techniques',
+      'Suitable for relaxation and everyday muscular tension',
+      'Available in 60 and 90-minute sessions',
     ],
-    popularFor: [
-      'Chronic Joint & Arthritis Pain Relief',
-      'Winter & Monsoon Cold Stiffness Relief',
-      'Deep Relaxation Enthusiasts',
-    ],
-    contraindications: [
-      'Diabetes with nerve neuropathy',
-      'Varicose veins or open skin lesions',
-      'Heart conditions or high blood pressure',
-      'Pregnancy',
-    ],
-    preparation: [
-      'Stay hydrated prior to your thermal treatment',
-      'Inform therapist immediately if stone temperature feels too warm',
-    ],
-    aftercare: [
-      'Avoid cold drafts or AC rooms immediately after warm thermal stone therapy',
-      'Drink warm water to support thermal detoxification',
-    ],
-    targetKeywords: [
-      'Hot Stone Massage Lucknow',
-      'Volcanic Stone Spa Gomti Nagar',
-      'Thermal Heat Therapy Lucknow',
-      'Warm Stone Massage Lucknow',
-      'Hot Stone Massage Gomti Nagar',
-      'Luxury Spa Lucknow',
-    ],
+    idealDuration:
+      '90 Minutes for a complete full-body hot stone relaxation experience',
+    expectedOutcome:
+      'A warm, calming spa experience designed to reduce feelings of everyday muscle tension and promote relaxation.',
+  },
+  category: 'therapy',
+  durationMinutes: [60, 90],
+  priceINR: { 60: 2999, 90: 4199 },
+  benefits: [
+    'Provides soothing warmth during a relaxing massage experience',
+    'Helps ease feelings of everyday muscular tightness',
+    'Creates a calming thermal wellness experience',
+    'Ideal for guests who enjoy warm spa treatments',
+  ],
+  popularFor: [
+    'Deep Relaxation',
+    'Cold Weather & Winter Wellness',
+    'Guests Seeking Warm Therapy',
+  ],
+  contraindications: [
+    'Reduced heat sensitivity or certain neuropathy conditions',
+    'Certain cardiovascular or blood-pressure conditions',
+    'Open skin wounds or irritated skin',
+    'Pregnancy unless cleared by a qualified healthcare professional',
+  ],
+  preparation: [
+    'Stay hydrated before your appointment',
+    'Tell the therapist if you are sensitive to heat',
+  ],
+  aftercare: [
+    'Cool down gradually after the session',
+    'Drink water after treatment',
+  ],
+  targetKeywords: [
+    'Hot Stone Massage Lucknow',
+    'Hot Stone Massage Gomti Nagar',
+    'Best Hot Stone Massage Lucknow',
+    'Hot Stone Massage near me Lucknow',
+    'Hot Stone Massage near me Gomti Nagar',
+    'Warm Stone Massage Lucknow',
+    'Luxury Hot Stone Spa Gomti Nagar',
+    'Thermal Massage Lucknow',
+    'Hot Stone Spa Lucknow',
+    'Hot Stone Therapy Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/hot-stone-massage.webp',
       alt: 'Volcanic Hot Stone Therapy at The Cloud Spa Gomti Nagar',
@@ -454,63 +513,70 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'couple-spa',
-    slug: 'couple-spa',
-    name: 'Luxury Royal Couple Spa Package',
-    tagline: 'Private Soundproof VIP Suite with Jacuzzi & Synchronized Therapies',
-    shortDescription:
-      'Celebrate romantic milestones or relax together in our soundproof VIP couple suite with side-by-side massages and hydrotherapy.',
-    fullDescription:
-      'Unwind side-by-side in complete royal privacy. Our Royal Couple Suite features romantic ambient candlelighting, custom soothing soundscapes, dual plush massage beds, candlelit rose petal bath, and a private Jacuzzi session accompanied by fresh organic herbal refreshments.',
-    aiOverview: {
-      summary:
-        'The Royal Couple Spa Package is a premium romantic wellness experience in a soundproof VIP suite featuring side-by-side synchronized full-body massages, private Jacuzzi immersion, and welcome refreshments.',
-      keyPoints: [
-        'Exclusive access to our luxury soundproof VIP couple suite',
-        'Side-by-side massages performed simultaneously by two expert therapists',
-        'Includes private hydro-jacuzzi session and herbal detox drinks',
-        'Available in 90, 120, and 150-minute luxury packages',
-      ],
-      idealDuration: '120 Minutes for complete massage and Jacuzzi immersion',
-      expectedOutcome: 'Unforgettable shared relaxation, renewed intimacy, and complete physical stress relief.',
-    },
-    category: 'couple',
-    durationMinutes: [90, 120, 150],
-    priceINR: { 90: 5999, 120: 7999, 150: 9999 },
-    benefits: [
-      'Exclusive private VIP candlelit suite with attached luxury Jacuzzi',
-      'Side-by-side synchronized full body massage experience',
-      'Complimentary hydro-jacuzzi immersion with organic bath salts',
-      'Welcome organic detox elixir and gourmet fruit platter',
-      'Unmatched privacy and soundproof romantic tranquility',
+  id: 'couple-spa',
+  slug: 'couple-spa',
+  name: 'Luxury Couple Spa in Gomti Nagar, Lucknow',
+  tagline:
+    'Private VIP Couple Spa Suite with Synchronized Massage & Jacuzzi',
+  shortDescription:
+    'Enjoy a private couple spa experience in Gomti Nagar with synchronized massages, a luxury suite, Jacuzzi and relaxing wellness rituals.',
+  fullDescription:
+    'The Cloud Spa Couple Spa experience is designed for partners celebrating an anniversary, honeymoon, birthday or simply looking to relax together. Guests enjoy a private VIP suite with synchronized massage sessions, a dedicated Jacuzzi experience and a calm, comfortable wellness setting in Gomti Nagar, Lucknow.',
+  aiOverview: {
+    summary:
+      'Couple Spa at The Cloud Spa Gomti Nagar is a private wellness experience featuring synchronized massages, a VIP couple suite and Jacuzzi access for shared relaxation and special occasions.',
+    keyPoints: [
+      'Private couple spa suite in Gomti Nagar, Lucknow',
+      'Synchronized massage sessions with two therapists',
+      'Private Jacuzzi experience included in selected packages',
+      '90, 120 and 150-minute package options',
     ],
-    popularFor: [
-      'Anniversary Celebrations & Birthdays',
-      'Honeymoon & Romantic Couples',
-      'Valentine & Special Occasion Gifts',
-    ],
-    contraindications: [
-      'Standard pregnancy precautions for Jacuzzi heat',
-      'Cardiovascular hypertension during hot hydrotherapy',
-    ],
-    preparation: [
-      'Book at least 3-6 hours in advance to guarantee suite availability',
-      'Swimwear or comfortable attire provided for Jacuzzi session',
-    ],
-    aftercare: [
-      'Relax in the private suite lounge before heading out',
-      'Sip warm organic herbal elixirs',
-    ],
-    targetKeywords: [
-      'Couple Spa Lucknow',
-      'Best Couple Spa in Gomti Nagar',
-      'Couple Massage Package Lucknow',
-      'Romantic Spa Day Lucknow',
-      'VIP Couple Suite Lucknow',
-      'Couple Spa Gomti Nagar',
-      'Couple Massage Lucknow',
-      'Private Couple Spa',
-    ],
+    idealDuration:
+      '120 Minutes for a complete massage and Jacuzzi experience',
+    expectedOutcome:
+      'A private shared relaxation experience designed for couples and special occasions.',
+  },
+  category: 'couple',
+  durationMinutes: [90, 120, 150],
+  priceINR: { 90: 5999, 120: 7999, 150: 9999 },
+  benefits: [
+    'Private VIP couple spa suite with enhanced privacy',
+    'Synchronized side-by-side massage experience',
+    'Jacuzzi hydrotherapy option for shared relaxation',
+    'Ideal for anniversaries, honeymoons and special occasions',
+    'Convenient luxury spa experience in Gomti Nagar, Lucknow',
+  ],
+  popularFor: [
+    'Anniversary Celebrations & Birthdays',
+    'Honeymoon & Romantic Couples',
+    'Valentine & Special Occasion Gifts',
+  ],
+  contraindications: [
+    'Standard pregnancy precautions for Jacuzzi heat',
+    'Certain cardiovascular conditions sensitive to hot hydrotherapy',
+  ],
+  preparation: [
+    'Book in advance to secure the private couple suite',
+    'Comfortable attire or spa-provided attire can be used for the Jacuzzi session',
+  ],
+  aftercare: [
+    'Relax and hydrate after the session',
+    'Take time to cool down gradually after Jacuzzi hydrotherapy',
+  ],
+  targetKeywords: [
+    'Couple Spa Lucknow',
+    'Best Couple Spa in Gomti Nagar',
+    'Couple Spa Gomti Nagar',
+    'Couple Massage Lucknow',
+    'Couple Massage Gomti Nagar',
+    'Private Couple Spa Lucknow',
+    'Luxury Couple Spa Lucknow',
+    'Couple Spa with Jacuzzi Lucknow',
+    'Couple Spa with Jacuzzi Gomti Nagar',
+    'Romantic Spa Day Lucknow',
+    'Couple Spa near me Lucknow',
+    'Couple Spa near me Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/couples-spa.webp',
       alt: 'Private Luxury Couple Spa Suite at The Cloud Spa Gomti Nagar Lucknow',
@@ -531,62 +597,67 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'steam-bath',
-    slug: 'steam-bath',
-    name: 'Herbal Detox Steam Bath Chamber',
-    tagline: 'Eucalyptus Infused Thermal Moisture to Purify Pores & Clear Airways',
-    shortDescription:
-      'Purify your skin and respiratory tract with 100% pure eucalyptus-infused thermal herbal steam in custom marble steam chambers.',
-    fullDescription:
-      'Step into a sanctuary of soothing warm vapor. Our Eucalyptus Herbal Steam Bath opens skin pores, flushes deeply trapped micro-toxins, relaxes respiratory passages, and prepares muscle fibers for massage treatments. Combined with cold-shower contrast therapy, it leaves your skin glowing and invigorated.',
-    aiOverview: {
-      summary:
-        'Eucalyptus Herbal Steam Therapy uses high-temperature moist heat infused with organic eucalyptus to open pores, flush metabolic toxins, clear bronchial passages, and soften stiff muscles.',
-      keyPoints: [
-        '100% natural eucalyptus essential oil infusion',
-        'Helps open skin pores and clear clogged sebum',
-        'Soothes nasal congestion and sinus stiffness',
-        'Ideal 20-30 minute add-on before or after body massage',
-      ],
-      idealDuration: '30 Minutes for complete pore cleansing and respiratory ease',
-      expectedOutcome: 'Clear airways, glowing revitalized skin, and open, relaxed muscle tissue.',
-    },
-    category: 'hydrotherapy',
-    durationMinutes: [30, 45],
-    priceINR: { 30: 999, 45: 1499 },
-    benefits: [
-      'Flushes out deeply embedded skin toxins and heavy impurities',
-      'Clears nasal passages, sinus congestion, and bronchial congestion',
-      'Softens hard skin cells and boosts dermal hydration',
-      'Relieves muscle soreness and prepares body for deep massage',
+  id: 'steam-bath',
+  slug: 'steam-bath',
+  name: 'Luxury Steam Bath in Gomti Nagar, Lucknow',
+  tagline: 'Herbal Steam Wellness for Deep Relaxation & Muscle Recovery',
+  shortDescription:
+    'Relax in a private herbal steam bath with warm eucalyptus-infused moisture designed for relaxation, skin care and pre-massage muscle preparation.',
+  fullDescription:
+    'The Cloud Spa Steam Bath experience provides a private warm-steam wellness session with optional eucalyptus aromatherapy. The humid heat creates a relaxing environment, helps soften the skin and can prepare tired muscles for a subsequent massage session.',
+  aiOverview: {
+    summary:
+      'Herbal Steam Bath at The Cloud Spa Gomti Nagar is a private warm-steam wellness experience with optional eucalyptus aromatherapy for relaxation and pre-massage preparation.',
+    keyPoints: [
+      'Private steam bath experience in Gomti Nagar, Lucknow',
+      'Warm humid environment with optional eucalyptus aroma',
+      'Useful as a relaxation or pre-massage wellness session',
+      'Available in 30 and 45-minute sessions',
     ],
-    popularFor: [
-      'Sinus & Respiratory Relief Seekers',
-      'Post-Workout Muscle De-Stiffening',
-      'Pre-Massage Thermal Warmup',
-    ],
-    contraindications: [
-      'Uncontrolled high or low blood pressure',
-      'Heart conditions, pacemaker, or cardiovascular disease',
-      'Pregnancy',
-      'Dizziness or vertigo prone individuals',
-    ],
-    preparation: [
-      'Drink 1-2 glasses of water prior to stepping into the steam room',
-      'Remove all metal jewelry and watches',
-    ],
-    aftercare: [
-      'Cool down with a temperate or cold rinse to close skin pores',
-      'Hydrate with electrolytes or fresh coconut water post-steam',
-    ],
-    targetKeywords: [
-      'Steam Bath Lucknow',
-      'Herbal Steam Room Gomti Nagar',
-      'Detox Steam Therapy Lucknow',
-      'Spa Steam Room Lucknow',
-      'Steam Bath Gomti Nagar',
-      'Spa with Steam Bath Lucknow',
-    ],
+    idealDuration:
+      '30 Minutes for a comfortable steam wellness session',
+    expectedOutcome:
+      'A relaxing warm-steam experience with refreshed skin and comfortably warmed muscles.',
+  },
+  category: 'hydrotherapy',
+  durationMinutes: [30, 45],
+  priceINR: { 30: 999, 45: 1499 },
+  benefits: [
+    'Provides a relaxing warm-steam wellness experience',
+    'Helps soften skin before selected spa treatments',
+    'Can gently warm muscles before massage therapy',
+    'Creates a calming private spa environment',
+  ],
+  popularFor: [
+    'Pre-Massage Relaxation',
+    'Post-Workout Recovery',
+    'Steam Wellness & Self-Care',
+  ],
+  contraindications: [
+    'Uncontrolled blood pressure conditions',
+    'Certain cardiovascular conditions',
+    'Pregnancy unless cleared by a qualified healthcare professional',
+    'Dizziness or heat sensitivity',
+  ],
+  preparation: [
+    'Drink water before your steam session',
+    'Remove watches and metal jewellery before entering',
+  ],
+  aftercare: [
+    'Cool down gradually after leaving the steam room',
+    'Drink water after the session to stay hydrated',
+  ],
+  targetKeywords: [
+    'Steam Bath Lucknow',
+    'Best Steam Bath Gomti Nagar',
+    'Steam Bath in Gomti Nagar',
+    'Luxury Steam Bath Lucknow',
+    'Herbal Steam Bath Lucknow',
+    'Steam Room Gomti Nagar',
+    'Spa with Steam Bath Lucknow',
+    'Steam Bath near me Lucknow',
+    'Steam Bath near me Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/steam-bath.webp',
       alt: 'Herbal Detox Steam Chamber at The Cloud Spa Lucknow',
@@ -602,61 +673,66 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'jacuzzi',
-    slug: 'jacuzzi',
-    name: 'Hydrotherapy Jacuzzi Bath Soak',
-    tagline: 'Targeted Multi-Jet Hydrotherapy with Epsom & Essential Oils',
-    shortDescription:
-      'Melt stress in high-pressure hydrotherapy jets infused with mineral Epsom salts, rose petals, and relaxing essential oils.',
-    fullDescription:
-      'Indulge in deep buoyant weightlessness. Our state-of-the-art Hydrotherapy Jacuzzi tub utilizes ergonomic multi-directional water jets that massage high-tension zones along your spinal column, thighs, and feet. Infused with mineral Epsom salts and therapeutic essential oils, it reduces joint impact and boosts circulation.',
-    aiOverview: {
-      summary:
-        'Hydrotherapy Jacuzzi Soak combines warm buoyant water, high-pressure directional water jets, and Epsom mineral salts to relieve joint pressure, improve circulation, and soothe sore muscles.',
-      keyPoints: [
-        'Custom jet pressure controls targeting lower back, thighs, and feet',
-        'Infused with magnesium-rich Epsom salts and therapeutic aromas',
-        'Promotes weightless joint decompression and deep muscle relaxation',
-        'Available in 30, 45, and 60-minute hydro-soak options',
-      ],
-      idealDuration: '45 Minutes for complete mineral absorption and joint decompression',
-      expectedOutcome: 'Weightless spinal decompression, instant joint pain relief, and silky skin.',
-    },
-    category: 'hydrotherapy',
-    durationMinutes: [30, 45, 60],
-    priceINR: { 30: 1499, 45: 1999, 60: 2499 },
-    benefits: [
-      'Weightless buoyancy decompresses spinal vertebrae and joints',
-      'Magnesium Epsom salts soothe muscle fatigue and cramps',
-      'Hydro-jets stimulate blood flow and capillary dilation',
-      'Deeply calming warm water environment lowers pulse rate',
+  id: 'jacuzzi',
+  slug: 'jacuzzi',
+  name: 'Luxury Jacuzzi Spa & Hydrotherapy Bath',
+  tagline: 'Private Multi-Jet Hydrotherapy for Deep Relaxation & Muscle Recovery',
+  shortDescription:
+    'Relax in a private Jacuzzi spa experience with warm hydrotherapy jets, Epsom salts and calming aromatherapy in Gomti Nagar, Lucknow.',
+  fullDescription:
+    'The Cloud Spa Jacuzzi experience combines warm buoyant water, targeted multi-jet hydrotherapy, Epsom mineral salts and calming aromatherapy to create a deeply relaxing private spa session. The warm water environment can help ease everyday muscle tension and provide a comfortable recovery experience after workouts or long working hours.',
+  aiOverview: {
+    summary:
+      'Jacuzzi Spa at The Cloud Spa Gomti Nagar is a private hydrotherapy experience using warm water, adjustable jets, Epsom salts and relaxing aromatherapy for stress relief, muscle relaxation and a premium wellness break.',
+    keyPoints: [
+      'Private Jacuzzi hydrotherapy experience in Gomti Nagar, Lucknow',
+      'Adjustable water jets for back, legs and foot relaxation',
+      'Epsom salts and relaxing aromatherapy options',
+      'Available in 30, 45 and 60-minute sessions',
     ],
-    popularFor: [
-      'Joint Pain & Arthritis Relief',
-      'Post-Marathon / Gym Recovery',
-      'Couples & Luxury Pampering',
-    ],
-    contraindications: [
-      'Open skin incisions or unhealed wounds',
-      'Cardiovascular conditions sensitive to warm immersion',
-      'Active skin infections',
-    ],
-    preparation: [
-      'Shower thoroughly before entering the Jacuzzi tub',
-      'Bring or use provided clean swimwear/disposable spa attire',
-    ],
-    aftercare: [
-      'Pat skin dry gently to retain mineral hydration',
-      'Drink plenty of fresh water to balance fluid levels',
-    ],
-    targetKeywords: [
-      'Jacuzzi Lucknow',
-      'Hydrotherapy Spa Gomti Nagar',
-      'Jacuzzi Bath Center Lucknow',
-      'Luxury Spa with Jacuzzi Lucknow',
-      'Jacuzzi Spa Lucknow',
-      'Jacuzzi in Gomti Nagar',
-    ],
+    idealDuration:
+      '45 Minutes for a complete private hydrotherapy and relaxation session',
+    expectedOutcome:
+      'A soothing, weightless relaxation experience with temporary relief from everyday muscle tension and fatigue.',
+  },
+  category: 'hydrotherapy',
+  durationMinutes: [30, 45, 60],
+  priceINR: { 30: 1499, 45: 1999, 60: 2499 },
+  benefits: [
+    'Provides a relaxing warm-water hydrotherapy experience',
+    'Helps soothe everyday muscle fatigue after work or exercise',
+    'Adjustable jets provide targeted water-pressure relaxation',
+    'Creates a private premium spa and wellness experience',
+  ],
+  popularFor: [
+    'Couples & Luxury Pampering',
+    'Post-Workout Recovery',
+    'Stress Relief & Relaxation',
+  ],
+  contraindications: [
+    'Open skin wounds or unhealed incisions',
+    'Certain cardiovascular conditions sensitive to warm-water immersion',
+    'Active skin infections',
+  ],
+  preparation: [
+    'Shower before entering the Jacuzzi',
+    'Use clean swimwear or the spa-provided disposable spa attire',
+  ],
+  aftercare: [
+    'Drink fresh water after the session to stay hydrated',
+    'Allow your body to cool gradually after warm-water therapy',
+  ],
+  targetKeywords: [
+    'Jacuzzi Lucknow',
+    'Jacuzzi Spa Lucknow',
+    'Jacuzzi in Gomti Nagar',
+    'Luxury Spa with Jacuzzi Lucknow',
+    'Private Jacuzzi Spa Gomti Nagar',
+    'Jacuzzi Bath Center Lucknow',
+    'Hydrotherapy Spa Gomti Nagar',
+    'Spa with Jacuzzi near me Lucknow',
+    'Jacuzzi near me Gomti Nagar',
+  ],
     image: {
       src: '/images/spa/jacuzzi.webp',
       alt: 'Luxury Hydrotherapy Jacuzzi Soak at The Cloud Spa Gomti Nagar',
@@ -672,60 +748,70 @@ export const SPA_TREATMENTS: SpaTreatment[] = [
     ],
   },
   {
-    id: 'body-scrub',
-    slug: 'body-scrub',
-    name: 'Exfoliating Body Scrub & Skin Polish',
-    tagline: 'Organic Walnut, Coffee & Honey Exfoliation for Silky Glowing Skin',
-    shortDescription:
-      'Slough away dead skin cells, unclog pores, and reveal velvety radiant skin with our custom organic botanical body scrubs.',
-    fullDescription:
-      'Rejuvenate dull, tired skin with our mineral-rich Exfoliating Body Scrub & Polish. Using natural exfoliants like crushed walnut shells, ground Robusta coffee, raw wild honey, and Himalayan pink salt, our therapists gently buff away dead epidermal cells while stimulating surface microcirculation.',
-    aiOverview: {
-      summary:
-        'Exfoliating Body Scrub & Polish buffs away dead skin cells using natural organic scrubs (Coffee, Honey, Himalayan Salt) to reveal smooth, radiant, deeply hydrated skin.',
-      keyPoints: [
-        'Choice of Coffee & Walnut, Honey & Almond, or Himalayan Pink Salt scrub',
-        'Stimulates surface blood flow and cellular cell turnover',
-        'Followed by a warm shower and deeply hydrating body lotion lock-in',
-        'Available in 45 and 60-minute polishing treatments',
-      ],
-      idealDuration: '60 Minutes for comprehensive head-to-toe exfoliation and hydration lock-in',
-      expectedOutcome: 'Silky smooth, glowing skin texture with even tone and zero dull dryness.',
-    },
-    category: 'body-care',
-    durationMinutes: [45, 60],
-    priceINR: { 45: 1999, 60: 2699 },
-    benefits: [
-      'Removes dead epidermal skin cells and unclogs pore buildup',
-      'Stimulates micro-circulation for a healthy radiant glow',
-      'Improves absorption of moisturizers and natural skin oils',
-      'Evens out skin tone and smoothes rough patches on knees and elbows',
+  id: 'body-scrub',
+  slug: 'body-scrub',
+  name: 'Body Scrub & Body Polish in Gomti Nagar, Lucknow',
+  tagline:
+    'Luxury Full-Body Exfoliation for Smooth, Fresh & Radiant Skin',
+  shortDescription:
+    'Enjoy a relaxing Body Scrub and Body Polish in Gomti Nagar, Lucknow to gently exfoliate dry skin and leave your body feeling smooth and refreshed.',
+  fullDescription:
+    'The Cloud Spa Body Scrub & Body Polish treatment is a relaxing body-care experience designed to gently exfoliate the skin and support a smoother, refreshed appearance. Our therapists use selected scrub blends followed by cleansing and moisturizing care for a comfortable spa experience in Gomti Nagar, Lucknow.',
+  aiOverview: {
+    summary:
+      'Body Scrub & Body Polish at The Cloud Spa Gomti Nagar is a relaxing exfoliation treatment designed to remove surface dead skin buildup and leave the skin feeling smoother and refreshed.',
+    keyPoints: [
+      'Body Scrub in Gomti Nagar, Lucknow',
+      'Gentle full-body exfoliation and polishing treatment',
+      'Choice of selected botanical scrub blends',
+      'Available in 45 and 60-minute sessions',
     ],
-    popularFor: [
-      'Bridal & Pre-Event Glow Treatments',
-      'Dry, Dull, or Flaky Skin Texture',
-      'Sun Tan Removal & Skin Brightening',
-    ],
-    contraindications: [
-      'Sunburnt or severely irritated skin',
-      'Active eczema, psoriasis flare-ups, or open cuts',
-      'Shaving or waxing within 24 hours prior to treatment',
-    ],
-    preparation: [
-      'Do not shave or wax your legs/body within 24 hours of your appointment to avoid stinging',
-    ],
-    aftercare: [
-      'Apply gentle moisturizer daily to keep new skin layers supple',
-      'Wear SPF sunscreen if stepping out into sunlight',
-    ],
-    targetKeywords: [
-      'Body Scrub Lucknow',
-      'Body Polish Spa Gomti Nagar',
-      'Skin Exfoliation Lucknow',
-      'Bridal Body Polish Lucknow',
-      'Body Scrub Gomti Nagar',
-      'Full Body Spa Lucknow',
-    ],
+    idealDuration:
+      '60 Minutes for a complete full-body exfoliation and moisturizing experience',
+    expectedOutcome:
+      'Smoother-feeling skin and a refreshed full-body spa experience.',
+  },
+  category: 'body-care',
+  durationMinutes: [45, 60],
+  priceINR: { 45: 1999, 60: 2699 },
+  benefits: [
+    'Helps remove surface dead-skin buildup',
+    'Leaves skin feeling smoother and refreshed',
+    'Supports a relaxing full-body self-care routine',
+    'Helps prepare the skin for moisturizing products',
+  ],
+  popularFor: [
+    'Bridal & Pre-Event Grooming',
+    'Dry or Dull Skin',
+    'Full-Body Spa & Self-Care',
+  ],
+  contraindications: [
+    'Sunburn or severely irritated skin',
+    'Open cuts or active skin flare-ups',
+    'Recent shaving or waxing that may make the skin sensitive',
+  ],
+  preparation: [
+    'Avoid shaving or waxing immediately before the treatment',
+    'Tell the therapist about any skin sensitivity or irritation',
+  ],
+  aftercare: [
+    'Use a gentle moisturizer after treatment',
+    'Protect freshly exfoliated skin from excessive sun exposure',
+  ],
+  targetKeywords: [
+    'Body Scrub Lucknow',
+    'Body Scrub Gomti Nagar',
+    'Best Body Scrub Lucknow',
+    'Body Scrub near me Lucknow',
+    'Body Scrub near me Gomti Nagar',
+    'Body Polish Spa Gomti Nagar',
+    'Full Body Polish Lucknow',
+    'Full Body Spa Lucknow',
+    'Luxury Body Scrub Lucknow',
+    'Body Exfoliation Spa Lucknow',
+    'Bridal Body Polish Lucknow',
+    'Body Scrub and Massage Lucknow',
+  ],
     image: {
       src: '/images/spa/body-scrub.webp',
       alt: 'Exfoliating Body Scrub & Polish Treatment at The Cloud Spa Lucknow',
