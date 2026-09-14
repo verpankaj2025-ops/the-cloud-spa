@@ -4,12 +4,22 @@ import { BLOG_AUTHORS } from './blog-authors';
 export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'benefits-of-thai-massage',
-    title: '10 Proven Health Benefits of Traditional Thai Massage & Assisted Yoga Stretching',
-    metaTitle: '10 Health Benefits of Thai Massage | Assisted Yoga & Stretching Lucknow',
-    metaDescription: 'Discover 10 science-backed health benefits of Traditional Thai Massage. Learn how oil-free stretching, SEN line pressure, and joint mobilization relieve stiffness.',
-    excerpt: 'Traditional Thai Massage combines rhythmic acupressure, passive yoga stretching, and energy line mobilization. Discover how this ancient dry bodywork relieves back pain and boosts flexibility.',
-    category: 'Thai Massage',
-    tags: ['Thai Massage', 'Yoga Stretching', 'Flexibility', 'Back Pain', 'Energy Lines'],
+title: '10 Benefits of Thai Massage: Stretching, Relaxation & Flexibility Guide',
+metaTitle: '10 Benefits of Thai Massage in Lucknow | The Cloud Spa',
+metaDescription:
+  'Learn the key benefits of Thai Massage, including assisted stretching, pressure-point techniques, flexibility support and relaxation. See what to expect in Lucknow.',
+excerpt:
+  'Learn how Traditional Thai Massage combines assisted stretching and pressure-point techniques to support flexibility, relaxation and everyday muscle comfort.',
+category: 'Thai Massage',
+tags: [
+  'Thai Massage',
+  'Thai Massage Lucknow',
+  'Thai Massage Gomti Nagar',
+  'Benefits of Thai Massage',
+  'Thai Massage Benefits',
+  'Massage for Flexibility',
+  'Full Body Massage',
+],
     author: BLOG_AUTHORS['master-somchai'],
     publishedDate: '2026-01-10',
     updatedDate: '2026-02-01',
@@ -101,12 +111,22 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'thai-massage-vs-deep-tissue-massage',
-    title: 'Thai Massage vs Deep Tissue Massage: Which Therapy Suits Your Body Best?',
-    metaTitle: 'Thai Massage vs Deep Tissue Massage | Which is Better? Lucknow Spa Guide',
-    metaDescription: 'Unsure whether to choose Thai Massage or Deep Tissue Massage? Compare techniques, benefits, oil usage, pressure levels, and ideal body needs.',
-    excerpt: 'Comparing oil-free Thai yoga stretching with oil-based Deep Tissue muscle knot release. Learn which technique is right for your pain points and recovery goals.',
-    category: 'Thai Massage',
-    tags: ['Thai Massage', 'Deep Tissue Massage', 'Massage Comparison', 'Muscle Knots', 'Wellness Guide'],
+title: 'Thai Massage vs Deep Tissue Massage: Which Therapy Suits Your Body Best?',
+metaTitle:
+  'Thai vs Deep Tissue Massage in Lucknow | Which Massage Is Right for You?',
+metaDescription:
+  'Compare Thai and Deep Tissue Massage in Lucknow by pressure, stretching, oil use, target areas and relaxation goals to choose the right treatment for you.',
+excerpt: 'Comparing oil-free Thai yoga stretching with oil-based Deep Tissue muscle knot release. Learn which technique is right for your pain points and recovery goals.',
+category: 'Thai Massage',
+tags: [
+  'Thai Massage',
+  'Deep Tissue Massage',
+  'Thai vs Deep Tissue Massage',
+  'Thai Massage Lucknow',
+  'Deep Tissue Massage Lucknow',
+  'Massage Comparison',
+  'Massage Guide Lucknow',
+],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-01-12',
     updatedDate: '2026-02-02',
@@ -172,12 +192,23 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'deep-tissue-massage-for-office-workers',
-    title: 'Deep Tissue Massage for Office Workers: Eliminating Tech Neck & Desk Slump in Lucknow',
-    metaTitle: 'Deep Tissue Massage for Desk Workers | Tech Neck Relief Lucknow',
-    metaDescription: 'Eliminate neck stiffness, upper back knots, and lower back strain caused by long hours in office chairs with targeted Deep Tissue Massage in Gomti Nagar.',
-    excerpt: 'Sitting for 8-10 hours daily creates severe muscular imbalance in IT professionals and office workers. Discover how deep tissue therapy deconstructs chronic tension.',
-    category: 'Deep Tissue Massage',
-    tags: ['Deep Tissue Massage', 'Office Workers', 'Tech Neck', 'Postural Strain', 'Gomti Nagar'],
+title: 'Deep Tissue Massage for Office Workers: Eliminating Tech Neck & Desk Slump in Lucknow',
+metaTitle:
+  'Deep Tissue Massage for Office Workers in Lucknow | Tech Neck Relief',
+metaDescription:
+  'Learn how Deep Tissue Massage can help office workers manage everyday neck, shoulder and back tension from long desk hours. Based in Gomti Nagar, Lucknow.',
+excerpt: 'Sitting for 8-10 hours daily creates severe muscular imbalance in IT professionals and office workers. Discover how deep tissue therapy deconstructs chronic tension.',
+category: 'Deep Tissue Massage',
+tags: [
+  'Deep Tissue Massage',
+  'Deep Tissue Massage Lucknow',
+  'Deep Tissue Massage Gomti Nagar',
+  'Office Worker Massage',
+  'Desk Worker Massage',
+  'Tech Neck Massage',
+  'Back Massage Lucknow',
+  'Corporate Wellness Lucknow',
+],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-01-15',
     updatedDate: '2026-02-03',
@@ -238,12 +269,23 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'best-spa-in-gomti-nagar',
-    title: 'Top Features of the Best Spa in Gomti Nagar, Lucknow: A Luxury Wellness Guide',
-    metaTitle: 'Best Spa in Gomti Nagar Lucknow | The Cloud Spa Vivek Khand 4',
-    metaDescription: 'Explore why The Cloud Spa in Vivek Khand 4 is rated the best spa in Gomti Nagar, Lucknow. Private luxury suites, certified therapists, valet parking, and organic oils.',
-    excerpt: 'Looking for a sanctuary of pure relaxation in Gomti Nagar? Discover the standards, hygiene protocols, private couple suites, and certified therapists that make a luxury spa exceptional.',
-    category: 'Wellness',
-    tags: ['Gomti Nagar', 'Best Spa Lucknow', 'Luxury Spa', 'Vivek Khand', 'Patrakarpuram'],
+title: 'Top Features of the Best Spa in Gomti Nagar, Lucknow: A Luxury Wellness Guide',
+metaTitle:
+  'Best Spa in Gomti Nagar, Lucknow | Luxury Spa Guide',
+metaDescription:
+  'Looking for the best spa in Gomti Nagar? Learn what to check for in a luxury spa, including therapist quality, hygiene, private rooms, facilities and transparent pricing.',
+excerpt: 'Looking for a sanctuary of pure relaxation in Gomti Nagar? Discover the standards, hygiene protocols, private couple suites, and certified therapists that make a luxury spa exceptional.',
+category: 'Wellness',
+tags: [
+  'Best Spa in Gomti Nagar',
+  'Best Spa in Lucknow',
+  'Luxury Spa Gomti Nagar',
+  'Spa in Gomti Nagar',
+  'Spa Guide Lucknow',
+  'Massage Center Gomti Nagar',
+  'Vivek Khand Spa',
+  'Patrakarpuram Spa',
+],
     author: BLOG_AUTHORS['priya-verma'],
     publishedDate: '2026-01-18',
     updatedDate: '2026-02-04',
@@ -309,12 +351,23 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'best-spa-in-lucknow',
-    title: 'Ultimate Directory to the Best Spa in Lucknow: How to Choose a Certified Luxury Sanctuary',
-    metaTitle: 'Best Spa in Lucknow Directory | Luxury Body Massage & Wellness Guide',
-    metaDescription: 'Complete consumer guide to choosing the best luxury spa in Lucknow. Learn about therapist qualifications, hygiene benchmarks, pricing transparency, and service quality.',
-    excerpt: 'Selecting an authentic spa in Lucknow requires knowing what standards distinguish a high-grade luxury center. Read our comprehensive expert evaluation checklist.',
-    category: 'Wellness',
-    tags: ['Best Spa Lucknow', 'Luxury Spa Directory', 'Spa Review', 'Wellness Sanctuary', 'Lucknow Spa'],
+title: 'Ultimate Directory to the Best Spa in Lucknow: How to Choose a Certified Luxury Sanctuary',
+metaTitle:
+  'Best Spa in Lucknow | Luxury Spa & Massage Guide',
+metaDescription:
+  'Looking for the best spa in Lucknow? Learn how to compare spa hygiene, therapist quality, massage services, pricing and private facilities before booking.',
+excerpt: 'Selecting an authentic spa in Lucknow requires knowing what standards distinguish a high-grade luxury center. Read our comprehensive expert evaluation checklist.',
+category: 'Wellness',
+tags: [
+  'Best Spa in Lucknow',
+  'Best Spa Lucknow',
+  'Luxury Spa Lucknow',
+  'Spa in Lucknow',
+  'Massage Center Lucknow',
+  'Spa Guide Lucknow',
+  'Wellness Center Lucknow',
+  'Luxury Massage Lucknow',
+],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-01-20',
     updatedDate: '2026-02-05',
@@ -374,12 +427,23 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'how-often-should-you-get-a-massage',
-    title: 'How Often Should You Get a Massage? Expert Frequency Guide for Stress, Fitness & Pain',
-    metaTitle: 'How Often Should You Get a Massage? Spa Frequency Guide',
-    metaDescription: 'Find out the optimal massage frequency based on your lifestyle: daily desk work, heavy fitness training, chronic back pain, or general stress relief.',
-    excerpt: 'Is once a week or once a month right for you? Our Lead Physician breaks down recommended massage schedules for muscle recovery, pain relief, and mental calm.',
-    category: 'Wellness',
-    tags: ['Massage Frequency', 'Wellness Schedule', 'Pain Relief', 'Self Care', 'Health Tips'],
+title: 'How Often Should You Get a Massage? Expert Frequency Guide for Stress, Fitness & Pain',
+metaTitle:
+  'How Often Should You Get a Massage? | Lucknow Massage Guide',
+metaDescription:
+  'How often should you get a massage? Learn practical massage frequency guidance for stress relief, desk work, fitness recovery and ongoing muscle tension in Lucknow.',
+excerpt: 'Is once a week or once a month right for you? Our Lead Physician breaks down recommended massage schedules for muscle recovery, pain relief, and mental calm.',
+category: 'Wellness',
+tags: [
+  'How Often Should You Get a Massage',
+  'Massage Frequency',
+  'Massage Frequency Lucknow',
+  'Stress Relief Massage',
+  'Pain Relief Massage',
+  'Massage for Desk Workers',
+  'Gym Recovery Massage',
+  'Wellness Guide Lucknow',
+],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-01-22',
     updatedDate: '2026-02-05',
@@ -433,12 +497,23 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'spa-before-wedding',
-    title: 'Bridal & Groom Spa Guide: When & How to Plan Your Spa Treatments Before the Wedding',
-    metaTitle: 'Bridal & Groom Spa Guide Lucknow | Pre-Wedding Couple Spa Timeline',
-    metaDescription: 'Complete pre-wedding spa timeline for brides and grooms in Lucknow. Plan your body scrubs, aromatherapy, face glow, and couple spa packages for glowing skin and zero stress.',
-    excerpt: 'Planning a wedding in Lucknow? Discover the exact 4-week timeline for pre-wedding body exfoliation, stress relief, and luxury couple spa rituals.',
-    category: 'Couple Spa',
-    tags: ['Bridal Spa', 'Pre Wedding Spa', 'Couple Spa', 'Wedding Preparation', 'Lucknow Bride'],
+title: 'Bridal & Groom Spa Guide: When & How to Plan Your Spa Treatments Before the Wedding',
+metaTitle:
+  'Pre-Wedding Spa in Lucknow | Bridal & Groom Spa Guide',
+metaDescription:
+  'Planning a wedding in Lucknow? Learn when to book body scrub, massage and couple spa treatments for a relaxing pre-wedding wellness routine.',
+excerpt: 'Planning a wedding in Lucknow? Discover the exact 4-week timeline for pre-wedding body exfoliation, stress relief, and luxury couple spa rituals.',
+category: 'Couple Spa',
+tags: [
+  'Pre Wedding Spa Lucknow',
+  'Bridal Spa Lucknow',
+  'Groom Spa Lucknow',
+  'Pre Wedding Massage',
+  'Couple Spa Lucknow',
+  'Bridal Body Scrub',
+  'Wedding Wellness Lucknow',
+  'Luxury Couple Spa',
+],
     author: BLOG_AUTHORS['priya-verma'],
     publishedDate: '2026-01-25',
     updatedDate: '2026-02-06',
@@ -493,11 +568,22 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   {
     slug: 'massage-for-it-professionals',
     title: 'Comprehensive Ergonomic & Massage Guide for IT Professionals in Vibhuti Khand & Gomti Nagar',
-    metaTitle: 'IT Professional Massage Guide | Vibhuti Khand & Gomti Nagar Tech Stress',
-    metaDescription: 'Targeted workplace wellness guide for software engineers and IT professionals in Lucknow. Relieve wrist strain, lower back stiffness, and eye fatigue.',
+    metaTitle:
+        'Massage for IT Professionals in Lucknow | Tech & Desk Stress Relief',
+    metaDescription:
+        'Massage and wellness tips for IT professionals in Lucknow dealing with neck, shoulder, wrist and back tension from long hours at a desk in Vibhuti Khand and Gomti Nagar.',
     excerpt: 'Software developers and IT managers face unique physical strain. Learn how targeted bodywork addresses carpal tunnel discomfort, thoracic tightness, and mental fatigue.',
     category: 'Corporate Wellness',
-    tags: ['IT Professionals', 'Vibhuti Khand', 'Gomti Nagar', 'Corporate Wellness', 'Tech Stress'],
+    tags: [
+  'Massage for IT Professionals',
+  'IT Professional Massage Lucknow',
+  'Desk Worker Massage Lucknow',
+  'Tech Neck Massage',
+  'Corporate Wellness Lucknow',
+  'Vibhuti Khand Massage',
+  'Gomti Nagar Massage',
+  'Office Stress Relief',
+],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-01-28',
     updatedDate: '2026-02-06',
@@ -651,12 +737,23 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
   },
   {
     slug: 'benefits-of-aromatherapy',
-    title: 'Science of Essential Oils: Health Benefits of Balinese & Swedish Aromatherapy Massage',
-    metaTitle: 'Benefits of Aromatherapy Massage | Essential Oils Guide Lucknow',
-    metaDescription: 'Discover how essential oils like lavender, eucalyptus, and sandalwood act on the limbic system to reduce anxiety, improve sleep quality, and uplift mood.',
-    excerpt: 'Aromatherapy combines pure plant essential oils with rhythmic massage. Learn how olfactory stimulation and botanical absorption promote emotional and physical well-being.',
-    category: 'Aromatherapy',
-    tags: ['Aromatherapy', 'Essential Oils', 'Stress Relief', 'Balinese Massage', 'Mental Calm'],
+title: 'Science of Essential Oils: Health Benefits of Balinese & Swedish Aromatherapy Massage',
+metaTitle:
+  'Benefits of Aromatherapy Massage in Lucknow | Essential Oils Guide',
+metaDescription:
+  'Learn the benefits of Aromatherapy Massage in Lucknow, including relaxation, stress relief and the use of calming essential oils such as lavender and eucalyptus.',
+excerpt: 'Aromatherapy combines pure plant essential oils with rhythmic massage. Learn how olfactory stimulation and botanical absorption promote emotional and physical well-being.',
+category: 'Aromatherapy',
+tags: [
+  'Aromatherapy Massage Lucknow',
+  'Benefits of Aromatherapy Massage',
+  'Aromatherapy Massage Gomti Nagar',
+  'Essential Oil Massage Lucknow',
+  'Essential Oils Spa Gomti Nagar',
+  'Stress Relief Massage Lucknow',
+  'Relaxation Massage Lucknow',
+  'Balinese Massage Lucknow',
+],
     author: BLOG_AUTHORS['priya-verma'],
     publishedDate: '2026-02-02',
     updatedDate: '2026-02-08',
@@ -703,13 +800,32 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     relatedPostsSlugs: ['essential-oils-for-anxiety-relief', 'balinese-massage-techniques'],
   },
   {
-    slug: 'swedish-massage-guide',
-    title: 'Complete Swedish Massage Guide: Gentle Effleurage Techniques for Total Body Relaxation',
-    metaTitle: 'Swedish Massage Guide | Effleurage Relaxation Massage Lucknow',
-    metaDescription: 'Learn everything about Swedish Massage: classic 5 strokes, effleurage benefits, gentle pressure levels, and why it is perfect for first-time spa visitors.',
-    excerpt: 'New to professional massage? Swedish Massage uses long, flowing strokes, gentle kneading, and circular motions to soothe tired muscles and ease stress.',
-    category: 'Swedish Massage',
-    tags: ['Swedish Massage', 'Effleurage', 'Relaxation Massage', 'Beginners Guide', 'Gentle Bodywork'],
+  slug: 'swedish-massage-guide',
+
+  title:
+    'Complete Swedish Massage Guide: Gentle Effleurage Techniques for Total Body Relaxation',
+
+  metaTitle:
+    'Swedish Massage in Lucknow | Relaxation & Beginner Guide',
+
+  metaDescription:
+    'Learn what to expect from Swedish Massage in Lucknow, including gentle pressure, classic massage strokes, relaxation benefits and who it is best suited for.',
+
+  excerpt:
+    'New to professional massage? Swedish Massage uses long, flowing strokes, gentle kneading, and circular motions to soothe tired muscles and ease stress.',
+
+  category: 'Swedish Massage',
+
+  tags: [
+    'Swedish Massage Lucknow',
+    'Swedish Massage Gomti Nagar',
+    'Benefits of Swedish Massage',
+    'Relaxation Massage Lucknow',
+    'Gentle Massage Lucknow',
+    'Full Body Massage Lucknow',
+    'Massage for Beginners',
+    'Spa Guide Lucknow',
+  ],
     author: BLOG_AUTHORS['priya-verma'],
     publishedDate: '2026-02-03',
     updatedDate: '2026-02-08',
@@ -756,13 +872,34 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     relatedPostsSlugs: ['senior-citizen-gentle-massage', 'benefits-of-aromatherapy'],
   },
   {
-    slug: 'corporate-stress-relief',
-    title: 'Corporate Stress Relief Strategies: Reducing Workplace Burnout in Lucknow Tech Parks',
-    metaTitle: 'Corporate Stress Relief Lucknow | Executive Wellness & Burnout Guide',
-    metaDescription: 'Discover actionable workplace stress management strategies for executives, managers, and IT teams across Lucknow. Reduce employee absenteeism and boost productivity.',
-    excerpt: 'High work targets and continuous screen time contribute to executive burnout. Explore holistic stress mitigation techniques and on-demand spa wellness protocols.',
-    category: 'Corporate Wellness',
-    tags: ['Corporate Wellness', 'Stress Relief', 'Burnout Prevention', 'Lucknow Tech', 'Executive Health'],
+  slug: 'corporate-stress-relief',
+
+  title:
+    'Corporate Stress Relief Strategies: Reducing Workplace Burnout in Lucknow Tech Parks',
+
+  metaTitle:
+    'Corporate Stress Relief in Lucknow | Executive Wellness Guide',
+
+  metaDescription:
+    'Explore practical corporate stress relief strategies for executives and IT teams in Lucknow, including massage, workplace wellness and burnout recovery support.',
+
+  excerpt:
+    'High work targets and continuous screen time contribute to executive burnout. Explore holistic stress mitigation techniques and on-demand spa wellness protocols.',
+
+  category: 'Corporate Wellness',
+
+  tags: [
+    'Corporate Stress Relief Lucknow',
+    'Corporate Wellness Lucknow',
+    'Executive Wellness Lucknow',
+    'Workplace Stress Relief',
+    'Burnout Prevention Lucknow',
+    'IT Employee Wellness',
+    'Corporate Massage Lucknow',
+    'Vibhuti Khand Corporate Wellness',
+    'Gomti Nagar Corporate Wellness',
+    'Employee Wellness Programs',
+  ],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-02-04',
     updatedDate: '2026-02-08',
@@ -809,22 +946,49 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     relatedPostsSlugs: ['massage-for-it-professionals', 'head-neck-shoulder-express-massage'],
   },
   {
-    slug: 'weekend-relaxation-guide',
-    title: 'The Ultimate Weekend Relaxation Guide in Lucknow: Recharging Mind & Body in Gomti Nagar',
-    metaTitle: 'Weekend Relaxation Guide Lucknow | Self Care Itinerary Gomti Nagar',
-    metaDescription: 'Plan your ideal relaxing weekend in Lucknow. Combine morning park walks, healthy dining, and a 90-minute luxury spa retreat at The Cloud Spa in Vivek Khand 4.',
-    excerpt: 'Looking to disconnect from weekly stress? Read our curated guide to spending a restorative weekend in Gomti Nagar, featuring top spots for calm and renewal.',
-    category: 'Lifestyle',
-    tags: ['Weekend Guide', 'Lucknow Lifestyle', 'Gomti Nagar', 'Self Care', 'Relaxation'],
-    author: BLOG_AUTHORS['priya-verma'],
-    publishedDate: '2026-02-05',
-    updatedDate: '2026-02-08',
-    readingTimeMinutes: 6,
-    featuredImage: {
-      src: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Weekend relaxation sanctuary at The Cloud Spa Lucknow',
-      caption: 'Escape weekend fatigue in serene, luxury surroundings at Vivek Khand 4, Gomti Nagar.',
-    },
+  slug: 'weekend-relaxation-guide',
+
+  title:
+    'The Ultimate Weekend Relaxation Guide in Lucknow: Recharging Mind & Body in Gomti Nagar',
+
+  metaTitle:
+    'Weekend Relaxation in Lucknow | Gomti Nagar Self-Care Guide',
+
+  metaDescription:
+    'Plan a relaxing weekend in Lucknow with a simple Gomti Nagar wellness itinerary featuring a morning walk, spa treatment and peaceful evening relaxation.',
+
+  excerpt:
+    'Looking to disconnect from weekly stress? Read our curated guide to spending a restorative weekend in Gomti Nagar, featuring top spots for calm and renewal.',
+
+  category: 'Lifestyle',
+
+  tags: [
+    'Weekend Relaxation Lucknow',
+    'Weekend Spa Lucknow',
+    'Gomti Nagar Relaxation',
+    'Self Care Lucknow',
+    'Weekend Wellness Lucknow',
+    'Spa in Gomti Nagar',
+    'Relaxing Spa Lucknow',
+    'Weekend Getaway Lucknow',
+    'Stress Relief Lucknow',
+    'Luxury Spa Gomti Nagar',
+  ],
+
+  author: BLOG_AUTHORS['priya-verma'],
+
+  publishedDate: '2026-02-05',
+
+  updatedDate: '2026-02-08',
+
+  readingTimeMinutes: 6,
+
+  featuredImage: {
+    src: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Weekend relaxation sanctuary at The Cloud Spa Lucknow',
+    caption:
+      'Escape weekend fatigue in serene, luxury surroundings at Vivek Khand 4, Gomti Nagar.',
+  },
     tableOfContents: [
       { id: 'morning-walks', title: 'Morning: Janeshwar Mishra Park & Fresh Air', level: 2 },
       { id: 'afternoon-spa', title: 'Afternoon: 90-Minute Spa Therapy at The Cloud Spa', level: 2 },
@@ -862,22 +1026,49 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     relatedPostsSlugs: ['best-spa-in-gomti-nagar', 'lucknow-wellness-lifestyle-trends'],
   },
   {
-    slug: 'balinese-massage-techniques',
-    title: 'Balinese Massage Techniques: Palm Pressure, Gentle Stretches & Essential Oils Explained',
-    metaTitle: 'Balinese Massage Techniques Guide | Traditional Indonesian Therapy Lucknow',
-    metaDescription: 'Explore authentic Balinese Massage techniques: long palm pressure, skin rolling, gentle stretching, and exotic flower-infused essential oils.',
-    excerpt: 'Originating from Bali, this holistic therapy blends Indian Ayurvedic influence with traditional Asian bodywork. Discover how firm palm pressure restores deep vitality.',
-    category: 'Balinese Massage',
-    tags: ['Balinese Massage', 'Indonesian Therapy', 'Palm Pressure', 'Skin Rolling', 'Aromatherapy'],
-    author: BLOG_AUTHORS['priya-verma'],
-    publishedDate: '2026-02-06',
-    updatedDate: '2026-02-08',
-    readingTimeMinutes: 7,
-    featuredImage: {
-      src: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
-      alt: 'Authentic Balinese massage palm pressure therapy at The Cloud Spa',
-      caption: 'Traditional Indonesian palm rolling and floral aromatherapy at The Cloud Spa Gomti Nagar.',
-    },
+  slug: 'balinese-massage-techniques',
+
+  title:
+    'Balinese Massage Techniques: Palm Pressure, Gentle Stretches & Essential Oils Explained',
+
+  metaTitle:
+    'Balinese Massage Techniques in Lucknow | Benefits & Guide',
+
+  metaDescription:
+    'Learn the main Balinese Massage techniques used for relaxation, including palm pressure, gentle stretching, skin rolling and aromatic oils in Lucknow.',
+
+  excerpt:
+    'Originating from Bali, this holistic therapy blends Indian Ayurvedic influence with traditional Asian bodywork. Discover how firm palm pressure restores deep vitality.',
+
+  category: 'Balinese Massage',
+
+  tags: [
+    'Balinese Massage Lucknow',
+    'Balinese Massage Gomti Nagar',
+    'Balinese Massage Techniques',
+    'Balinese Massage Benefits',
+    'Indonesian Massage Lucknow',
+    'Aromatherapy Massage Lucknow',
+    'Palm Pressure Massage',
+    'Skin Rolling Massage',
+    'Relaxation Massage Lucknow',
+    'Luxury Spa Lucknow',
+  ],
+
+  author: BLOG_AUTHORS['priya-verma'],
+
+  publishedDate: '2026-02-06',
+
+  updatedDate: '2026-02-08',
+
+  readingTimeMinutes: 7,
+
+  featuredImage: {
+    src: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
+    alt: 'Authentic Balinese massage palm pressure therapy at The Cloud Spa',
+    caption:
+      'Traditional Indonesian palm rolling and floral aromatherapy at The Cloud Spa Gomti Nagar.',
+  },
     tableOfContents: [
       { id: 'balinese-origins', title: 'The Origins & Philosophy of Balinese Bodywork', level: 2 },
       { id: 'core-techniques', title: 'Key Techniques: Palm Pressure & Skin Rolling', level: 2 },
@@ -915,13 +1106,34 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     relatedPostsSlugs: ['benefits-of-aromatherapy', 'swedish-massage-guide'],
   },
   {
-    slug: 'hot-stone-massage-benefits',
-    title: 'Deep Warmth Therapy: Health & Circulation Benefits of Volcanic Hot Stone Massage',
-    metaTitle: 'Hot Stone Massage Benefits | Volcanic Basalt Stone Therapy Lucknow',
-    metaDescription: 'Discover how heated volcanic basalt stones melt rigid muscle tension, improve circulation, and soothe chronic joint stiffness in cold weather.',
-    excerpt: 'Heated smooth volcanic stones radiate soothing warmth deep into muscle layers. Learn how thermodynamic therapy accelerates physical healing.',
-    category: 'Hot Stone Massage',
-    tags: ['Hot Stone Massage', 'Basalt Stones', 'Thermodynamic Therapy', 'Joint Stiffness', 'Circulation'],
+  slug: 'hot-stone-massage-benefits',
+
+  title:
+    'Deep Warmth Therapy: Health & Circulation Benefits of Volcanic Hot Stone Massage',
+
+  metaTitle:
+    'Hot Stone Massage in Lucknow | Benefits & Wellness Guide',
+
+  metaDescription:
+    'Discover the benefits of Hot Stone Massage in Lucknow, including warm muscle relaxation, soothing heat and a comfortable wellness experience in Gomti Nagar.',
+
+  excerpt:
+    'Heated smooth volcanic stones radiate soothing warmth deep into muscle layers. Learn how thermodynamic therapy accelerates physical healing.',
+
+  category: 'Hot Stone Massage',
+
+  tags: [
+    'Hot Stone Massage Lucknow',
+    'Hot Stone Massage Gomti Nagar',
+    'Benefits of Hot Stone Massage',
+    'Hot Stone Therapy Lucknow',
+    'Warm Stone Massage',
+    'Luxury Spa Lucknow',
+    'Muscle Relaxation Massage',
+    'Winter Wellness Lucknow',
+    'Joint Stiffness Relief',
+    'Spa Therapy Gomti Nagar',
+  ],
     author: BLOG_AUTHORS['dr-ananya-sharma'],
     publishedDate: '2026-02-07',
     updatedDate: '2026-02-08',
@@ -968,13 +1180,34 @@ It is performed dry—without oils or lotions—while the guest wears comfortabl
     relatedPostsSlugs: ['hot-stone-vs-warm-herbal-pouch', 'winter-wellness-and-skin-care-lucknow'],
   },
   {
-    slug: 'couple-spa-date-ideas-lucknow',
-    title: 'Romantic Couple Spa Date Ideas in Lucknow: Luxury Private Suites at The Cloud Spa',
-    metaTitle: 'Couple Spa Date Ideas Lucknow | Luxury Romantic Spa Suites Gomti Nagar',
-    metaDescription: 'Surprise your partner with a luxury private couple spa experience in Gomti Nagar, Lucknow. Private jacuzzi suites, side-by-side massages, and floral aromatics.',
-    excerpt: 'Looking for a unique, romantic date idea in Lucknow? Experience dual relaxation in a private luxury suite designed for couples at The Cloud Spa.',
-    category: 'Couple Spa',
-    tags: ['Couple Spa', 'Romantic Date', 'Lucknow Couples', 'Anniversary Date', 'Gomti Nagar'],
+  slug: 'couple-spa-date-ideas-lucknow',
+
+  title:
+    'Romantic Couple Spa Date Ideas in Lucknow: Luxury Private Suites at The Cloud Spa',
+
+  metaTitle:
+    'Couple Spa in Lucknow | Romantic Spa Date Ideas in Gomti Nagar',
+
+  metaDescription:
+    'Looking for romantic date ideas in Lucknow? Discover private couple spa experiences, synchronized massages, Jacuzzi relaxation and special-occasion ideas in Gomti Nagar.',
+
+  excerpt:
+    'Looking for a unique, romantic date idea in Lucknow? Experience dual relaxation in a private luxury suite designed for couples at The Cloud Spa.',
+
+  category: 'Couple Spa',
+
+  tags: [
+    'Couple Spa Lucknow',
+    'Couple Spa Gomti Nagar',
+    'Best Couple Spa Lucknow',
+    'Romantic Spa Date Lucknow',
+    'Private Couple Spa',
+    'Couple Spa with Jacuzzi',
+    'Couple Massage Lucknow',
+    'Anniversary Spa Lucknow',
+    'Valentine Spa Lucknow',
+    'Romantic Date Ideas Lucknow',
+  ],
     author: BLOG_AUTHORS['priya-verma'],
     publishedDate: '2026-02-08',
     updatedDate: '2026-02-08',

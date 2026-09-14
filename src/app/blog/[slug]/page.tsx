@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+
 import { BUSINESS_DETAILS } from '../../../constants/business';
 import {
   BLOG_POSTS,
@@ -25,54 +26,86 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
   const resolvedParams = await params;
   const post = getBlogPostBySlug(resolvedParams.slug);
 
   if (!post) {
-    return {
-      title: 'Article Not Found | The Cloud Spa Lucknow',
-    };
+    notFound();
   }
+
+  const canonicalPath = `/blog/${post.slug}`;
+  const canonicalUrl = `${BUSINESS_DETAILS.url}${canonicalPath}`;
+
+  const featuredImageUrl = post.featuredImage.src.startsWith('http')
+    ? post.featuredImage.src
+    : `${BUSINESS_DETAILS.url}${post.featuredImage.src}`;
 
   const meta = buildPageMetadata({
     title: post.metaTitle,
     description: post.metaDescription,
-    path: `/blog/${post.slug}`,
+    path: canonicalPath,
     keywords: post.tags,
-    imageUrl: post.featuredImage.src,
+    imageUrl: featuredImageUrl,
     type: 'article',
+    geoPlacename: 'Gomti Nagar, Lucknow',
   });
 
   return {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
+
     alternates: {
-      canonical: `${BUSINESS_DETAILS.url}/blog/${post.slug}`,
+      canonical: canonicalUrl,
     },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
+    },
+
     openGraph: {
       title: meta.openGraph.title,
       description: meta.openGraph.description,
-      url: `${BUSINESS_DETAILS.url}/blog/${post.slug}`,
+      url: canonicalUrl,
       type: 'article',
+      siteName: BUSINESS_DETAILS.name,
+      locale: 'en_IN',
       publishedTime: post.publishedDate,
       modifiedTime: post.updatedDate,
       authors: [post.author.name],
       images: [
         {
-          url: post.featuredImage.src,
+          url: featuredImageUrl,
           width: 1200,
           height: 630,
           alt: post.featuredImage.alt,
         },
       ],
     },
+
     twitter: {
-      card: meta.twitter.card,
+      card: 'summary_large_image',
       title: meta.twitter.title,
       description: meta.twitter.description,
-      images: [post.featuredImage.src],
+      images: [featuredImageUrl],
+    },
+
+    other: {
+      'geo.region': meta.geoTags.region,
+      'geo.placename': meta.geoTags.placename,
+      'geo.position': meta.geoTags.position,
+      ICBM: meta.geoTags.ICBM,
     },
   };
 }
@@ -85,12 +118,14 @@ export default async function BlogSlugPage({ params }: PageProps) {
     notFound();
   }
 
+  const canonicalUrl = `${BUSINESS_DETAILS.url}/blog/${post.slug}`;
+
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: '/', position: 1 },
     { name: 'Blog', url: '/blog', position: 2 },
     {
       name: post.title,
-      url: `/blog/${post.slug}`,
+      url: canonicalUrl,
       position: 3,
     },
   ]);
@@ -102,16 +137,24 @@ export default async function BlogSlugPage({ params }: PageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
       />
+
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleSchema),
+        }}
       />
+
       {post.faqs.length > 0 && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
         />
       )}
 
