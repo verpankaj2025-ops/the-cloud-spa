@@ -579,12 +579,14 @@ Please share slot availability.`;
             </h2>
             <div className="flex flex-wrap justify-center gap-2 text-xs">
               {localities.map((loc) => (
-                <span
+                <Link
                   key={loc.slug}
-                  className="bg-[#2C3A33] text-[#FAF9F5]/90 px-3 py-1.5 rounded-lg border border-[#C5A059]/20"
+                  href={`/locations/${loc.slug}`}
+                  aria-label={`${treatment.name} near ${loc.name}, Lucknow`}
+                  className="bg-[#2C3A33] text-[#FAF9F5]/90 px-3 py-1.5 rounded-lg border border-[#C5A059]/20 hover:border-[#C5A059] hover:text-[#C5A059] transition-colors"
                 >
-                  {loc.name} ({loc.distanceFromSpa})
-                </span>
+                  {treatment.name} near {loc.name}
+                </Link>
               ))}
             </div>
           </div>

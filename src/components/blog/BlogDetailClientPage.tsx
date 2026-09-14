@@ -371,7 +371,7 @@ export function BlogDetailClientPage({ post }: BlogDetailClientPageProps) {
                           </span>
                           <Link href={`/services/${srv.slug}`}>
                             <LuxuryButton variant="forest" size="sm">
-                              Book
+                              View {srv.name}
                             </LuxuryButton>
                           </Link>
                         </div>
@@ -396,8 +396,9 @@ export function BlogDetailClientPage({ post }: BlogDetailClientPageProps) {
                         key={loc.slug}
                         href={`/locations/${loc.slug}`}
                         className="p-3 rounded-xl bg-[#FAF9F5] hover:bg-[#C5A059] hover:text-white transition-all text-[#1E2522] text-center font-semibold border border-[#2C3A33]/10 block"
+                        aria-label={`Spa near ${loc.name}, Lucknow`}
                       >
-                        <span className="block truncate">{loc.name}</span>
+                        <span className="block truncate">Spa near {loc.name}</span>
                         <span className="text-[10px] text-[#2C3A33]/60 font-normal">
                           {loc.distanceFromSpa}
                         </span>
