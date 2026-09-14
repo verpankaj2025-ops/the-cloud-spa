@@ -23,7 +23,7 @@ export function generateLocalBusinessSchema() {
     url: BUSINESS_DETAILS.url,
     telephone: BUSINESS_DETAILS.phone,
     email: BUSINESS_DETAILS.email,
-    priceRange: "₹1499 - ₹8999",
+    priceRange: BUSINESS_DETAILS.priceRange,
     currenciesAccepted: BUSINESS_DETAILS.currenciesAccepted,
     paymentAccepted: BUSINESS_DETAILS.paymentAccepted.join(', '),
     image: [
@@ -112,7 +112,6 @@ export function generateWebSiteSchema() {
     publisher: {
       '@id': `${BUSINESS_DETAILS.url}/#organization`,
     },
-
   };
 }
 
@@ -126,7 +125,7 @@ export function generateServiceSchema(treatment: SpaTreatment) {
     '@id': `${BUSINESS_DETAILS.url}/services/${treatment.slug}/#service`,
     name: treatment.name,
     serviceType: treatment.category,
-    category: "Massage Therapy & Wellness",
+    category: 'Massage Therapy & Wellness',
     audience: {
       '@type': 'Audience',
       audienceType: 'Adults seeking luxury wellness therapy',
@@ -143,7 +142,7 @@ export function generateServiceSchema(treatment: SpaTreatment) {
     offers: Object.entries(treatment.priceINR).map(([duration, price]) => ({
       '@type': 'Offer',
       name: `${duration} Minutes Session`,
-      price: price,
+      price,
       priceCurrency: 'INR',
       availability: 'https://schema.org/InStock',
       url: `${BUSINESS_DETAILS.url}/services/${treatment.slug}`,
@@ -158,6 +157,7 @@ export function generateFAQSchema(
   customFaqs?: Array<{ question: string; answer: string }>
 ) {
   const faqs = customFaqs || SEO_KEYWORD_CLUSTERS.faqSchemaQuestions;
+
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -280,4 +280,3 @@ export function generateArticleSchema(post: {
     },
   };
 }
-

@@ -48,7 +48,7 @@ export const BUSINESS_DETAILS: LocalBusinessInfo = {
       displayHours: '11:00 AM – 8:00 PM (Open 7 Days a Week)',
     },
   ],
-  priceRange: '₹₹₹ (₹2,000 - ₹6,000 per session)',
+  priceRange: '₹999 - ₹9,999',
   paymentAccepted: [
     'Cash',
     'Credit Card',
@@ -82,7 +82,6 @@ export const BUSINESS_DETAILS: LocalBusinessInfo = {
     whatsapp: 'https://wa.me/919455671995',
   },
 };
-
 
 export function getWhatsAppUrl(message?: string): string {
   const baseUrl = `https://wa.me/${BUSINESS_DETAILS.whatsappPhone}`;
