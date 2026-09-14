@@ -1,12 +1,15 @@
 /**
  * Luxury Card System - The Cloud Spa Design System
  * Enforces Nested Border Radius Formula: Inner Radius = Outer Radius - Padding
+ *
+ * Performance note:
+ * This component uses CSS transforms/transitions instead of a motion runtime
+ * for its simple hover lift effect.
  */
 
 import React from 'react';
-import { motion, HTMLMotionProps } from 'motion/react';
 
-export interface LuxuryCardProps extends HTMLMotionProps<'div'> {
+export interface LuxuryCardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
   variant?: 'elevated' | 'flat' | 'gold-bordered' | 'dark';
   padding?: 'none' | 'sm' | 'md' | 'lg';
@@ -31,16 +34,17 @@ export const LuxuryCard: React.FC<LuxuryCardProps> = ({
 
   const paddingStyles = {
     none: 'p-0',
-    sm: 'p-4', // 16px
-    md: 'p-6 sm:p-8', // 24px - 32px
-    lg: 'p-8 sm:p-12', // 32px - 48px
+    sm: 'p-4',
+    md: 'p-6 sm:p-8',
+    lg: 'p-8 sm:p-12',
   };
 
   return (
-    <motion.div
-      whileHover={hoverEffect ? { y: -4, transition: { duration: 0.25, ease: 'easeOut' } } : undefined}
+    <div
       className={`
-        rounded-2xl transition-all duration-300 overflow-hidden relative
+        rounded-2xl overflow-hidden relative
+        transition-transform duration-300
+        ${hoverEffect ? 'hover:-translate-y-1' : ''}
         ${variantStyles[variant]}
         ${paddingStyles[padding]}
         ${className}
@@ -48,6 +52,6 @@ export const LuxuryCard: React.FC<LuxuryCardProps> = ({
       {...props}
     >
       {children}
-    </motion.div>
+    </div>
   );
 };
