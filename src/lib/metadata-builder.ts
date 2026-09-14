@@ -1,6 +1,6 @@
 /**
- * Metadata Builder Utility for Next.js 16 App Router
- * Generates SEO-compliant head metadata, Open Graph, Geo tags & Twitter Cards
+ * Metadata Builder Utility for Next.js App Router
+ * Generates consistent SEO metadata, Open Graph, Geo tags & Twitter Cards.
  */
 
 import { BUSINESS_DETAILS } from '../constants/business';
@@ -13,6 +13,7 @@ interface BuildMetadataParams {
   keywords?: string[];
   imageUrl?: string;
   type?: 'website' | 'article';
+  geoPlacename?: string;
 }
 
 export function buildPageMetadata({
@@ -22,8 +23,13 @@ export function buildPageMetadata({
   keywords = [],
   imageUrl = `${BUSINESS_DETAILS.url}/images/spa-placeholder.svg`,
   type = 'website',
+  geoPlacename = 'Gomti Nagar, Lucknow',
 }: BuildMetadataParams): SEOPageMetadata {
-  const canonicalUrl = `${BUSINESS_DETAILS.url}${path}`;
+  const canonicalUrl = new URL(
+    path.startsWith('/') ? path : `/${path}`,
+    BUSINESS_DETAILS.url
+  ).toString();
+
   const fullTitle = title.includes('The Cloud Spa')
     ? title
     : `${title} | The Cloud Spa & Wellness Center Lucknow`;
@@ -39,11 +45,17 @@ export function buildPageMetadata({
     'Couple Spa Lucknow',
   ];
 
+  const mergedKeywords = Array.from(
+    new Set([...keywords, ...defaultKeywords])
+  );
+
   return {
     title: fullTitle,
     description,
     canonicalUrl,
-    keywords: Array.from(new Set([...keywords, ...defaultKeywords])),
+
+    keywords: mergedKeywords,
+
     openGraph: {
       title: fullTitle,
       description,
@@ -54,19 +66,21 @@ export function buildPageMetadata({
           url: imageUrl,
           width: 1200,
           height: 630,
-          alt: `${BUSINESS_DETAILS.name} - Luxury Spa Gomti Nagar Lucknow`,
+          alt: `${BUSINESS_DETAILS.name} - ${geoPlacename}`,
         },
       ],
     },
+
     twitter: {
       card: 'summary_large_image',
       title: fullTitle,
       description,
       images: [imageUrl],
     },
+
     geoTags: {
       region: 'IN-UP',
-      placename: 'Gomti Nagar, Lucknow',
+      placename: geoPlacename,
       position: `${BUSINESS_DETAILS.geo.latitude};${BUSINESS_DETAILS.geo.longitude}`,
       ICBM: `${BUSINESS_DETAILS.geo.latitude}, ${BUSINESS_DETAILS.geo.longitude}`,
     },

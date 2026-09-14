@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+
 import { BUSINESS_DETAILS } from '../../../constants/business';
 import {
   LUCKNOW_LOCATIONS,
@@ -18,61 +19,82 @@ interface PageProps {
   }>;
 }
 
+const LOCATION_IMAGE =
+  'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80';
+
 export async function generateStaticParams() {
-  return LUCKNOW_LOCATIONS.map((loc) => ({
-    slug: loc.slug,
+  return LUCKNOW_LOCATIONS.map((location) => ({
+    slug: location.slug,
   }));
 }
 
-export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const resolvedParams = await params;
-  const location = getLocationBySlug(resolvedParams.slug);
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const location = getLocationBySlug(slug);
 
   if (!location) {
-    return {
-      title: 'Location Not Found | The Cloud Spa Lucknow',
-    };
+    notFound();
   }
 
+  const canonicalUrl = `${BUSINESS_DETAILS.url}/locations/${location.slug}`;
+
   const meta = buildPageMetadata({
-    title: location.metaTitle,
-    description: location.metaDescription,
-    path: `/locations/${location.slug}`,
-    keywords: location.primaryKeywords,
-    imageUrl:
-      'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
-    type: 'article',
-  });
+  title: location.metaTitle,
+  description: location.metaDescription,
+  path: `/locations/${location.slug}`,
+  keywords: location.primaryKeywords,
+  imageUrl: LOCATION_IMAGE,
+  type: 'website',
+  geoPlacename: `${location.name}, Lucknow`,
+});
 
   return {
     title: meta.title,
     description: meta.description,
     keywords: meta.keywords,
+
     alternates: {
-      canonical: `${BUSINESS_DETAILS.url}/locations/${location.slug}`,
+      canonical: canonicalUrl,
     },
+
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
+    },
+
     openGraph: {
+      type: 'website',
+      locale: 'en_IN',
+      url: canonicalUrl,
+      siteName: BUSINESS_DETAILS.name,
       title: meta.openGraph.title,
       description: meta.openGraph.description,
-      url: `${BUSINESS_DETAILS.url}/locations/${location.slug}`,
-      type: 'article',
       images: [
         {
-          url: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
+          url: LOCATION_IMAGE,
           width: 1200,
           height: 630,
-          alt: `Luxury Spa Services near ${location.name} Lucknow - The Cloud Spa`,
+          alt: `The Cloud Spa in ${location.name}, Lucknow`,
         },
       ],
     },
+
     twitter: {
       card: meta.twitter.card,
       title: meta.twitter.title,
       description: meta.twitter.description,
-      images: [
-        'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1200&q=80',
-      ],
+      images: [LOCATION_IMAGE],
     },
+
     other: {
       'geo.region': meta.geoTags.region,
       'geo.placename': `${location.name}, Lucknow`,
@@ -83,19 +105,29 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function LocationSlugPage({ params }: PageProps) {
-  const resolvedParams = await params;
-  const location = getLocationBySlug(resolvedParams.slug);
+  const { slug } = await params;
+  const location = getLocationBySlug(slug);
 
   if (!location) {
     notFound();
   }
 
+  const canonicalUrl = `${BUSINESS_DETAILS.url}/locations/${location.slug}`;
+
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: 'Home', url: '/', position: 1 },
-    { name: 'Locations', url: '/locations', position: 2 },
+    {
+      name: 'Home',
+      url: '/',
+      position: 1,
+    },
+    {
+      name: 'Locations',
+      url: '/locations',
+      position: 2,
+    },
     {
       name: location.name,
-      url: `/locations/${location.slug}`,
+      url: canonicalUrl,
       position: 3,
     },
   ]);
@@ -103,9 +135,10 @@ export default async function LocationSlugPage({ params }: PageProps) {
   const placeSchema = {
     '@context': 'https://schema.org',
     '@type': 'Place',
-    '@id': `${BUSINESS_DETAILS.url}/locations/${location.slug}/#place`,
-    name: `Luxury Spa Services near ${location.name}, Lucknow`,
+    '@id': `${canonicalUrl}/#place`,
+    name: `Spa in ${location.name}, Lucknow`,
     description: location.metaDescription,
+    url: canonicalUrl,
     geo: {
       '@type': 'GeoCoordinates',
       latitude: BUSINESS_DETAILS.geo.latitude,
@@ -118,8 +151,8 @@ export default async function LocationSlugPage({ params }: PageProps) {
       addressCountry: 'IN',
     },
     containedInPlace: {
-      '@type': 'AdministrativeArea',
-      name: 'Lucknow, Uttar Pradesh',
+      '@type': 'City',
+      name: 'Lucknow',
     },
   };
 
@@ -129,15 +162,23 @@ export default async function LocationSlugPage({ params }: PageProps) {
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema),
+        }}
       />
+
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(placeSchema),
+        }}
       />
+
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
       />
 
       <LocationDetailClientPage location={location} />
