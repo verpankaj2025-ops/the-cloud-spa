@@ -29,9 +29,9 @@ export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS_DETAILS.url),
 
   title: {
-    default: 'Best Spa in Gomti Nagar, Lucknow | The Cloud Spa',
-    template: '%s | The Cloud Spa',
-  },
+  default: 'Best Spa in Gomti Nagar, Lucknow | The Cloud Spa',
+  template: '%s',
+},
 
   description:
     'Looking for a spa near you in Lucknow? The Cloud Spa in Gomti Nagar offers Thai, Balinese, Deep Tissue, Swedish and Couple Spa experiences, plus Jacuzzi and wellness facilities.',
